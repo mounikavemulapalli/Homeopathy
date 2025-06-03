@@ -1,0 +1,38 @@
+.bottom-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #F8F8F8; /* Light gray background */
+  border-top: 1px solid #CCCCCC; /* Light gray border */
+  padding: 12px 0;
+  z-index: 999;
+  border-radius: 8px 8px 0 0; /* Slightly rounded corners */
+  font-family: Segoe UI, sans-serif; /* Modern font */
+}
+
+.tab-link {
+  color: #4682B4; /* Steel Blue color for text */
+  font-size: 18px; /* Slightly larger font size */
+  text-decoration: none;
+  opacity: 0.8; /* Slightly lower opacity in normal state */
+  transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.tab-link:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+.tab-link.active {
+  color: #1E90FF; /* Dodger Blue color for active tab */
+  font-weight: bold;
+}
+
+/* Icons for tabs */
+.tab-link span {
+  display: block;
+  font-size: 1.4em; /* Adjust size as needed */
+  margin-bottom: 6px;
+}
