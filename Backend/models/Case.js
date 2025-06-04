@@ -1,3 +1,5 @@
+/** @format */
+
 // const caseSchema = new mongoose.Schema({
 //   name: String,
 //   age: Number,
@@ -17,28 +19,66 @@
 //     default: Date.now,
 //   },
 // });
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-// Sub-schema for follow-ups
-const followUpSchema = new mongoose.Schema({
-  date: Date,
-  notes: String
-}, { _id: false });
-
-// Main case schema
-const caseSchema = new mongoose.Schema({
-  patientName: { type: String, required: true },
-  phoneNumber: { type: String, required: true },
-  visitDate: {
-    type: Date,
-    default: Date.now
-  },
-  symptoms: { type: String, required: true },
-  mentalSymptoms: String,
-  remedyGiven: String,
-  followUpDate: Date,
-  faceAnalysis: Object,          // ✅ NEW: stores AI analysis result
-  followUps: [followUpSchema]    // ✅ supports multiple follow-ups
+const chiefComplaintSchema = new mongoose.Schema({
+  complaint: String,
+  duration: String,
+  description: String,
 });
 
-module.exports = mongoose.model('Case', caseSchema);
+const prescriptionSchema = new mongoose.Schema({
+  date: Date,
+  remedyName: String,
+  potency: String,
+  dose: String,
+  instructions: String,
+});
+
+const pastHistorySchema = new mongoose.Schema({
+  childhoodDiseases: String,
+  surgeriesInjuries: String,
+  majorIllnesses: String,
+});
+
+const personalHistorySchema = new mongoose.Schema({
+  appetite: String,
+  cravingsAversions: String,
+  thirst: String,
+  bowel: String,
+  urine: String,
+  sleep: String,
+  dreams: String,
+  sweat: String,
+  thermal: String,
+  habits: String,
+  menstrual: String,
+});
+
+const caseSchema = new mongoose.Schema(
+  {
+    name: { type: String, required: true },
+    age: String,
+    gender: String,
+    maritalStatus: String,
+    occupation: String,
+    address: String,
+    phone: String,
+    dateOfVisit: Date,
+    chiefComplaints: [chiefComplaintSchema],
+    historyPresentIllness: String,
+    pastHistory: pastHistorySchema,
+    familyHistory: String,
+    personalHistory: personalHistorySchema,
+    mentalSymptoms: String,
+    generalRemarks: String,
+    observationsByDoctor: String,
+    prescription: [prescriptionSchema],
+    imageUrl: String, // store the image path or URL
+  },
+  {
+    timestamps: true,
+  }
+);
+
+module.exports = mongoose.model("Case", caseSchema);
