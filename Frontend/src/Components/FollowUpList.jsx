@@ -1,57 +1,33 @@
-import React, { useEffect, useState } from "react";
+/** @format */
 
-const FollowUpList = () => {
-  const [followUps, setFollowUps] = useState([]);
+import React from "react";
 
-  // Dummy data for now — replace with real API data
-  useEffect(() => {
-    const dummyFollowUps = [
-      {
-        id: 1,
-        patientName: "Ravi Kumar",
-        date: "2025-05-12",
-        symptoms: "Improved sleep, reduced anxiety",
-        notes: "Continue same remedy. Next follow-up in 1 week.",
-      },
-      {
-        id: 2,
-        patientName: "Sita Devi",
-        date: "2025-05-11",
-        symptoms: "Joint pain slightly better",
-        notes: "Increase potency, observe for 3 days.",
-      },
-    ];
-    setFollowUps(dummyFollowUps);
-  }, []);
-
-  return (
-    <div className="max-w-5xl mx-auto p-4">
-      <h2 className="text-2xl font-bold text-center mb-6">Follow-Up List</h2>
-
-      {followUps.length === 0 ? (
-        <p className="text-center text-gray-500">No follow-ups found.</p>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {followUps.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition"
-            >
-              <div className="flex justify-between mb-2">
-                <h3 className="text-lg font-semibold">{item.patientName}</h3>
-                <span className="text-sm text-gray-500">{item.date}</span>
-              </div>
-              <p className="text-gray-700"><strong>Symptoms:</strong> {item.symptoms}</p>
-              <p className="mt-2 text-gray-700"><strong>Notes:</strong> {item.notes}</p>
-              <button className="mt-4 w-full bg-green-600 text-white p-2 rounded hover:bg-green-700 transition">
-                View Follow-Up
-              </button>
+const FollowUpList = ({ followUps }) => (
+  <div className='max-w-2xl mx-auto mt-8'>
+    <h2 className='text-xl font-bold mb-4 text-blue-700'>Follow-Up History</h2>
+    {!followUps || followUps.length === 0 ? (
+      <div className='text-gray-500 text-center'>No follow-ups yet.</div>
+    ) : (
+      <ul className='space-y-4'>
+        {followUps.map((item) => (
+          <li key={item.id} className='bg-white shadow rounded p-4 border'>
+            <div className='flex justify-between items-center mb-2'>
+              <span className='font-semibold'>{item.patientName}</span>
+              <span className='text-sm text-gray-500'>{item.date}</span>
             </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-};
+            <div>
+              <strong>Complaint/Progress:</strong>
+              <div className='ml-2'>{item.complaint}</div>
+            </div>
+            <div className='mt-2'>
+              <strong>Prescription:</strong>
+              <div className='ml-2'>{item.prescription}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+);
 
 export default FollowUpList;
