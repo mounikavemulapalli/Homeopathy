@@ -13,6 +13,7 @@ import CasesList from "./Components/CasesList";
 import "./App.css"; // This should style your bottom tabs
 import FollowUpList from "./Components/FollowUpList";
 import FollowUpPage from "./Components/FollowUpPage";
+import TodayFollowups from "./Components/TodayFollowups";
 // Bottom tab component
 const BottomTabs = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
           <Route path='/cases' element={<CasesList />} />
           <Route path='/followup' element={<FollowUpPage />} />
           {/* <Route path='/followuplist' element={<FollowUpList />} /> */}
+          <Route path='/today-followups' element={<TodayFollowups />} />
         </Routes>
         <BottomTabs />
       </div>

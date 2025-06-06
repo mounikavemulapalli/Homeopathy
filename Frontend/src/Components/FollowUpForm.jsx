@@ -5,9 +5,12 @@ import React, { useState } from "react";
 const FollowUpForm = ({ onSubmit }) => {
   const [formData, setFormData] = useState({
     patientName: "",
-    date: "",
+    phoneNumber: "",
     complaint: "",
+    complaints: "",
     prescription: "",
+    remarks: "",
+    date: "",
   });
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -25,9 +28,12 @@ const FollowUpForm = ({ onSubmit }) => {
       setSaving(false);
       setFormData({
         patientName: "",
-        date: "",
+        phoneNumber: "",
         complaint: "",
+        complaints: "",
         prescription: "",
+        remarks: "",
+        date: "",
       });
       setTimeout(() => setSuccess(false), 2000);
     }, 600);
@@ -64,17 +70,17 @@ const FollowUpForm = ({ onSubmit }) => {
       <div>
         <label
           className='block font-semibold mb-1 text-gray-700'
-          htmlFor='date'
+          htmlFor='phoneNumber'
         >
-          Date
+          Phone Number
         </label>
         <input
-          id='date'
-          type='date'
-          value={formData.date}
-          onChange={(e) => handleChange("date", e.target.value)}
+          id='phoneNumber'
+          type='text'
+          placeholder='Phone Number'
+          value={formData.phoneNumber}
+          onChange={(e) => handleChange("phoneNumber", e.target.value)}
           className='w-full p-2 border rounded focus:ring-2 focus:ring-blue-300'
-          required
         />
       </div>
 
@@ -83,16 +89,32 @@ const FollowUpForm = ({ onSubmit }) => {
           className='block font-semibold mb-1 text-gray-700'
           htmlFor='complaint'
         >
-          Complaint / Progress
+          Complaint
         </label>
-        <textarea
+        <input
           id='complaint'
-          placeholder='Complaint/Progress'
+          type='text'
+          placeholder='Complaint'
           value={formData.complaint}
           onChange={(e) => handleChange("complaint", e.target.value)}
           className='w-full p-2 border rounded focus:ring-2 focus:ring-blue-300'
-          rows='3'
-          required
+        />
+      </div>
+
+      <div>
+        <label
+          className='block font-semibold mb-1 text-gray-700'
+          htmlFor='complaints'
+        >
+          Complaints (if any)
+        </label>
+        <input
+          id='complaints'
+          type='text'
+          placeholder='Complaints'
+          value={formData.complaints}
+          onChange={(e) => handleChange("complaints", e.target.value)}
+          className='w-full p-2 border rounded focus:ring-2 focus:ring-blue-300'
         />
       </div>
 
@@ -110,6 +132,39 @@ const FollowUpForm = ({ onSubmit }) => {
           onChange={(e) => handleChange("prescription", e.target.value)}
           className='w-full p-2 border rounded focus:ring-2 focus:ring-blue-300'
           rows='2'
+        />
+      </div>
+
+      <div>
+        <label
+          className='block font-semibold mb-1 text-gray-700'
+          htmlFor='remarks'
+        >
+          Remarks
+        </label>
+        <textarea
+          id='remarks'
+          placeholder='Remarks'
+          value={formData.remarks}
+          onChange={(e) => handleChange("remarks", e.target.value)}
+          className='w-full p-2 border rounded focus:ring-2 focus:ring-blue-300'
+          rows='2'
+        />
+      </div>
+
+      <div>
+        <label
+          className='block font-semibold mb-1 text-gray-700'
+          htmlFor='date'
+        >
+          Date
+        </label>
+        <input
+          id='date'
+          type='date'
+          value={formData.date}
+          onChange={(e) => handleChange("date", e.target.value)}
+          className='w-full p-2 border rounded focus:ring-2 focus:ring-blue-300'
           required
         />
       </div>
