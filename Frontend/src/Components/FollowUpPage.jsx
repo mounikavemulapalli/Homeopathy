@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import FollowUpForm from "./FollowUpForm";
-import FollowUpList from "./FollowUpList";
 
 const FollowUpPage = () => {
   const [followUps, setFollowUps] = useState([]);

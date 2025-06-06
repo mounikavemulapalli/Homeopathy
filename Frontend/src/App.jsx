@@ -11,7 +11,7 @@ import CaseSheetForm from "./Components/CaseSheetForm";
 import FollowUpForm from "./Components/FollowUpForm";
 import CasesList from "./Components/CasesList";
 import "./App.css"; // This should style your bottom tabs
-import FollowUpList from "./Components/FollowUpList";
+
 import FollowUpPage from "./Components/FollowUpPage";
 import TodayFollowups from "./Components/TodayFollowups";
 // Bottom tab component

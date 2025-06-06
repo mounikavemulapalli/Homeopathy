@@ -68,4 +68,30 @@ router.get("/", async (req, res) => {
   }
 });
 
+// @route   PUT /api/cases/:id
+// @desc    Update an existing case
+router.put("/:id", async (req, res) => {
+  try {
+    const updated = await Case.findByIdAndUpdate(
+      req.params.id,
+      { $set: req.body },
+      { new: true }
+    );
+    res.json(updated);
+  } catch (err) {
+    res.status(500).json({ error: "Update failed" });
+  }
+});
+
+// @route   DELETE /api/cases/:id
+// @desc    Delete a case
+router.delete("/:id", async (req, res) => {
+  try {
+    await Case.findByIdAndDelete(req.params.id);
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: "Delete failed" });
+  }
+});
+
 module.exports = router;
