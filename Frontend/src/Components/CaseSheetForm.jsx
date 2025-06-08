@@ -12,7 +12,15 @@ const initialCaseData = {
   address: "",
   phone: "",
   dateOfVisit: "",
-  chiefComplaints: [{ complaint: "", duration: "", description: "" }],
+  chiefComplaints: [
+    {
+      complaint: "",
+      duration: "",
+      description: "",
+      modalities: "", // Added modalities field
+      skinImage: null, // Added skinImage field
+    },
+  ],
   historyPresentIllness: "",
   pastHistory: {
     childhoodDiseases: "",
@@ -55,9 +63,14 @@ const CaseSheetForm = () => {
   };
 
   const handleChiefComplaintChange = (index, e) => {
-    const { name, value } = e.target;
+    const { name, value, files } = e.target; // Destructure files for file input
     const updatedComplaints = [...caseData.chiefComplaints];
-    updatedComplaints[index][name] = value;
+
+    if (name === "skinImage" && files && files[0]) {
+      updatedComplaints[index][name] = files[0];
+    } else {
+      updatedComplaints[index][name] = value;
+    }
     setCaseData({ ...caseData, chiefComplaints: updatedComplaints });
   };
 
@@ -66,7 +79,13 @@ const CaseSheetForm = () => {
       ...caseData,
       chiefComplaints: [
         ...caseData.chiefComplaints,
-        { complaint: "", duration: "", description: "" },
+        {
+          complaint: "",
+          duration: "",
+          description: "",
+          modalities: "",
+          skinImage: null,
+        },
       ],
     });
   };
@@ -97,7 +116,31 @@ const CaseSheetForm = () => {
 
     const formData = new FormData();
     formData.append("image", caseData.image);
-    formData.append("data", JSON.stringify({ ...caseData, image: undefined }));
+
+    // Append chief complaints data, including skin images
+    const chiefComplaintsWithImages = caseData.chiefComplaints.map(
+      (complaint, index) => {
+        if (complaint.skinImage) {
+          formData.append(
+            `chiefComplaints[${index}][skinImage]`,
+            complaint.skinImage
+          );
+          // Return complaint without the File object for JSON stringify
+          const { skinImage, ...rest } = complaint;
+          return rest;
+        }
+        return complaint;
+      }
+    );
+
+    formData.append(
+      "data",
+      JSON.stringify({
+        ...caseData,
+        image: undefined,
+        chiefComplaints: chiefComplaintsWithImages,
+      })
+    );
 
     try {
       const response = await fetch("http://localhost:5000/api/cases", {
@@ -171,19 +214,10 @@ const CaseSheetForm = () => {
     <form className='case-container' onSubmit={handleSubmit}>
       <h2 style={{ textAlign: "center", marginBottom: 25 }}>Case Sheet</h2>
 
-      {/* Image Upload */}
-      <div className='case-section'>
-        <label className='case-file-input-label'>Upload Face Image:</label>
-        <input type='file' accept='image/*' onChange={handleImageUpload} />
-        <p style={{ fontSize: 12, color: "#555" }}>
-          {caseData.image ? caseData.image.name : "No file chosen"}
-        </p>
-      </div>
-
       {/* Basic Info */}
       <section className='case-section'>
         <h3 className='case-section-title'>1. Basic Patient Information</h3>
-        <div className='case-form-row'>
+        <div className='case-form-column'>
           <div className='case-form-group'>
             <label className='case-label'>Name</label>
             <input
@@ -221,7 +255,7 @@ const CaseSheetForm = () => {
           </div>
         </div>
 
-        <div className='case-form-row'>
+        <div className='case-form-column'>
           <div className='case-form-group'>
             <label className='case-label'>Marital Status</label>
             <input
@@ -244,7 +278,7 @@ const CaseSheetForm = () => {
           </div>
         </div>
 
-        <div className='case-form-row'>
+        <div className='case-form-column'>
           <div className='case-form-group' style={{ flex: "2 1 100%" }}>
             <label className='case-label'>Address</label>
             <input
@@ -257,7 +291,15 @@ const CaseSheetForm = () => {
           </div>
         </div>
 
-        <div className='case-form-row'>
+        <div className='case-form-column'>
+          {/* Image Upload */}
+          <div className='case-section'>
+            <label className='case-file-input-label'>Upload Face Image:</label>
+            <input type='file' accept='image/*' onChange={handleImageUpload} />
+            <p style={{ fontSize: 12, color: "#555" }}>
+              {caseData.image ? caseData.image.name : "No file chosen"}
+            </p>
+          </div>
           <div className='case-form-group'>
             <label className='case-label'>Phone / WhatsApp</label>
             <input
@@ -268,6 +310,7 @@ const CaseSheetForm = () => {
               placeholder='Phone number'
             />
           </div>
+
           <div className='case-form-group'>
             <label className='case-label'>Date of Visit</label>
             <input
@@ -286,7 +329,7 @@ const CaseSheetForm = () => {
         <h3 className='case-section-title'>2. Chief Complaints</h3>
         {caseData.chiefComplaints.map((complaint, index) => (
           <div key={index} className='case-complaint-block'>
-            <div className='case-form-row'>
+            <div className='case-form-column'>
               <div className='case-form-group'>
                 <label className='case-label'>Complaint</label>
                 <input
@@ -309,7 +352,7 @@ const CaseSheetForm = () => {
                 />
               </div>
             </div>
-            <div className='case-form-row'>
+            <div className='case-form-column'>
               <div className='case-form-group' style={{ flex: "1 1 100%" }}>
                 <label className='case-label'>Description</label>
                 <textarea
@@ -319,6 +362,33 @@ const CaseSheetForm = () => {
                   onChange={(e) => handleChiefComplaintChange(index, e)}
                   placeholder='Additional details'
                 />
+              </div>
+            </div>
+            {/* New fields for Chief Complaints */}
+            <div className='case-form-column'>
+              <div className='case-form-group'>
+                <label className='case-label'>Modalities</label>
+                <input
+                  className='case-input'
+                  name='modalities'
+                  value={complaint.modalities}
+                  onChange={(e) => handleChiefComplaintChange(index, e)}
+                  placeholder='Modalities (e.g., worse by cold, better by heat)'
+                />
+              </div>
+              <div className='case-form-group'>
+                <label className='case-label'>Skin Image</label>
+                <input
+                  type='file'
+                  accept='image/*'
+                  name='skinImage'
+                  onChange={(e) => handleChiefComplaintChange(index, e)}
+                />
+                <p style={{ fontSize: 12, color: "#555" }}>
+                  {complaint.skinImage
+                    ? complaint.skinImage.name
+                    : "No file chosen"}
+                </p>
               </div>
             </div>
           </div>
@@ -348,7 +418,7 @@ const CaseSheetForm = () => {
       {/* Past History */}
       <section className='case-section'>
         <h3 className='case-section-title'>4. Past History</h3>
-        <div className='case-form-row'>
+        <div className='case-form-column'>
           <div className='case-form-group'>
             <label className='case-label'>Childhood Diseases</label>
             <textarea
@@ -418,7 +488,7 @@ const CaseSheetForm = () => {
       {/* Personal History */}
       <section className='case-section'>
         <h3 className='case-section-title'>6. Personal History</h3>
-        <div className='case-form-row'>
+        <div className='case-form-column'>
           {[
             { label: "Appetite", name: "appetite" },
             { label: "Cravings / Aversions", name: "cravingsAversions" },
@@ -447,7 +517,7 @@ const CaseSheetForm = () => {
             </div>
           ))}
         </div>
-        <div className='case-form-row'>
+        <div className='case-form-column'>
           {[
             { label: "Sleep", name: "sleep" },
             { label: "Dreams", name: "dreams" },
@@ -517,10 +587,37 @@ const CaseSheetForm = () => {
 
       {/* Prescription */}
       <section className='case-section'>
+         {/* AI Summary */}
+      <div style={{ marginTop: "20px" }}>
+        <button
+          type='button'
+          style={{ backgroundColor: "#ffc107", color: "#333" }}
+          onClick={generateSummary}
+          disabled={loadingSummary}
+        >
+          {loadingSummary ? "Generating AI Summary..." : "Generate AI Summary"}
+        </button>
+      </div>
+
+      {aiSummary && (
+        <div
+          style={{
+            marginTop: "20px",
+            padding: "10px",
+            border: "1px solid #ccc",
+            backgroundColor: "#f9f9f9",
+            whiteSpace: "pre-wrap",
+            color: "#000",
+          }}
+        >
+          <h3>AI Generated Summary</h3>
+          <p>{aiSummary}</p>
+        </div>
+      )}
         <h3 className='case-section-title'>10. Prescription</h3>
         {caseData.prescription.map((prescription, index) => (
           <div key={index} className='case-prescription-block'>
-            <div className='case-form-row'>
+            <div className='case-form-column'>
               <div className='case-form-group'>
                 <label className='case-label'>Date</label>
                 <input
@@ -550,7 +647,7 @@ const CaseSheetForm = () => {
                 />
               </div>
             </div>
-            <div className='case-form-row'>
+            <div className='case-form-column'>
               <div className='case-form-group'>
                 <label className='case-label'>Dose</label>
                 <input
@@ -573,6 +670,7 @@ const CaseSheetForm = () => {
             </div>
           </div>
         ))}
+        
         <button
           type='button'
           className='case-button'
@@ -588,42 +686,16 @@ const CaseSheetForm = () => {
       </button>
 
       {/* Submitted Data Preview */}
-      {submittedData && (
+      {/* {submittedData && (
         <div className='case-submitted-data-container'>
           <h4>Submitted Data Preview:</h4>
           <pre style={{ whiteSpace: "pre-wrap", wordWrap: "break-word" }}>
             {JSON.stringify(submittedData, null, 2)}
           </pre>
         </div>
-      )}
+      )} */}
 
-      {/* AI Summary */}
-      <div style={{ marginTop: "20px" }}>
-        <button
-          type='button'
-          style={{ backgroundColor: "#ffc107", color: "#333" }}
-          onClick={generateSummary}
-          disabled={loadingSummary}
-        >
-          {loadingSummary ? "Generating AI Summary..." : "Generate AI Summary"}
-        </button>
-      </div>
-
-      {aiSummary && (
-        <div
-          style={{
-            marginTop: "20px",
-            padding: "10px",
-            border: "1px solid #ccc",
-            backgroundColor: "#f9f9f9",
-            whiteSpace: "pre-wrap",
-            color: "#000",
-          }}
-        >
-          <h3>AI Generated Summary</h3>
-          <p>{aiSummary}</p>
-        </div>
-      )}
+     
     </form>
   );
 };

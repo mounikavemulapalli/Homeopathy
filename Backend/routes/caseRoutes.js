@@ -13,16 +13,14 @@ if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir);
 }
 
-// Multer setup for file uploads
+// Multer setup
 const storage = multer.diskStorage({
   destination(req, file, cb) {
-    cb(null, "uploads/");
+    cb(null, uploadDir);
   },
   filename(req, file, cb) {
-    cb(
-      null,
-      `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`
-    );
+    const ext = path.extname(file.originalname);
+    cb(null, `${file.fieldname}-${Date.now()}${ext}`);
   },
 });
 
@@ -30,7 +28,7 @@ const upload = multer({
   storage,
   fileFilter(req, file, cb) {
     const ext = path.extname(file.originalname).toLowerCase();
-    if (ext !== ".jpg" && ext !== ".jpeg" && ext !== ".png") {
+    if (![".jpg", ".jpeg", ".png"].includes(ext)) {
       return cb(new Error("Only images are allowed"));
     }
     cb(null, true);
@@ -38,16 +36,42 @@ const upload = multer({
 });
 
 // @route   POST /api/cases
-// @desc    Submit new case with image upload
-router.post("/", upload.single("image"), async (req, res) => {
+// @desc    Submit new case with image and chief complaint images
+router.post("/", upload.any(), async (req, res) => {
   try {
-    const data = JSON.parse(req.body.data);
-
-    // If image uploaded, save path
-    if (req.file) {
-      data.imageUrl = `/uploads/${req.file.filename}`;
+    // Parse and validate input data
+    if (!req.body.data) {
+      return res.status(400).json({ message: "Missing data field" });
     }
 
+    const data = JSON.parse(req.body.data);
+    if (!Array.isArray(data.chiefComplaints)) {
+      data.chiefComplaints = [];
+    }
+
+    // Initialize image fields
+    data.imageUrl = "";
+    data.chiefComplaints = data.chiefComplaints.map((c) => ({
+      ...c,
+      skinImageUrl: "",
+    }));
+
+    // Process all uploaded files
+    (req.files || []).forEach((file) => {
+      if (file.fieldname === "image") {
+        data.imageUrl = `/uploads/${file.filename}`;
+      } else {
+        const match = file.fieldname.match(/chiefComplaints\[(\d+)\]\[skinImage\]/);
+        if (match) {
+          const index = parseInt(match[1], 10);
+          if (data.chiefComplaints[index]) {
+            data.chiefComplaints[index].skinImageUrl = `/uploads/${file.filename}`;
+          }
+        }
+      }
+    });
+
+    // Save to MongoDB
     const newCase = new Case(data);
     await newCase.save();
 
@@ -58,18 +82,18 @@ router.post("/", upload.single("image"), async (req, res) => {
   }
 });
 
+// @route   GET /api/cases
 router.get("/", async (req, res) => {
   try {
     const cases = await Case.find();
-    res.json(cases); // send array of cases as JSON
+    res.json(cases);
   } catch (error) {
-    console.error(error);
+    console.error("Error fetching cases:", error);
     res.status(500).json({ message: "Server error" });
   }
 });
 
 // @route   PUT /api/cases/:id
-// @desc    Update an existing case
 router.put("/:id", async (req, res) => {
   try {
     const updated = await Case.findByIdAndUpdate(
@@ -79,17 +103,18 @@ router.put("/:id", async (req, res) => {
     );
     res.json(updated);
   } catch (err) {
+    console.error("Error updating case:", err);
     res.status(500).json({ error: "Update failed" });
   }
 });
 
 // @route   DELETE /api/cases/:id
-// @desc    Delete a case
 router.delete("/:id", async (req, res) => {
   try {
     await Case.findByIdAndDelete(req.params.id);
     res.json({ success: true });
   } catch (err) {
+    console.error("Error deleting case:", err);
     res.status(500).json({ error: "Delete failed" });
   }
 });

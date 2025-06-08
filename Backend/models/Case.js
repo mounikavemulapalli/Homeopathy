@@ -25,6 +25,8 @@ const chiefComplaintSchema = new mongoose.Schema({
   complaint: String,
   duration: String,
   description: String,
+  modalities: String, // Added modalities field
+  skinImage: String, // Added skinImage field for file path
 });
 
 const prescriptionSchema = new mongoose.Schema({
@@ -55,30 +57,32 @@ const personalHistorySchema = new mongoose.Schema({
   menstrual: String,
 });
 
-const caseSchema = new mongoose.Schema(
-  {
-    name: { type: String, required: true },
-    age: String,
-    gender: String,
-    maritalStatus: String,
-    occupation: String,
-    address: String,
-    phone: String,
-    dateOfVisit: Date,
-    chiefComplaints: [chiefComplaintSchema],
-    historyPresentIllness: String,
-    pastHistory: pastHistorySchema,
-    familyHistory: String,
-    personalHistory: personalHistorySchema,
-    mentalSymptoms: String,
-    generalRemarks: String,
-    observationsByDoctor: String,
-    prescription: [prescriptionSchema],
-    imageUrl: String, // store the image path or URL
-  },
-  {
-    timestamps: true,
-  }
-);
 
-module.exports = mongoose.model("Case", caseSchema);
+const CaseSchema = new mongoose.Schema({
+  name: String,
+  age: Number,
+  gender: String,
+  phone: String,
+  dateOfVisit: Date,
+  imageUrl: String,
+  chiefComplaints: [
+    {
+      complaint: String,
+      duration: String,
+      description: String,
+      skinImageUrl: String,
+    },
+  ],
+  pastHistory: {
+    childhoodDiseases: String,
+    surgeriesInjuries: String,
+    majorIllnesses: String,
+  },
+  // Add other nested fields (e.g., presentIllness, familyHistory, etc.)
+});
+
+module.exports = mongoose.model("Case", CaseSchema);
+
+
+
+
