@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import "./casestyles.css";
 
 const initialCaseData = {
@@ -28,20 +28,7 @@ const initialCaseData = {
     majorIllnesses: "",
   },
   familyHistory: "",
-  personalHistory: {
-    appetite: "",
-    cravingsAversions: "",
-    thirst: "",
-    bowel: "",
-    urine: "",
-    sleep: "",
-    dreams: "",
-    sweat: "",
-    thermal: "",
-    habits: "",
-    menstrual: "",
-  },
-  mentalSymptoms: "",
+  personalHistory: "",
   generalRemarks: "",
   observationsByDoctor: "",
   prescription: [
@@ -56,7 +43,7 @@ const CaseSheetForm = () => {
   const [aiSummary, setAiSummary] = useState("");
   const [loadingSummary, setLoadingSummary] = useState(false);
   const [focusedInput, setFocusedInput] = useState(null);
-
+  const [brainResult, setBrainResult] = useState(null);
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setCaseData({ ...caseData, [name]: value });
@@ -169,47 +156,91 @@ const CaseSheetForm = () => {
       reader.onerror = (error) => reject(error);
     });
 
-  const generateSummary = async () => {
-    setLoadingSummary(true);
-    setAiSummary("");
+    const generateBrainAnalysis = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/api/brain/analyze", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            caseInput: {
+              symptoms: caseData.chiefComplaints.map(c => c.description).join(", "),
+              thermal: caseData.personalHistory.thermal,
+              cravings: caseData.personalHistory.cravingsAversions,
+              mentals: caseData.mentalSymptoms,
+            },
+            toggles: { showExplanation: true }
+          }),
+        });
+    
+        const data = await response.json();
+        setBrainResult(data);
+      } catch (error) {
+        console.error("Brain API error:", error);
+      }
+    };
+    
 
-    let imageBase64 = null;
-    if (caseData.image) {
-      imageBase64 = await getBase64(caseData.image);
-    }
+    const generateSummary = async () => {
+      setLoadingSummary(true);
+      setAiSummary("");
 
-    try {
-      const response = await fetch(
-        "http://localhost:5000/api/generate-summary",
-        {
+      let imageBase64 = null;
+      if (caseData.image) {
+        imageBase64 = await getBase64(caseData.image);
+      }
+
+      try {
+        // Step 1: Get summary from Gemini AI
+        const response = await fetch("http://localhost:5000/api/generate-summary", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...caseData, imageBase64 }),
-        }
-      );
+        });
 
-      if (response.status === 429) {
-        alert(
-          "You have exceeded your Gemini AI API quota. Please check your billing settings."
-        );
+        const summaryData = await response.json();
+        const summaryText = summaryData.summary || "No summary generated.";
+
+        // Step 2: Get remedy + dosage from internal brain logic
+        const aiResponse = await fetch("http://localhost:5000/api/brain/analyze", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            caseInput: {
+              symptoms: caseData.chiefComplaints.map(c => c.description).join(", "),
+              thermal: caseData.personalHistory.thermal,
+              cravings: caseData.personalHistory.cravingsAversions,
+              mentals: caseData.mentalSymptoms,
+            },
+            toggles: { showExplanation: true }
+          }),
+        });
+
+        const brainData = await aiResponse.json();
+        setBrainResult(brainData); // Set the brainResult state
+
+        // Combine summary and AI remedy suggestion
+        const finalSummary = `
+        📝 AI Generated Summary
+        ${summaryText}
+        
+        🧠 AI Suggested Remedy
+        Remedy: ${brainData.main_remedy || "N/A"}
+        Miasm: ${brainData.analysis || "N/A"}
+        Dosage: ${brainData.dosage || "1M once daily"}
+        Explanation: ${brainData.pioneer_explanation || "No explanation provided."}
+        `;
+            
+        setAiSummary(finalSummary);
+      } catch (error) {
+        alert("Error generating summary.");
+      } finally {
         setLoadingSummary(false);
-        return;
       }
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setAiSummary(data.summary);
-      } else {
-        alert(data.message || "Failed to generate summary");
-      }
-    } catch (error) {
-      alert("An unexpected error occurred while generating summary.");
-    }
-
-    setLoadingSummary(false);
-  };
-
+    };
+    
+    
   return (
     <form className='case-container' onSubmit={handleSubmit}>
       <h2 style={{ textAlign: "center", marginBottom: 25 }}>Case Sheet</h2>
@@ -612,6 +643,13 @@ const CaseSheetForm = () => {
         >
           <h3>AI Generated Summary</h3>
           <p>{aiSummary}</p>
+          {brainResult && ( // Display brainResult if available
+            <div className="brain">
+              <h3>Remedy: {brainResult.main_remedy}</h3>
+              <p>Dosage: {brainResult.dosage}</p>
+              <p>{brainResult.analysis}</p>
+            </div>
+          )}
         </div>
       )}
         <h3 className='case-section-title'>10. Prescription</h3>
@@ -668,6 +706,7 @@ const CaseSheetForm = () => {
                 />
               </div>
             </div>
+            
           </div>
         ))}
         
@@ -701,3 +740,6 @@ const CaseSheetForm = () => {
 };
 
 export default CaseSheetForm;
+
+
+
