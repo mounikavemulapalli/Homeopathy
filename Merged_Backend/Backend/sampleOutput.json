@@ -1,0 +1,12 @@
+{
+  "main_remedy": "Natrum Muriaticum",
+  "comparative_remedies": [
+    { "remedy": "Sepia", "reason": "Depression + dryness" },
+    { "remedy": "Ignatia", "reason": "Grief-related headache" }
+  ],
+  "miasm": "Psora",
+  "modalities_match": "Better in dark room and cold, matches Nat Mur",
+  "pioneer_explanation": "Kent: Emotion after grief. Boericke: Sun-induced headaches.",
+  "skin_diagnosis": "Psoriasis (based on description)",
+  "remedy_dosage": "200C, one dose weekly"
+}

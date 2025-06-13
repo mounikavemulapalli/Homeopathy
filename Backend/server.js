@@ -10,7 +10,7 @@ const connectDB = require("./config/db");
 const caseRoutes = require("./routes/caseRoutes");
 const gptRoutes = require("./routes/gpt");
 const patientRoutes = require("./routes/patientRoutes");
-
+const brainRoutes = require("./routes/brainroutes");
 dotenv.config();
 connectDB();
 
@@ -34,6 +34,7 @@ app.get("/", (req, res) => {
   res.send("Hello from Bhanu CaseSheet backend");
 });
 app.use("/api/patients", patientRoutes);
+app.use("/api/brain", brainRoutes);
 app.use("/api/cases", caseRoutes);
 app.use("/api/submit-case", caseRoutes);
 app.use("/api/generate-summary", gptRoutes);
