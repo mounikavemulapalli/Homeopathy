@@ -11,6 +11,7 @@ const caseRoutes = require("./routes/caseRoutes");
 const gptRoutes = require("./routes/gpt");
 const patientRoutes = require("./routes/patientRoutes");
 const brainRoutes = require("./routes/brainRoutes");
+const brainSearch = require("./routes/brainSearch");
 dotenv.config();
 connectDB();
 
@@ -39,6 +40,7 @@ app.use("/api/cases", caseRoutes);
 app.use("/api/submit-case", caseRoutes);
 app.use("/api/generate-summary", gptRoutes);
 app.use("/api/followups", followupRoutes);
+app.use("/api/brain", brainSearch);
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

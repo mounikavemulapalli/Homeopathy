@@ -44,6 +44,10 @@ const CaseSheetForm = () => {
   const [loadingSummary, setLoadingSummary] = useState(false);
   const [focusedInput, setFocusedInput] = useState(null);
   const [brainResult, setBrainResult] = useState(null);
+  const [rubricInput, setRubricInput] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+  const [selectedRubrics, setSelectedRubrics] = useState([]);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setCaseData({ ...caseData, [name]: value });
@@ -213,12 +217,21 @@ const CaseSheetForm = () => {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            rubrics: [
-              ...caseData.mentalSymptoms.split(",").map((s) => s.trim()),
-              ...caseData.chiefComplaints.map((c) => c.description.trim()),
-            ],
-          }),
+          body: JSON.stringify(
+            selectedRubrics.length > 0
+              ? { rubrics: selectedRubrics } // Use rubric override if selected
+              : {
+                  caseInput: {
+                    symptoms:
+                      caseData.chiefComplaints
+                        ?.map((c) => c.description)
+                        .join(", ") || "",
+                    thermal: caseData.personalHistory?.thermal || "",
+                    cravings: caseData.personalHistory?.cravingsAversions || "",
+                    mentals: caseData.mentalSymptoms || "",
+                  },
+                }
+          ),
         }
       );
 
@@ -227,17 +240,15 @@ const CaseSheetForm = () => {
 
       // Combine summary and AI remedy suggestion
       const finalSummary = `
-        📝 AI Generated Summary
-        ${summaryText}
-        
-        🧠 AI Suggested Remedy
-        Remedy: ${brainData.main_remedy || "N/A"}
-        Miasm: ${brainData.analysis || "N/A"}
-        Dosage: ${brainData.dosage || "1M once daily"}
-        Explanation: ${
-          brainData.pioneer_explanation || "No explanation provided."
-        }
-        `;
+📝 AI Generated Summary
+${summaryText}
+
+🧠 AI Suggested Remedy
+Remedy: ${brainData.main_remedy || "N/A"}
+Miasm: ${brainData.analysis || "N/A"}
+Dosage: ${brainData.dosage || "N/A"}
+Explanation: ${brainData.pioneer_explanation || "No explanation provided"}
+`;
 
       setAiSummary(finalSummary);
     } catch (error) {
@@ -245,6 +256,29 @@ const CaseSheetForm = () => {
     } finally {
       setLoadingSummary(false);
     }
+  };
+  useEffect(() => {
+    const fetchSuggestions = async () => {
+      if (rubricInput.length < 3) return;
+      const res = await fetch(
+        `http://localhost:5000/api/brain/search?q=${rubricInput}`
+      );
+      const data = await res.json();
+      setSuggestions(data);
+    };
+    fetchSuggestions();
+  }, [rubricInput]);
+
+  const handleAddRubric = (rubric) => {
+    if (!selectedRubrics.includes(rubric)) {
+      setSelectedRubrics((prev) => [...prev, rubric]);
+    }
+    setRubricInput("");
+    setSuggestions([]);
+  };
+
+  const handleRemoveRubric = (index) => {
+    setSelectedRubrics((prev) => prev.filter((_, i) => i !== index));
   };
 
   return (
@@ -621,6 +655,38 @@ const CaseSheetForm = () => {
           placeholder="Doctor's observations"
         />
       </section>
+      <div className='case-form-group'>
+        <label className='case-label'>Rubric Suggestion (type to search)</label>
+        <input
+          className='case-input'
+          value={rubricInput}
+          onChange={(e) => setRubricInput(e.target.value)}
+          placeholder='e.g. fear of death, sadness in evening...'
+        />
+        {suggestions.length > 0 && (
+          <ul className='rubric-suggestions'>
+            {suggestions.map((s, i) => (
+              <li
+                key={i}
+                onClick={() => handleAddRubric(s.target)}
+                style={{ cursor: "pointer", margin: "4px 0", color: "blue" }}
+              >
+                {s.target} ({Math.round(s.rating * 100)}%)
+              </li>
+            ))}
+          </ul>
+        )}
+        {selectedRubrics.length > 0 && (
+          <div className='selected-rubrics'>
+            {selectedRubrics.map((rubric, i) => (
+              <span key={i} className='selected-rubric-chip'>
+                {rubric}
+                <button onClick={() => handleRemoveRubric(i)}>×</button>
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
 
       {/* Prescription */}
       <section className='case-section'>

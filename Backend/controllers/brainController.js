@@ -89,7 +89,8 @@ function extractRubricsFromCase(caseInput) {
   words.forEach((userPhrase) => {
     const bestMatch = stringSimilarity.findBestMatch(userPhrase, allRubrics);
     bestMatch.ratings.forEach((match) => {
-      if (match.rating > 0.4) {
+      if (match.rating > 0.3) {
+        // 🎯 lowered threshold from 0.4 → 0.35
         matches.add(match.target);
       }
     });
@@ -100,12 +101,17 @@ function extractRubricsFromCase(caseInput) {
 
 exports.analyzeCase = (req, res) => {
   const { rubrics, caseInput } = req.body;
-
+  console.log("✅ req.body =", req.body);
+  console.log("✅ rubrics =", req.body.rubrics);
+  console.log("✅ caseInput =", req.body.caseInput);
   let finalRubrics = rubrics || [];
 
   if ((!finalRubrics || !finalRubrics.length) && caseInput) {
     finalRubrics = extractRubricsFromCase(caseInput);
   }
+
+  console.log("📩 Incoming caseInput:", caseInput);
+  console.log("🔍 Rubrics used:", finalRubrics);
 
   if (!finalRubrics.length) {
     return res
@@ -130,8 +136,16 @@ exports.analyzeCase = (req, res) => {
     .sort((a, b) => b[1] - a[1])
     .map(([name, score]) => ({ name, score }));
 
+  console.log("🏁 Final remedies:", sorted.slice(0, 10));
+
   res.json({
     inputRubrics: finalRubrics,
     topRemedies: sorted.slice(0, 10),
+    main_remedy: sorted[0]?.name || "N/A",
+    dosage: "1M once daily",
+    analysis: "Based on dominant mind and physical rubrics",
+    pioneer_explanation: `Selected based on rubric match: ${finalRubrics
+      .slice(0, 3)
+      .join(", ")}`,
   });
 };
