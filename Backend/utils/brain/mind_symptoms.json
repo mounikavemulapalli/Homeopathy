@@ -1,0 +1,832 @@
+[
+  {
+    "rubric": "Fear of being alone at night",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Phosphorus", "grade": 2 },
+      { "name": "Arsenicum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of death with restlessness",
+    "remedies": [
+      { "name": "Aconitum napellus", "grade": 3 },
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Phosphorus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of dark places",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Calcarea carbonica", "grade": 2 },
+      { "name": "Medorrhinum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of robbers or intruders",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Arsenicum album", "grade": 2 },
+      { "name": "Phosphorus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of poverty and insecurity",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Calcarea carbonica", "grade": 2 },
+      { "name": "Lycopodium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Anxiety about health of family",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Phosphorus", "grade": 2 },
+      { "name": "Calcarea carbonica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Indifference to loved ones",
+    "remedies": [
+      { "name": "Sepia", "grade": 3 },
+      { "name": "Phosphoric acid", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Ailments from silent grief",
+    "remedies": [
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Phosphoric acid", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Weeping when alone, better by consolation",
+    "remedies": [
+      { "name": "Pulsatilla", "grade": 3 },
+      { "name": "Phosphorus", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Loquacity with jumping from topic to topic",
+    "remedies": [
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Hyoscyamus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Sadness with aversion to consolation",
+    "remedies": [
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Sepia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Irritability before menses",
+    "remedies": [
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Sepia", "grade": 3 },
+      { "name": "Nux vomica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Anger when contradicted",
+    "remedies": [
+      { "name": "Nux vomica", "grade": 3 },
+      { "name": "Lycopodium", "grade": 2 },
+      { "name": "Chamomilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Desire to be alone; avoids company",
+    "remedies": [
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Sepia", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 3 }
+    ]
+  },
+  {
+    "rubric": "Fear of impending disease",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Aconitum napellus", "grade": 2 },
+      { "name": "Calcarea carbonica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Suspicious nature, doubts loyalty of spouse",
+    "remedies": [
+      { "name": "Hyoscyamus", "grade": 3 },
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Nux vomica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Jealousy with violence",
+    "remedies": [
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Hyoscyamus", "grade": 2 },
+      { "name": "Belladonna", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Suicidal thoughts with calmness",
+    "remedies": [
+      { "name": "Aurum metallicum", "grade": 3 },
+      { "name": "Natrum sulphuricum", "grade": 2 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Delusion he is worthless",
+    "remedies": [
+      { "name": "Aurum metallicum", "grade": 3 },
+      { "name": "Lachesis", "grade": 2 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Religious mania with praying all the time",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Veratrum album", "grade": 2 },
+      { "name": "Aurum metallicum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Sadness worse evening",
+    "remedies": [
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Pulsatilla", "grade": 2 },
+      { "name": "Sepia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of insanity",
+    "remedies": [
+      { "name": "Cannabis indica", "grade": 2 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Lachesis", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fastidious, everything must be in order",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Nux vomica", "grade": 2 },
+      { "name": "Carcinosin", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Compulsive hand washing",
+    "remedies": [
+      { "name": "Carcinosin", "grade": 3 },
+      { "name": "Syphilinum", "grade": 2 },
+      { "name": "Arsenicum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Delusion he is being followed",
+    "remedies": [
+      { "name": "Hyoscyamus", "grade": 3 },
+      { "name": "Cannabis indica", "grade": 2 },
+      { "name": "Veratrum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Talks excessively, jumps topic to topic",
+    "remedies": [
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Veratrum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Dreams of death or disasters",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Lycopodium", "grade": 2 },
+      { "name": "Phosphorus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of cancer",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Carcinosin", "grade": 2 },
+      { "name": "Phosphorus", "grade": 2 }
+    ]
+  }
+]
+[
+  {
+    "rubric": "Fear of thunderstorms",
+    "remedies": [
+      { "name": "Phosphorus", "grade": 3 },
+      { "name": "Silicea", "grade": 2 },
+      { "name": "Calcarea carbonica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of being poisoned",
+    "remedies": [
+      { "name": "Hyoscyamus", "grade": 3 },
+      { "name": "Lachesis", "grade": 2 },
+      { "name": "Stramonium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of contagious diseases",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Aconitum napellus", "grade": 2 },
+      { "name": "Thuja", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Hurry, cannot do anything fast enough",
+    "remedies": [
+      { "name": "Argentum nitricum", "grade": 3 },
+      { "name": "Lycopodium", "grade": 2 },
+      { "name": "Nux vomica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of crowds",
+    "remedies": [
+      { "name": "Lycopodium", "grade": 3 },
+      { "name": "Argentum nitricum", "grade": 2 },
+      { "name": "Sepia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Delusion of being pregnant (without reason)",
+    "remedies": [
+      { "name": "Cimicifuga", "grade": 2 },
+      { "name": "Platina", "grade": 2 },
+      { "name": "Pulsatilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Anxiety before examination or interview",
+    "remedies": [
+      { "name": "Gelsemium", "grade": 3 },
+      { "name": "Argentum nitricum", "grade": 3 },
+      { "name": "Lycopodium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Cannot tolerate noise, irritates easily",
+    "remedies": [
+      { "name": "Nux vomica", "grade": 3 },
+      { "name": "Belladonna", "grade": 2 },
+      { "name": "Chamomilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Memory weak for words/names",
+    "remedies": [
+      { "name": "Anacardium", "grade": 2 },
+      { "name": "Lycopodium", "grade": 3 },
+      { "name": "Natrum muriaticum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Desire to escape, runs away from home",
+    "remedies": [
+      { "name": "Belladonna", "grade": 2 },
+      { "name": "Hyoscyamus", "grade": 2 },
+      { "name": "Stramonium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Talks to imaginary people or spirits",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Hyoscyamus", "grade": 3 },
+      { "name": "Veratrum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of cancer without any cause",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Carcinosin", "grade": 2 },
+      { "name": "Phosphorus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Excessive guilt over minor mistakes",
+    "remedies": [
+      { "name": "Aurum metallicum", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Mood swings from laughing to weeping",
+    "remedies": [
+      { "name": "Ignatia", "grade": 3 },
+      { "name": "Pulsatilla", "grade": 2 },
+      { "name": "Crocus sativus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Cursing, violent language",
+    "remedies": [
+      { "name": "Anacardium", "grade": 2 },
+      { "name": "Nux vomica", "grade": 2 },
+      { "name": "Veratrum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Aversion to touch or being approached",
+    "remedies": [
+      { "name": "Platina", "grade": 3 },
+      { "name": "Sepia", "grade": 2 },
+      { "name": "Stramonium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Anger leading to destruction",
+    "remedies": [
+      { "name": "Belladonna", "grade": 2 },
+      { "name": "Chamomilla", "grade": 2 },
+      { "name": "Anacardium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Desire to strike or kill",
+    "remedies": [
+      { "name": "Belladonna", "grade": 3 },
+      { "name": "Anacardium", "grade": 2 },
+      { "name": "Hyoscyamus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Talkative, especially at night",
+    "remedies": [
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Phosphorus", "grade": 2 },
+      { "name": "Coffea", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Involuntary laughter",
+    "remedies": [
+      { "name": "Crocus sativus", "grade": 2 },
+      { "name": "Agaricus", "grade": 2 },
+      { "name": "Hyoscyamus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Slow to answer questions",
+    "remedies": [
+      { "name": "Baryta carbonica", "grade": 3 },
+      { "name": "Phosphoric acid", "grade": 2 },
+      { "name": "Cannabis indica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Sensitive to criticism",
+    "remedies": [
+      { "name": "Staphysagria", "grade": 3 },
+      { "name": "Lycopodium", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Laughing at serious matters",
+    "remedies": [
+      { "name": "Crocus sativus", "grade": 2 },
+      { "name": "Hyoscyamus", "grade": 2 },
+      { "name": "Veratrum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Loss of will power",
+    "remedies": [
+      { "name": "Phosphoric acid", "grade": 3 },
+      { "name": "Anacardium", "grade": 2 },
+      { "name": "Sepia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Talks about death constantly",
+    "remedies": [
+      { "name": "Aurum metallicum", "grade": 3 },
+      { "name": "Natrum sulphuricum", "grade": 2 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  }
+]
+[
+  {
+    "rubric": "Jealousy with suspicion",
+    "remedies": [
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Hyoscyamus", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Aversion to family members",
+    "remedies": [
+      { "name": "Sepia", "grade": 3 },
+      { "name": "Natrum muriaticum", "grade": 2 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of insanity",
+    "remedies": [
+      { "name": "Cannabis indica", "grade": 3 },
+      { "name": "Aconitum", "grade": 2 },
+      { "name": "Pulsatilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Suicidal thoughts but afraid to die",
+    "remedies": [
+      { "name": "Aur-m", "grade": 3 },
+      { "name": "Nat-s", "grade": 2 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Desire for solitude",
+    "remedies": [
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Sepia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Hatred towards persons who offended",
+    "remedies": [
+      { "name": "Staphysagria", "grade": 3 },
+      { "name": "Anacardium", "grade": 2 },
+      { "name": "Nux vomica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Easily offended",
+    "remedies": [
+      { "name": "Staphysagria", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Chamomilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Aversion to opposite sex",
+    "remedies": [
+      { "name": "Sepia", "grade": 3 },
+      { "name": "Kreosotum", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Sadness after sexual intercourse",
+    "remedies": [
+      { "name": "Kali bromatum", "grade": 2 },
+      { "name": "Sepia", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Excitement alternating with depression",
+    "remedies": [
+      { "name": "Crocus sativus", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Pulsatilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Shrieking from fear",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Belladonna", "grade": 2 },
+      { "name": "Hyoscyamus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Weeping when alone",
+    "remedies": [
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Pulsatilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Restlessness at night",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Sulphur", "grade": 2 },
+      { "name": "Coffea", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear something bad will happen",
+    "remedies": [
+      { "name": "Aconitum", "grade": 3 },
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Gelsemium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Forsaken feeling",
+    "remedies": [
+      { "name": "Pulsatilla", "grade": 3 },
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Carcinosin", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Silent grief",
+    "remedies": [
+      { "name": "Ignatia", "grade": 3 },
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Phosphoric acid", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Despair of recovery",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Psorinum", "grade": 2 },
+      { "name": "Aur-m", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Sudden impulse to kill",
+    "remedies": [
+      { "name": "Anacardium", "grade": 3 },
+      { "name": "Hyoscyamus", "grade": 2 },
+      { "name": "Stramonium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Irritability from slight noise",
+    "remedies": [
+      { "name": "Nux vomica", "grade": 3 },
+      { "name": "Coffea", "grade": 2 },
+      { "name": "Chamomilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Anguish in heart region",
+    "remedies": [
+      { "name": "Aconitum", "grade": 3 },
+      { "name": "Cactus", "grade": 2 },
+      { "name": "Glonoinum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of going insane",
+    "remedies": [
+      { "name": "Cannabis indica", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Aconitum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Desire to be carried",
+    "remedies": [
+      { "name": "Chamomilla", "grade": 3 },
+      { "name": "Cina", "grade": 2 },
+      { "name": "Pulsatilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Aversion to mental work",
+    "remedies": [
+      { "name": "Phosphoric acid", "grade": 3 },
+      { "name": "Sulphur", "grade": 2 },
+      { "name": "Nux vomica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Ailments from disappointed love",
+    "remedies": [
+      { "name": "Ignatia", "grade": 3 },
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Aurum metallicum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Grief with sobbing",
+    "remedies": [
+      { "name": "Ignatia", "grade": 3 },
+      { "name": "Pulsatilla", "grade": 2 },
+      { "name": "Sepia", "grade": 2 }
+    ]
+  }
+]
+[
+  {
+    "rubric": "Fear of being alone in the dark",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Phosphorus", "grade": 2 },
+      { "name": "Pulsatilla", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Aversion to company but dreads solitude",
+    "remedies": [
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 },
+      { "name": "Lycopodium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Insanity alternating with lucidity",
+    "remedies": [
+      { "name": "Belladonna", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Veratrum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of death during sleep",
+    "remedies": [
+      { "name": "Arsenicum album", "grade": 3 },
+      { "name": "Aconitum", "grade": 2 },
+      { "name": "Lachesis", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Brooding over past",
+    "remedies": [
+      { "name": "Natrum muriaticum", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Aurum metallicum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Hysterical behavior",
+    "remedies": [
+      { "name": "Ignatia", "grade": 3 },
+      { "name": "Platina", "grade": 2 },
+      { "name": "Crocus sativus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Feels forsaken and unloved",
+    "remedies": [
+      { "name": "Pulsatilla", "grade": 3 },
+      { "name": "Carcinosin", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Delusion that he is despised",
+    "remedies": [
+      { "name": "Platina", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Anacardium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Weeping from music",
+    "remedies": [
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Natrum muriaticum", "grade": 2 },
+      { "name": "Sepia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Desire to be magnetized or mesmerized",
+    "remedies": [
+      { "name": "Phosphorus", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Lachesis", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Feels guilty without cause",
+    "remedies": [
+      { "name": "Aurum metallicum", "grade": 3 },
+      { "name": "Ignatia", "grade": 2 },
+      { "name": "Phosphoric acid", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Religious melancholy",
+    "remedies": [
+      { "name": "Veratrum album", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Lachesis", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Spiritual delusions",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Cannabis indica", "grade": 2 },
+      { "name": "Veratrum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Impatience with contradiction",
+    "remedies": [
+      { "name": "Nux vomica", "grade": 3 },
+      { "name": "Chamomilla", "grade": 2 },
+      { "name": "Lycopodium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Thinks he has committed a crime",
+    "remedies": [
+      { "name": "Aurum metallicum", "grade": 3 },
+      { "name": "Veratrum album", "grade": 2 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Suicidal from religious despair",
+    "remedies": [
+      { "name": "Veratrum album", "grade": 3 },
+      { "name": "Aurum metallicum", "grade": 2 },
+      { "name": "Stramonium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Talks incoherently",
+    "remedies": [
+      { "name": "Belladonna", "grade": 3 },
+      { "name": "Hyoscyamus", "grade": 2 },
+      { "name": "Stramonium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Answers correctly but slowly",
+    "remedies": [
+      { "name": "Baryta carbonica", "grade": 3 },
+      { "name": "Phosphoric acid", "grade": 2 },
+      { "name": "Cannabis indica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Concentration difficult while reading",
+    "remedies": [
+      { "name": "Nux vomica", "grade": 3 },
+      { "name": "Phosphoric acid", "grade": 2 },
+      { "name": "Lycopodium", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of ghosts at night",
+    "remedies": [
+      { "name": "Stramonium", "grade": 3 },
+      { "name": "Phosphorus", "grade": 2 },
+      { "name": "Arsenicum album", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Loquacity alternating with silence",
+    "remedies": [
+      { "name": "Lachesis", "grade": 3 },
+      { "name": "Coffea", "grade": 2 },
+      { "name": "Ignatia", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Fear of being stared at",
+    "remedies": [
+      { "name": "Pulsatilla", "grade": 3 },
+      { "name": "Silicea", "grade": 2 },
+      { "name": "Argentum nitricum", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Shrieking during fever",
+    "remedies": [
+      { "name": "Belladonna", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Hyoscyamus", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Desire to jump from high place",
+    "remedies": [
+      { "name": "Aurum metallicum", "grade": 3 },
+      { "name": "Stramonium", "grade": 2 },
+      { "name": "Nux vomica", "grade": 2 }
+    ]
+  },
+  {
+    "rubric": "Changeable mood in children",
+    "remedies": [
+      { "name": "Cina", "grade": 3 },
+      { "name": "Chamomilla", "grade": 2 },
+      { "name": "Calcarea carbonica", "grade": 2 }
+    ]
+  }
+]
