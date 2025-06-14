@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./casestyles.css";
 
 const initialCaseData = {
@@ -156,72 +156,77 @@ const CaseSheetForm = () => {
       reader.onerror = (error) => reject(error);
     });
 
-    const generateBrainAnalysis = async () => {
-      try {
-        const response = await fetch("http://localhost:5000/api/brain/analyze", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+  const generateBrainAnalysis = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/api/brain/analyze", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          caseInput: {
+            symptoms: caseData.chiefComplaints
+              .map((c) => c.description)
+              .join(", "),
+            thermal: caseData.personalHistory.thermal,
+            cravings: caseData.personalHistory.cravingsAversions,
+            mentals: caseData.mentalSymptoms,
           },
-          body: JSON.stringify({
-            caseInput: {
-              symptoms: caseData.chiefComplaints.map(c => c.description).join(", "),
-              thermal: caseData.personalHistory.thermal,
-              cravings: caseData.personalHistory.cravingsAversions,
-              mentals: caseData.mentalSymptoms,
-            },
-            toggles: { showExplanation: true }
-          }),
-        });
-    
-        const data = await response.json();
-        setBrainResult(data);
-      } catch (error) {
-        console.error("Brain API error:", error);
-      }
-    };
-    
+          toggles: { showExplanation: true },
+        }),
+      });
 
-    const generateSummary = async () => {
-      setLoadingSummary(true);
-      setAiSummary("");
+      const data = await response.json();
+      setBrainResult(data);
+    } catch (error) {
+      console.error("Brain API error:", error);
+    }
+  };
 
-      let imageBase64 = null;
-      if (caseData.image) {
-        imageBase64 = await getBase64(caseData.image);
-      }
+  const generateSummary = async () => {
+    setLoadingSummary(true);
+    setAiSummary("");
 
-      try {
-        // Step 1: Get summary from Gemini AI
-        const response = await fetch("http://localhost:5000/api/generate-summary", {
+    let imageBase64 = null;
+    if (caseData.image) {
+      imageBase64 = await getBase64(caseData.image);
+    }
+
+    try {
+      // Step 1: Get summary from Gemini AI
+      const response = await fetch(
+        "http://localhost:5000/api/generate-summary",
+        {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...caseData, imageBase64 }),
-        });
+        }
+      );
 
-        const summaryData = await response.json();
-        const summaryText = summaryData.summary || "No summary generated.";
+      const summaryData = await response.json();
+      const summaryText = summaryData.summary || "No summary generated.";
 
-        // Step 2: Get remedy + dosage from internal brain logic
-        const aiResponse = await fetch("http://localhost:5000/api/brain/analyze", {
+      // Step 2: Get remedy + dosage from internal brain logic
+      // Corrected AI Brain Logic Call
+      const aiResponse = await fetch(
+        "http://localhost:5000/api/brain/analyze",
+        {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            caseInput: {
-              symptoms: caseData.chiefComplaints.map(c => c.description).join(", "),
-              thermal: caseData.personalHistory.thermal,
-              cravings: caseData.personalHistory.cravingsAversions,
-              mentals: caseData.mentalSymptoms,
-            },
-            toggles: { showExplanation: true }
+            rubrics: [
+              ...caseData.mentalSymptoms.split(",").map((s) => s.trim()),
+              ...caseData.chiefComplaints.map((c) => c.description.trim()),
+            ],
           }),
-        });
+        }
+      );
 
-        const brainData = await aiResponse.json();
-        setBrainResult(brainData); // Set the brainResult state
+      const brainData = await aiResponse.json();
+      setBrainResult(brainData); // Set the brainResult state
 
-        // Combine summary and AI remedy suggestion
-        const finalSummary = `
+      // Combine summary and AI remedy suggestion
+      const finalSummary = `
         📝 AI Generated Summary
         ${summaryText}
         
@@ -229,18 +234,19 @@ const CaseSheetForm = () => {
         Remedy: ${brainData.main_remedy || "N/A"}
         Miasm: ${brainData.analysis || "N/A"}
         Dosage: ${brainData.dosage || "1M once daily"}
-        Explanation: ${brainData.pioneer_explanation || "No explanation provided."}
+        Explanation: ${
+          brainData.pioneer_explanation || "No explanation provided."
+        }
         `;
-            
-        setAiSummary(finalSummary);
-      } catch (error) {
-        alert("Error generating summary.");
-      } finally {
-        setLoadingSummary(false);
-      }
-    };
-    
-    
+
+      setAiSummary(finalSummary);
+    } catch (error) {
+      alert("Error generating summary.");
+    } finally {
+      setLoadingSummary(false);
+    }
+  };
+
   return (
     <form className='case-container' onSubmit={handleSubmit}>
       <h2 style={{ textAlign: "center", marginBottom: 25 }}>Case Sheet</h2>
@@ -618,40 +624,42 @@ const CaseSheetForm = () => {
 
       {/* Prescription */}
       <section className='case-section'>
-         {/* AI Summary */}
-      <div style={{ marginTop: "20px" }}>
-        <button
-          type='button'
-          style={{ backgroundColor: "#ffc107", color: "#333" }}
-          onClick={generateSummary}
-          disabled={loadingSummary}
-        >
-          {loadingSummary ? "Generating AI Summary..." : "Generate AI Summary"}
-        </button>
-      </div>
-
-      {aiSummary && (
-        <div
-          style={{
-            marginTop: "20px",
-            padding: "10px",
-            border: "1px solid #ccc",
-            backgroundColor: "#f9f9f9",
-            whiteSpace: "pre-wrap",
-            color: "#000",
-          }}
-        >
-          <h3>AI Generated Summary</h3>
-          <p>{aiSummary}</p>
-          {brainResult && ( // Display brainResult if available
-            <div className="brain">
-              <h3>Remedy: {brainResult.main_remedy}</h3>
-              <p>Dosage: {brainResult.dosage}</p>
-              <p>{brainResult.analysis}</p>
-            </div>
-          )}
+        {/* AI Summary */}
+        <div style={{ marginTop: "20px" }}>
+          <button
+            type='button'
+            style={{ backgroundColor: "#ffc107", color: "#333" }}
+            onClick={generateSummary}
+            disabled={loadingSummary}
+          >
+            {loadingSummary
+              ? "Generating AI Summary..."
+              : "Generate AI Summary"}
+          </button>
         </div>
-      )}
+
+        {aiSummary && (
+          <div
+            style={{
+              marginTop: "20px",
+              padding: "10px",
+              border: "1px solid #ccc",
+              backgroundColor: "#f9f9f9",
+              whiteSpace: "pre-wrap",
+              color: "#000",
+            }}
+          >
+            <h3>AI Generated Summary</h3>
+            <p>{aiSummary}</p>
+            {brainResult && ( // Display brainResult if available
+              <div className='brain'>
+                <h3>Remedy: {brainResult.main_remedy}</h3>
+                <p>Dosage: {brainResult.dosage}</p>
+                <p>{brainResult.analysis}</p>
+              </div>
+            )}
+          </div>
+        )}
         <h3 className='case-section-title'>10. Prescription</h3>
         {caseData.prescription.map((prescription, index) => (
           <div key={index} className='case-prescription-block'>
@@ -706,10 +714,9 @@ const CaseSheetForm = () => {
                 />
               </div>
             </div>
-            
           </div>
         ))}
-        
+
         <button
           type='button'
           className='case-button'
@@ -733,13 +740,8 @@ const CaseSheetForm = () => {
           </pre>
         </div>
       )} */}
-
-     
     </form>
   );
 };
 
 export default CaseSheetForm;
-
-
-

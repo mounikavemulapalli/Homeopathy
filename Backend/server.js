@@ -1,5 +1,5 @@
 /** @format */
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -10,7 +10,7 @@ const connectDB = require("./config/db");
 const caseRoutes = require("./routes/caseRoutes");
 const gptRoutes = require("./routes/gpt");
 const patientRoutes = require("./routes/patientRoutes");
-const brainRoutes = require("./routes/brainroutes");
+const brainRoutes = require("./routes/brainRoutes");
 dotenv.config();
 connectDB();
 
