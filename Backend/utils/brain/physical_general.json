@@ -1,0 +1,3336 @@
+{
+  "category": "Modalities – Seasonal Effects",
+  "rubrics": [
+    {
+      "rubric": "Aggravation in summer",
+      "remedies": ["Nat-c", "Glon", "Lach", "Sulph", "Ant-c"]
+    },
+    {
+      "rubric": "Aggravation in winter",
+      "remedies": ["Sil", "Calc", "Hep", "Caust", "Psor"]
+    },
+    {
+      "rubric": "Aggravation in rainy season",
+      "remedies": ["Rhus-t", "Nux-v", "Dulc", "Nat-s", "Bry"]
+    },
+    {
+      "rubric": "Aggravation in spring",
+      "remedies": ["Sang", "Psor", "Puls", "Kali-bi"]
+    },
+    {
+      "rubric": "Aggravation in autumn",
+      "remedies": ["Carb-v", "Sulph", "Bry", "Dulc"]
+    },
+    {
+      "rubric": "Amelioration in summer",
+      "remedies": ["Med", "Sep", "Calc", "Ign"]
+    },
+    {
+      "rubric": "Amelioration in winter",
+      "remedies": ["Camph", "Psor", "Verat"]
+    },
+    {
+      "rubric": "Amelioration in rainy weather",
+      "remedies": ["Kali-c", "Ign", "Med"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Natrum carbonicum and Glonoinum suffer in summer – sunstroke, headache, heat aggravation.",
+      "confirmatoryRemedies": ["Nat-c", "Glon"]
+    },
+    {
+      "description": "Silicea and Hepar are very sensitive to cold, especially during winter.",
+      "confirmatoryRemedies": ["Sil", "Hep"]
+    },
+    {
+      "description": "Rhus tox and Dulcamara worsen during rainy, damp seasons.",
+      "confirmatoryRemedies": ["Rhus-t", "Dulc"]
+    },
+    {
+      "description": "Sepia and Medorrhinum feel better in dry, warm summer weather.",
+      "confirmatoryRemedies": ["Sep", "Med"]
+    },
+    {
+      "description": "Psorinum suffers in both winter and spring – marked aggravation from cold, change of season.",
+      "confirmatoryRemedies": ["Psor"]
+    }
+  ]
+}
+{
+  "category": "Appetite",
+  "rubrics": [
+    { "rubric": "Appetite increased (ravenous hunger)", "remedies": ["Phos", "China", "Iod", "Sulph", "Calc", "Lyc", "Psor", "Med"] },
+    { "rubric": "Appetite decreased (loss of appetite)", "remedies": ["Puls", "Sep", "Ign", "Nat-m", "Chin", "Staph", "Nux-v"] },
+    { "rubric": "Appetite entirely lost", "remedies": ["Sep", "Ign", "Nat-m", "Ars", "Nux-v", "China"] },
+    { "rubric": "Appetite wanting in morning", "remedies": ["Nux-v", "Sep", "Nat-m", "Sulph", "Puls"] },
+    { "rubric": "Appetite poor in evening", "remedies": ["Sulph", "Sep", "Lyc", "Puls"] },
+    { "rubric": "Appetite increased at night", "remedies": ["Phos", "Sulph", "Iod", "China", "Psor"] },
+    { "rubric": "Appetite with aversion to food", "remedies": ["Puls", "Sep", "Ign", "Ipecac", "Nat-m"] },
+    { "rubric": "Appetite only for dainties", "remedies": ["Puls", "Staph", "Sulph", "Cina"] },
+    { "rubric": "Appetite with nausea", "remedies": ["Ipecac", "Puls", "Sep", "Ars", "Bry", "Nux-v"] },
+    { "rubric": "Appetite with thirstlessness", "remedies": ["Puls", "Ant-t", "Gels", "Chin", "Sep"] },
+    { "rubric": "Appetite increased, yet emaciates", "remedies": ["Iod", "Nat-m", "Abrot", "Tub", "Psor"] },
+    { "rubric": "Appetite with disgust for food", "remedies": ["Ign", "Sep", "Ipecac", "Nux-v", "Ars"] },
+    { "rubric": "Craving to eat but gets full quickly", "remedies": ["Lyc", "Chin", "Sulph", "Ign", "Nat-m"] },
+    { "rubric": "Appetite with constant desire to nibble", "remedies": ["Lyc", "Phos", "Anac", "Sulph"] },
+    { "rubric": "Appetite absent with weakness", "remedies": ["China", "Phos-ac", "Ars", "Sep", "Sil"] },
+    { "rubric": "Aversion to food during headache", "remedies": ["Ipecac", "Nux-v", "Sep", "Bry"] },
+    { "rubric": "Appetite increased during diarrhea", "remedies": ["China", "Phos", "Sulph"] },
+    { "rubric": "Hunger immediately after eating", "remedies": ["Iod", "China", "Sulph", "Anac", "Abrot"] },
+    { "rubric": "Appetite with craving for indigestible things (chalk, clay)", "remedies": ["Alum", "Calc", "Verat", "Psor", "China"] },
+    { "rubric": "Loss of appetite from grief", "remedies": ["Ign", "Nat-m", "Sep", "Staph"] },
+    { "rubric": "Aversion to food smell", "remedies": ["Sep", "Ipecac", "Nux-v", "Ant-t", "Ars"] },
+    { "rubric": "Hunger with trembling if not eating", "remedies": ["Lyc", "Ign", "Sulph", "China", "Phos"] },
+    { "rubric": "Hungry but cannot eat much", "remedies": ["Ign", "Nat-m", "Lyc", "Chin"] },
+    { "rubric": "Appetite lost during fever", "remedies": ["Gels", "Acon", "Ars", "Bapt", "Bry"] }
+  ]
+}
+
+{
+  "category": "Desires / Cravings",
+  "rubrics": [
+    { "rubric": "Desire for sweets", "remedies": ["Arg-n", "Lyc", "Phos", "Sulph"] },
+    { "rubric": "Desire for salt", "remedies": ["Nat-m", "Carc", "Tub", "Calc"] },
+    { "rubric": "Desire for spicy food", "remedies": ["Rhus-t", "Sulph", "Med"] },
+    { "rubric": "Desire for sour things", "remedies": ["Sep", "Phos", "Nit-ac", "Cham"] },
+    { "rubric": "Desire for cold drinks", "remedies": ["Phos", "Sulph", "Verat"] },
+    { "rubric": "Desire for warm drinks", "remedies": ["Ars", "Bry", "Rhus-t"] },
+    { "rubric": "Desire for beer", "remedies": ["Nux-v", "Sulph", "Lach"] },
+    { "rubric": "Desire for wine", "remedies": ["Sulph", "Nux-v", "Lach", "Med"] },
+    { "rubric": "Desire for coffee", "remedies": ["Nux-v", "Cham", "Ign"] },
+    { "rubric": "Desire for ice or ice-cream", "remedies": ["Phos", "Calc", "Puls"] },
+    { "rubric": "Desire for chalk or lime", "remedies": ["Calc", "Alum", "Verat"] },
+    { "rubric": "Desire for indigestible things", "remedies": ["Alum", "Verat", "China"] },
+    { "rubric": "Desire for eggs", "remedies": ["Sulph", "Calc", "Psor"] },
+    { "rubric": "Desire for smoked food", "remedies": ["Tub", "Carc", "Nux-v"] },
+    { "rubric": "Desire for fatty food", "remedies": ["Pul", "Iod", "Sulph"] },
+    { "rubric": "Desire for raw food", "remedies": ["Carc", "Tub", "Nat-m"] }
+  ]
+}
+{
+  "category": "Aversions",
+  "rubrics": [
+    { "rubric": "Aversion to sweets", "remedies": ["China", "Sulph", "Nux-v"] },
+    { "rubric": "Aversion to salt", "remedies": ["Puls", "Ign", "Calc"] },
+    { "rubric": "Aversion to fat or oily food", "remedies": ["Puls", "Ipec", "Sep"] },
+    { "rubric": "Aversion to milk", "remedies": ["Sep", "Calc", "Sil", "Nat-c"] },
+    { "rubric": "Aversion to bread", "remedies": ["Ign", "Calc", "Sulph"] },
+    { "rubric": "Aversion to meat", "remedies": ["Puls", "Phos", "Sep", "Sulph"] },
+    { "rubric": "Aversion to eggs", "remedies": ["Sulph", "Puls", "Ign"] },
+    { "rubric": "Aversion to sour things", "remedies": ["Nux-v", "Ign", "Sil"] },
+    { "rubric": "Aversion to alcohol", "remedies": ["Puls", "Sep", "Sulph"] },
+    { "rubric": "Aversion to smoking", "remedies": ["Ign", "Sep", "Sil"] },
+    { "rubric": "Aversion to coffee", "remedies": ["Sep", "Sil", "Ign"] },
+    { "rubric": "Aversion to warm food", "remedies": ["Phos", "Puls", "Bry"] },
+    { "rubric": "Aversion to cold drinks", "remedies": ["Ars", "Nux-v", "Rhus-t"] }
+  ]
+}
+{
+  "category": "Sleep Position",
+  "rubrics": [
+    { "rubric": "Sleeps on abdomen", "remedies": ["Med", "Calc", "Puls", "Sulph", "Tub"] },
+    { "rubric": "Sleeps on back", "remedies": ["Phos", "Op", "Lach", "Sulph", "Calc"] },
+    { "rubric": "Sleeps on left side", "remedies": ["Lyc", "Phos", "Nit-ac", "Rhus-t", "Sep"] },
+    { "rubric": "Sleeps on right side", "remedies": ["Bry", "Lach", "Sulph", "Kali-c", "Chel"] },
+    { "rubric": "Cannot sleep unless lying on abdomen", "remedies": ["Med", "Tub", "Calc"] },
+    { "rubric": "Lying with hands under head", "remedies": ["Phos", "Sulph", "Op"] },
+    { "rubric": "Lying with knees drawn up", "remedies": ["Coloc", "Mag-p", "Med"] },
+    { "rubric": "Lying crosswise or in strange postures", "remedies": ["Med", "Tub", "Hyos"] },
+    { "rubric": "Head low, feet high (reverse position)", "remedies": ["Carb-v", "China", "Lyc"] },
+    { "rubric": "Likes to sleep sitting up", "remedies": ["Ars", "Ferr-p", "Lach", "Ant-t"] }
+  ]
+}
+{
+  "category": "Time Modalities",
+  "rubrics": [
+    { "rubric": "Worse in the morning (6–10 AM)", "remedies": ["Nux-v", "Sulph", "Lyc", "Sep", "Kali-c"] },
+    { "rubric": "Worse in the forenoon (10–12)", "remedies": ["Phos", "Nat-m", "Puls"] },
+    { "rubric": "Worse around noon (12–2 PM)", "remedies": ["Glon", "Nux-v", "Sulph"] },
+    { "rubric": "Worse afternoon (2–5 PM)", "remedies": ["Lyc", "Apis", "Ant-c"] },
+    { "rubric": "Worse evening (5–8 PM)", "remedies": ["Rhus-t", "Ign", "Lyc", "Merc"] },
+    { "rubric": "Worse night (8 PM–midnight)", "remedies": ["Ars", "Merc", "Phos", "Syph"] },
+    { "rubric": "Worse after midnight (1–3 AM)", "remedies": ["Ars", "Kali-c", "China", "Syph", "Sulph"] },
+    { "rubric": "Worse at 3 AM", "remedies": ["Kali-c", "Ars", "Lach"] },
+    { "rubric": "Worse at 4 AM", "remedies": ["Kali-c", "Tub", "Med"] },
+    { "rubric": "Worse at 5 AM", "remedies": ["Nux-v", "Kali-c", "Sulph"] },
+    { "rubric": "Worse sunrise", "remedies": ["Nat-m", "Puls", "Sil"] },
+    { "rubric": "Worse sunset", "remedies": ["Sulph", "Phos", "Lyc"] },
+    { "rubric": "Symptoms return every 24 hours", "remedies": ["China", "Nat-m", "Ign", "Ars"] },
+    { "rubric": "Periodic complaints (weekly/monthly)", "remedies": ["Sulph", "Thuja", "Nat-m", "Psor"] }
+  ]
+}
+{
+  "category": "Motion and Rest Modalities",
+  "rubrics": [
+    { "rubric": "Worse from motion", "remedies": ["Bry", "Apis", "Kali-c", "Nux-v", "Mag-p"] },
+    { "rubric": "Better from motion", "remedies": ["Rhus-t", "Ferr-p", "Puls", "Sep", "Zinc"] },
+    { "rubric": "Constant need to move", "remedies": ["Rhus-t", "Ars", "Tarent", "Zinc", "Ign"] },
+    { "rubric": "Restlessness with pain", "remedies": ["Ars", "Cham", "Rhus-t", "Acon"] },
+    { "rubric": "Worse at beginning of motion", "remedies": ["Rhus-t", "Caust", "Ruta", "Med"] },
+    { "rubric": "Better from continued motion", "remedies": ["Rhus-t", "Caust", "Zinc", "Kali-i"] },
+    { "rubric": "Worse from exertion", "remedies": ["Calc", "Phos", "Stann", "Carc", "China"] },
+    { "rubric": "Better from slow walking", "remedies": ["Sep", "Lyc", "Puls", "Carc"] },
+    { "rubric": "Worse from walking", "remedies": ["Bry", "Sulph", "Kali-c", "Arg-n"] },
+    { "rubric": "Worse from climbing stairs", "remedies": ["Calc", "Kali-c", "Psor", "Ant-t"] },
+    { "rubric": "Worse from standing", "remedies": ["Sulph", "Sep", "Nat-m", "Calc"] },
+    { "rubric": "Better from lying down", "remedies": ["Bry", "Nux-v", "Ign", "Phos"] },
+    { "rubric": "Worse from rising", "remedies": ["Rhus-t", "Bry", "Caust", "Kali-c"] },
+    { "rubric": "Better from sitting", "remedies": ["Phos", "Kali-c", "Ign", "Sep"] }
+  ]
+}
+{
+  "category": "Position Modalities",
+  "rubrics": [
+    { "rubric": "Worse lying on back", "remedies": ["Lach", "Phos", "Op", "Kali-c"] },
+    { "rubric": "Worse lying on left side", "remedies": ["Phos", "Nit-ac", "Rhus-t", "Spong"] },
+    { "rubric": "Worse lying on right side", "remedies": ["Lach", "Chel", "Kali-c", "Bry"] },
+    { "rubric": "Worse lying flat", "remedies": ["Ars", "Ant-t", "Lach", "Kali-c"] },
+    { "rubric": "Better lying on abdomen", "remedies": ["Med", "Coloc", "Puls", "Cham"] },
+    { "rubric": "Worse lying on painful side", "remedies": ["Bry", "Coloc", "Merc"] },
+    { "rubric": "Better lying on painful side", "remedies": ["Puls", "Mag-p", "Coloc"] },
+    { "rubric": "Worse bending forward", "remedies": ["Ign", "Nux-v", "Lach", "Spong"] },
+    { "rubric": "Better bending forward", "remedies": ["Coloc", "Kali-c", "Ipec"] },
+    { "rubric": "Worse bending backward", "remedies": ["Kali-c", "Rhus-t", "Sulph"] },
+    { "rubric": "Worse turning in bed", "remedies": ["Rhus-t", "Bry", "Arn", "Cham"] },
+    { "rubric": "Better by stretching limbs", "remedies": ["Zinc", "Rhus-t", "Mag-p"] },
+    { "rubric": "Worse raising arms", "remedies": ["Ferr-p", "Rhus-t", "Sulph"] },
+    { "rubric": "Better raising head", "remedies": ["Ars", "Carb-v", "Ferr-p"] }
+  ]
+}
+{
+  "category": "Clothing Modalities",
+  "rubrics": [
+    { "rubric": "Wants to be uncovered", "remedies": ["Puls", "Sulph", "Sec", "Camph"] },
+    { "rubric": "Aversion to covering", "remedies": ["Camph", "Sec", "Apis"] },
+    { "rubric": "Worse from uncovering", "remedies": ["Rhus-t", "Nux-v", "Ars", "Acon"] },
+    { "rubric": "Better from wrapping warmly", "remedies": ["Ars", "Sil", "Rhus-t", "Kali-c"] },
+    { "rubric": "Worse from tight clothing", "remedies": ["Lach", "Carc", "Sep", "Sulph"] },
+    { "rubric": "Worse from pressure of clothing on abdomen", "remedies": ["Lach", "Ign", "Sep", "Bry"] },
+    { "rubric": "Worse from clothing touching skin", "remedies": ["Lach", "Apis", "Sulph", "Med"] },
+    { "rubric": "Better from loose clothes", "remedies": ["Sep", "Lach", "Sulph"] },
+    { "rubric": "Wants to be completely covered (even in heat)", "remedies": ["Sil", "Rhus-t", "Calc"] },
+    { "rubric": "Wants head covered", "remedies": ["Sil", "Med", "Calc", "Camph"] }
+  ]
+}
+{
+  "category": "Bathing Modalities",
+  "rubrics": [
+    { "rubric": "Worse from bathing", "remedies": ["Ant-c", "Sulph", "Nat-m", "Sil", "Psor"] },
+    { "rubric": "Better from bathing", "remedies": ["Puls", "Calc", "Phos", "Camph"] },
+    { "rubric": "Worse from cold bath", "remedies": ["Rhus-t", "Sil", "Sulph", "Ant-c", "Psor"] },
+    { "rubric": "Worse from warm bath", "remedies": ["Lach", "Sulph", "Nat-m"] },
+    { "rubric": "Better from cold bath", "remedies": ["Puls", "Camph", "Med", "Apis"] },
+    { "rubric": "Better from warm bath", "remedies": ["Rhus-t", "Ars", "Mag-p", "Sep", "Sulph"] },
+    { "rubric": "Worse after bathing", "remedies": ["Sulph", "Sil", "Psor", "Nat-m"] },
+    { "rubric": "Chills after bathing", "remedies": ["Ant-c", "Sil", "Psor"] },
+    { "rubric": "Exhaustion after bath", "remedies": ["Sil", "Calc", "Sulph", "China"] },
+    { "rubric": "Vertigo from bathing", "remedies": ["Sulph", "Con", "Sil", "Sep"] },
+    { "rubric": "Skin eruptions worse after bath", "remedies": ["Sulph", "Psor", "Ant-c", "Calc"] },
+    { "rubric": "Aversion to bathing", "remedies": ["Sulph", "Psor", "Sil", "Tub"] },
+    { "rubric": "Desire to bathe frequently", "remedies": ["Med", "Camph", "Puls"] }
+  ]
+}
+{
+  "category": "Seasonal Modalities",
+  "rubrics": [
+    { "rubric": "Worse in summer", "remedies": ["Ant-c", "Nat-c", "Glon", "Puls", "Sulph"] },
+    { "rubric": "Worse in winter", "remedies": ["Sil", "Calc", "Rhus-t", "Psor", "Ars"] },
+    { "rubric": "Worse in rainy season", "remedies": ["Rhus-t", "Nat-s", "Calc", "Dulc", "Merc"] },
+    { "rubric": "Worse in spring", "remedies": ["Puls", "Sulph", "Carb-v", "Graph"] },
+    { "rubric": "Worse in autumn", "remedies": ["Bry", "Ign", "Nux-v", "Dulc"] },
+    { "rubric": "Worse before rains", "remedies": ["Rhus-t", "Dulc", "Calc", "Psor"] },
+    { "rubric": "Worse during change of season", "remedies": ["Sulph", "Nux-v", "Psor", "Nat-m"] },
+    { "rubric": "Better in summer", "remedies": ["Nat-m", "Calc", "Psor"] },
+    { "rubric": "Better in winter", "remedies": ["Puls", "Lach", "Ign"] },
+    { "rubric": "Better in rainy season", "remedies": ["Ign", "Nat-m", "Graph"] },
+    { "rubric": "Worse from weather change (hot to cold or vice versa)", "remedies": ["Dulc", "Nux-v", "Bry", "Rhus-t"] }
+  ]
+}
+{
+  "category": "Weather Modalities",
+  "rubrics": [
+    { "rubric": "Worse from cold weather", "remedies": ["Acon", "Ars", "Sil", "Rhus-t", "Hepar"] },
+    { "rubric": "Worse from hot weather", "remedies": ["Ant-c", "Glon", "Lach", "Sulph", "Nat-c"] },
+    { "rubric": "Worse from damp weather", "remedies": ["Dulc", "Rhus-t", "Nat-s", "Nux-v", "Calc"] },
+    { "rubric": "Worse before a storm", "remedies": ["Rhod", "Phos", "Sil", "Psor"] },
+    { "rubric": "Worse during storm", "remedies": ["Phos", "Rhod", "Spig", "Nux-v"] },
+    { "rubric": "Worse from dry weather", "remedies": ["Bry", "Sulph", "Apis"] },
+    { "rubric": "Better in dry weather", "remedies": ["Rhus-t", "Dulc", "Merc"] },
+    { "rubric": "Better in warm weather", "remedies": ["Rhus-t", "Ars", "Sil"] },
+    { "rubric": "Worse from windy weather", "remedies": ["Hepar", "Cham", "Rhus-t", "Sil", "Cocc"] },
+    { "rubric": "Worse from exposure to cold dry wind", "remedies": ["Acon", "Hepar", "Sil", "Caust"] },
+    { "rubric": "Better from open air", "remedies": ["Puls", "Sulph", "Med", "Sep", "Lach"] },
+    { "rubric": "Worse from open air", "remedies": ["Hepar", "Rhus-t", "Nux-v", "Ars"] },
+    { "rubric": "Worse in closed rooms", "remedies": ["Puls", "Sulph", "Med", "Ign"] },
+    { "rubric": "Craves open air", "remedies": ["Puls", "Lach", "Camph", "Sep"] }
+  ]
+}
+{
+  "category": "Sweat Modalities",
+  "rubrics": [
+    { "rubric": "Profuse sweating", "remedies": ["China", "Calc", "Merc", "Sil", "Psor"] },
+    { "rubric": "Offensive sweat", "remedies": ["Sil", "Merc", "Psor", "Thuja", "Carb-an"] },
+    { "rubric": "Sweat stains yellow", "remedies": ["Sep", "Chin", "Nit-ac", "Graph"] },
+    { "rubric": "Sweat stains brown", "remedies": ["Carb-v", "Lyc", "Sulph"] },
+    { "rubric": "Sweats easily", "remedies": ["Calc", "China", "Sil", "Carc"] },
+    { "rubric": "Sweat on exertion", "remedies": ["Calc", "Phos", "Sil", "Tub"] },
+    { "rubric": "Sweat from slightest motion", "remedies": ["China", "Merc", "Sil", "Phos"] },
+    { "rubric": "Sweat during sleep", "remedies": ["Sil", "China", "Sanic", "Nat-m"] },
+    { "rubric": "Sweat only on waking", "remedies": ["Sep", "Graph", "Lyc", "Nat-m"] },
+    { "rubric": "Sweat with anxiety", "remedies": ["Acon", "Ars", "Ign", "Phos"] },
+    { "rubric": "Sweat after acute disease", "remedies": ["China", "Calc", "Psor"] },
+    { "rubric": "Sweat relieves symptoms", "remedies": ["Nat-m", "Rhus-t", "Gels"] },
+    { "rubric": "Sweat aggravates", "remedies": ["Merc", "Psor", "Sil", "Nux-v"] },
+
+    { "rubric": "Sweat on scalp", "remedies": ["Calc", "Sil", "Sanic", "Nat-m", "Merc"] },
+    { "rubric": "Sweat on face", "remedies": ["Calc", "Phos", "Merc", "Sil"] },
+    { "rubric": "Sweat on upper lip", "remedies": ["Sep", "Lach", "Calc", "Phos"] },
+    { "rubric": "Sweat on palms", "remedies": ["Sil", "Phos-ac", "Calc", "Nat-m"] },
+    { "rubric": "Sweat on feet", "remedies": ["Sil", "Graph", "Sep", "Thuja"] },
+    { "rubric": "Sweaty hands and feet", "remedies": ["Sil", "Psor", "Nat-m"] },
+    { "rubric": "Sweat under arms", "remedies": ["Graph", "Sil", "Sep", "Lyc"] },
+    { "rubric": "Sweat on chest", "remedies": ["Phos", "Sil", "Sulph"] },
+    { "rubric": "Cold sweat", "remedies": ["Verat", "Camph", "Carb-v", "Ars", "Tab"] },
+    { "rubric": "Sticky sweat", "remedies": ["Sil", "Sep", "Sulph", "Psor"] }
+  ]
+}
+{
+  "category": "Sexual Generalities",
+  "rubrics": [
+    { "rubric": "Sexual desire increased (nymphomania / satyriasis)", "remedies": ["Phos", "Med", "Lyc", "Nux-v", "Canth", "Arg-n", "Hyos", "Graph"] },
+    { "rubric": "Sexual desire diminished / absent", "remedies": ["Sep", "Sil", "Kali-br", "Ign", "Staph", "Con", "Nat-m"] },
+    { "rubric": "Aversion to sexual activity", "remedies": ["Sep", "Con", "Staph", "Nat-m", "Ign", "Kali-br"] },
+    { "rubric": "Sexual dreams with emissions", "remedies": ["Phos", "Kali-ph", "Med", "Nux-v", "Sulph", "Calc"] },
+    { "rubric": "Masturbation effects (past or current)", "remedies": ["Staph", "Kali-br", "Phos", "Sil", "China", "Graph", "Nux-v", "Med"] },
+    { "rubric": "Ill-effects of sexual excesses", "remedies": ["Staph", "Kali-ph", "China", "Phos", "Calc", "Nat-m", "Sulph"] },
+    { "rubric": "Sexual thoughts constant", "remedies": ["Canth", "Med", "Phos", "Hyos", "Nux-v"] },
+    { "rubric": "Sexual excitement from slightest provocation", "remedies": ["Med", "Phos", "Hyos", "Lach", "Canth", "Stram"] },
+    { "rubric": "Sexual organs cold", "remedies": ["Con", "Sep", "Lyc", "Sil", "Kali-br", "Carc"] },
+    { "rubric": "Sexual desire suppressed after grief or disappointment", "remedies": ["Nat-m", "Ign", "Staph", "Con", "Ph-ac"] },
+    { "rubric": "Sexual weakness (physical)", "remedies": ["Agn", "China", "Staph", "Kali-ph", "Selen", "Calc", "Lyc", "Phos"] },
+    { "rubric": "Premature ejaculation", "remedies": ["Selen", "Staph", "Kali-ph", "China", "Con"] },
+    { "rubric": "Erections painful / prolonged", "remedies": ["Canth", "Phos", "Agar", "Tarent"] },
+    { "rubric": "Erections weak / absent", "remedies": ["Agn", "Con", "Lyc", "Calc", "Staph", "Sil"] },
+    { "rubric": "Loss of semen with stool or urine", "remedies": ["Phos", "China", "Sil", "Selen", "Calc-p"] },
+    { "rubric": "Nocturnal emissions frequent", "remedies": ["Phos", "Kali-ph", "Selen", "Med", "Sil", "China"] },
+    { "rubric": "Sexual dreams causing weakness or prostration", "remedies": ["Phos", "Selen", "Staph", "China", "Calc", "Kali-ph"] },
+    { "rubric": "Craving for frequent sex (in women)", "remedies": ["Med", "Lach", "Phos", "Canth", "Hyos", "Sep"] },
+    { "rubric": "Aversion to sex (in women)", "remedies": ["Sep", "Con", "Ign", "Nat-m", "Staph", "Carc"] },
+    { "rubric": "Painful coition (dyspareunia)", "remedies": ["Sep", "Lach", "Platina", "Staph", "Con"] },
+    { "rubric": "Sexual hypersensitivity (female)", "remedies": ["Platina", "Med", "Lach", "Canth", "Hyos"] },
+    { "rubric": "Genital itching with desire", "remedies": ["Med", "Canth", "Sulph", "Lach", "Psor"] },
+    { "rubric": "Sexual perversion / mania", "remedies": ["Med", "Hyos", "Stram", "Verat", "Lach", "Canth"] },
+    { "rubric": "Sexual abuse effects (past)", "remedies": ["Staph", "Nat-m", "Con", "Ign", "Carc"] },
+    { "rubric": "Sexual suppression from guilt or religion", "remedies": ["Kali-br", "Nat-m", "Ign", "Con", "Staph"] }
+  ]
+}
+{
+  "category": "Menstrual Generals",
+  "rubrics": [
+    { "rubric": "Menses too early", "remedies": ["Calc", "Bell", "Nux-v", "Sulph", "Lach", "Phos"] },
+    { "rubric": "Menses too late", "remedies": ["Sep", "Puls", "Graph", "Con", "Nat-m", "Sil"] },
+    { "rubric": "Menses suppressed (amenorrhea)", "remedies": ["Puls", "Sep", "Ign", "Con", "Nat-m", "Calc", "Lyc"] },
+    { "rubric": "Menses scanty", "remedies": ["Sep", "Puls", "Graph", "Sil", "Con", "Nat-m"] },
+    { "rubric": "Menses profuse", "remedies": ["Bell", "Phos", "Calc", "Nux-v", "Sabin", "Ipecac", "Sec"] },
+    { "rubric": "Menses irregular", "remedies": ["Puls", "Sep", "Graph", "Lach", "Calc", "Ign"] },
+    { "rubric": "Menses painful (dysmenorrhea)", "remedies": ["Mag-p", "Cham", "Coloc", "Cimic", "Bell", "Puls"] },
+    { "rubric": "Menses offensive odor", "remedies": ["Kreos", "Sep", "Carbo-an", "Med", "Lach", "Psor"] },
+    { "rubric": "Menses dark / black", "remedies": ["Lach", "Croc", "Cimic", "Kali-c", "Sep"] },
+    { "rubric": "Menses bright red", "remedies": ["Bell", "Calc", "Ipecac", "Phos"] },
+    { "rubric": "Menses clotted", "remedies": ["Croc", "Lach", "Sabin", "Calc", "Ham", "Mag-p"] },
+    { "rubric": "Menses acrid, excoriating", "remedies": ["Kreos", "Med", "Sulph", "Nit-ac", "Psor"] },
+    { "rubric": "Menses stains difficult to wash", "remedies": ["Croc", "Sulph", "Kreos", "Med"] },
+    { "rubric": "Menses flow only at night", "remedies": ["Cycl", "Puls", "Am-c", "Phos"] },
+    { "rubric": "Menses flow only during day", "remedies": ["Mag-p", "Sep", "Kali-c"] },
+    { "rubric": "Menses flow only while lying down", "remedies": ["Puls", "Cycl", "Bell", "Goss"] },
+    { "rubric": "Menses flow stops when moving", "remedies": ["Puls", "Cycl", "Sulph"] },
+    { "rubric": "Menses < from slightest motion", "remedies": ["Sabin", "Bell", "Sec", "Phos"] },
+    { "rubric": "Menses with severe backache", "remedies": ["Kali-c", "Cimic", "Sep", "Mag-p", "Bell"] },
+    { "rubric": "Menses with nausea or vomiting", "remedies": ["Ipecac", "Sep", "Nux-v", "Coccul"] },
+    { "rubric": "Menses delayed after grief", "remedies": ["Ign", "Nat-m", "Staph", "Sep"] },
+    { "rubric": "Menses delayed after emotional shock", "remedies": ["Acon", "Ign", "Op", "Nat-m", "Gels"] },
+    { "rubric": "Menses associated with fainting", "remedies": ["Lach", "Ign", "Calc", "Puls", "Bell"] },
+    { "rubric": "Menses worse at night", "remedies": ["Lach", "Croc", "Sabin"] },
+    { "rubric": "Menses better lying on abdomen", "remedies": ["Mag-p", "Coloc", "Cham"] },
+    { "rubric": "Menses better with pressure", "remedies": ["Coloc", "Cham", "Mag-p"] },
+    { "rubric": "Menses associated with irritability", "remedies": ["Nux-v", "Sep", "Cham", "Lach", "Kali-c"] },
+    { "rubric": "Menses associated with sadness", "remedies": ["Nat-m", "Ign", "Sep", "Puls", "Phos-ac"] },
+    { "rubric": "Menses preceded by headache", "remedies": ["Sep", "Lach", "Calc", "Cycl", "Nat-m"] },
+    { "rubric": "Menses followed by leucorrhoea", "remedies": ["Sep", "Puls", "Calc", "Kali-c", "Sulph"] },
+    { "rubric": "Menses irregular during menopause", "remedies": ["Lach", "Sep", "Sulph", "Cimic", "Ign", "Am-c"] },
+    { "rubric": "Menstrual flow intermits", "remedies": ["Croc", "Cycl", "Puls", "Sulph", "Lach"] },
+    { "rubric": "Flow starts, then stops suddenly", "remedies": ["Croc", "Cycl", "Ign", "Puls"] },
+    { "rubric": "Blood gushing out in bursts", "remedies": ["Bell", "Ipecac", "Croc", "Sabin"] },
+    { "rubric": "Blood with offensive clots", "remedies": ["Lach", "Croc", "Kreos", "Sabin", "Carbo-v"] },
+    { "rubric": "Menstrual flow exhausting", "remedies": ["Phos-ac", "China", "Carc", "Kali-ph", "Sep"] },
+    { "rubric": "Menstrual colic before flow", "remedies": ["Mag-p", "Cham", "Coloc", "Bell", "Cimic"] },
+    { "rubric": "Colic relieved when flow starts", "remedies": ["Puls", "Mag-p", "Sep", "Cham"] },
+    { "rubric": "Colic continues even after flow begins", "remedies": ["Coloc", "Cimic", "Bell"] },
+    { "rubric": "Menses with breast tenderness", "remedies": ["Con", "Calc", "Puls", "Sep", "Lach"] }
+  ]
+}
+{
+  "category": "Thirst",
+  "rubrics": [
+    { "rubric": "Thirst increased (excessive)", "remedies": ["Bry", "Sulph", "Phos", "Nat-m", "China", "Iod", "Apis", "Ars"] },
+    { "rubric": "Thirst absent (thirstlessness)", "remedies": ["Puls", "Ant-t", "Gels", "Ipecac", "Sep", "Cycl", "Ferr"] },
+    { "rubric": "Thirst during fever", "remedies": ["Bry", "Acon", "China", "Ars", "Sulph"] },
+    { "rubric": "Thirst absent during fever", "remedies": ["Puls", "Gels", "Ant-t", "Apis", "Ipecac"] },
+    { "rubric": "Thirst for small quantities often", "remedies": ["Ars", "China", "Ipecac", "Nux-v", "Phos-ac", "Sulph"] },
+    { "rubric": "Thirst for large quantities at long intervals", "remedies": ["Bry", "Nat-m", "Sulph", "Phos", "China"] },
+    { "rubric": "Thirst for cold drinks", "remedies": ["Phos", "Sulph", "Bry", "Nat-m", "Puls"] },
+    { "rubric": "Thirst for warm drinks", "remedies": ["Ars", "Lyc", "Nux-v", "Rhus-t", "Ferr", "Ph-ac"] },
+    { "rubric": "Thirst before menses", "remedies": ["Sep", "Lach", "Calc", "Sulph"] },
+    { "rubric": "Thirst during headache", "remedies": ["Bry", "Nat-m", "Nux-v", "Phos"] },
+    { "rubric": "Thirst absent during headache", "remedies": ["Puls", "Ipecac", "Gels"] },
+    { "rubric": "Thirst during chill", "remedies": ["Ars", "China", "Nux-v", "Bry"] },
+    { "rubric": "Thirst absent during chill", "remedies": ["Gels", "Puls", "Ant-t"] },
+    { "rubric": "Thirst during heat", "remedies": ["Bry", "Sulph", "Nat-m", "Ars"] },
+    { "rubric": "Thirst absent during heat", "remedies": ["Puls", "Gels", "Ant-t", "Ipecac"] },
+    { "rubric": "Thirst during sweat", "remedies": ["China", "Bry", "Sulph"] },
+    { "rubric": "Thirst absent during sweat", "remedies": ["Puls", "Gels"] },
+    { "rubric": "Thirst for acidic drinks (lemon, vinegar)", "remedies": ["Phos", "Puls", "Sulph", "Verat", "Kali-bi"] },
+    { "rubric": "Thirst for beer", "remedies": ["Sulph", "Lyc", "Nux-v", "Calc", "Psor"] },
+    { "rubric": "Thirst for milk", "remedies": ["Sep", "Calc", "Puls", "Sil", "Mag-m"] },
+    { "rubric": "Thirst during diarrhea", "remedies": ["Phos-ac", "Ars", "Verat", "China", "Aloe"] },
+    { "rubric": "Thirst absent during diarrhea", "remedies": ["Puls", "Ferr", "Ant-c", "Ipecac"] },
+    { "rubric": "Thirst with dryness of mouth", "remedies": ["Bry", "Nat-m", "Ars", "Phos", "China"] },
+    { "rubric": "Thirst without dryness of mouth", "remedies": ["Sulph", "Ipecac", "Phos-ac"] },
+    { "rubric": "Thirst with dry lips", "remedies": ["Bry", "Nat-m", "Sulph", "Ars"] },
+    { "rubric": "Thirst with nausea", "remedies": ["Ipecac", "Ars", "Nux-v", "Phos", "Bry"] },
+    { "rubric": "Thirst for carbonated drinks", "remedies": ["Phos", "Carb-v", "Lyc", "Sulph", "Puls"] },
+    { "rubric": "Thirst after vomiting", "remedies": ["Phos", "Ipecac", "Verat", "Ars", "Ant-t"] },
+    { "rubric": "Thirst with burning sensations", "remedies": ["Ars", "Phos", "Sulph", "Canth"] },
+    { "rubric": "Thirst at night", "remedies": ["Phos", "Sulph", "China", "Lyc", "Puls", "Med"] },
+    { "rubric": "Thirst in early morning hours", "remedies": ["Nux-v", "Sulph", "Calc", "Phos"] },
+    { "rubric": "Thirst on waking", "remedies": ["Bry", "Nat-m", "Sulph", "Ars", "Lyc"] }
+  ]
+}
+{
+  "category": "Bowel Habits",
+  "rubrics": [
+    { "rubric": "Constipation", "remedies": ["Bry", "Alum", "Nux-v", "Op", "Plumb", "Sil", "Sep", "Sulph"] },
+    { "rubric": "Constipation with no urge", "remedies": ["Op", "Alum", "Plumb", "Sil"] },
+    { "rubric": "Constipation with frequent ineffective urge", "remedies": ["Nux-v", "Sep", "Ign", "Sulph"] },
+    { "rubric": "Constipation with hard, dry stool", "remedies": ["Bry", "Nux-v", "Op", "Alum", "Sulph"] },
+    { "rubric": "Constipation alternating with diarrhea", "remedies": ["Ant-c", "Bry", "Nux-v", "Sulph", "Lyc", "Iris", "Nat-m"] },
+    { "rubric": "Stool large, difficult to pass", "remedies": ["Sil", "Sanic", "Phos", "Calc", "Plumb", "Op"] },
+    { "rubric": "Stool like sheep dung", "remedies": ["Chel", "Plumb", "Op", "Alum", "Sep", "Nux-v"] },
+    { "rubric": "Stool in small balls", "remedies": ["Plumb", "Chel", "Nux-v", "Alum"] },
+    { "rubric": "Obstinate constipation in infants", "remedies": ["Calc", "Cham", "Sil", "Nux-v", "Alum"] },
+    { "rubric": "Constipation in elderly", "remedies": ["Op", "Plumb", "Alum", "Sulph", "Bry"] },
+    { "rubric": "Diarrhea", "remedies": ["Aloe", "Ars", "Phos", "Sulph", "Verat", "Podoph", "China", "Cham", "Gamb"] },
+    { "rubric": "Diarrhea early morning (5 am)", "remedies": ["Sulph", "Podoph", "Aloe", "Nat-s", "Bry"] },
+    { "rubric": "Diarrhea after eating or drinking", "remedies": ["Ars", "China", "Phos", "Sulph", "Croton-t"] },
+    { "rubric": "Diarrhea sudden and gushing", "remedies": ["Croton-t", "Aloe", "Podoph", "Gamb", "Jatropha"] },
+    { "rubric": "Diarrhea painless but exhausting", "remedies": ["Ph-ac", "China", "Ars", "Verat", "Nat-m"] },
+    { "rubric": "Diarrhea with colic", "remedies": ["Coloc", "Mag-p", "Cham", "Diosc", "Aloe"] },
+    { "rubric": "Urgent stool driving out of bed in morning", "remedies": ["Sulph", "Aloe", "Podoph", "Psor"] },
+    { "rubric": "Flatus before stool", "remedies": ["Aloe", "Lyc", "Sulph", "Carb-v"] },
+    { "rubric": "Flatus after stool", "remedies": ["Sulph", "Lyc", "Aloe", "China"] },
+    { "rubric": "No flatus passed", "remedies": ["Op", "Plumb", "Alum"] },
+    { "rubric": "Ineffectual urging", "remedies": ["Nux-v", "Sulph", "Ign", "Sep", "Merc"] },
+    { "rubric": "Diarrhea from fruit or milk", "remedies": ["Puls", "Nat-c", "Aeth", "Calc", "Sulph"] },
+    { "rubric": "Diarrhea in children during dentition", "remedies": ["Cham", "Calc", "Podoph", "Sulph", "Bell"] },
+    { "rubric": "Stool offensive, like rotten eggs", "remedies": ["Cham", "Sulph", "Psor", "Calc", "Kali-bi"] },
+    { "rubric": "Stool watery", "remedies": ["Ars", "Verat", "Aloe", "China", "Phos"] },
+    { "rubric": "Stool involuntary", "remedies": ["Ars", "Verat", "Hyos", "Phos", "Sulph"] },
+    { "rubric": "Stool after fright", "remedies": ["Gels", "Acon", "Op", "Ign", "Arg-n"] },
+    { "rubric": "Frequent but scanty stool", "remedies": ["Nux-v", "Merc", "Sulph", "Sep", "Ign"] },
+    { "rubric": "Burning in rectum after stool", "remedies": ["Sulph", "Ars", "Aloe", "Nit-ac", "Kali-bi"] },
+    { "rubric": "Mucus in stool", "remedies": ["Merc", "Aloe", "Kali-bi", "Nux-v", "Colch"] },
+    { "rubric": "Bloody stool", "remedies": ["Ham", "Nit-ac", "Phos", "Merc", "Colch", "Aloe"] },
+    { "rubric": "Chronic diarrhea with emaciation", "remedies": ["Phos", "Tub", "Abrot", "China", "Nat-m", "Psor"] },
+    { "rubric": "Stool difficult even if soft", "remedies": ["Sil", "Alum", "Sep", "Op", "Nux-m"] },
+    { "rubric": "Sensation of incomplete evacuation", "remedies": ["Nux-v", "Ign", "Sep", "Merc", "Sulph"] },
+    { "rubric": "Stool offensive", "remedies": ["Psor", "Sulph", "Calc", "Cham", "Merc", "Kali-bi"] }
+  ]
+}
+{
+  "category": "Sweat",
+  "rubrics": [
+    { "rubric": "Sweat profuse", "remedies": ["China", "Phos", "Verat", "Merc", "Sil", "Calc", "Ars"] },
+    { "rubric": "Sweat absent (anhidrosis)", "remedies": ["Bell", "Apis", "Stram", "Op", "Lach"] },
+    { "rubric": "Sweat on slightest exertion", "remedies": ["Calc", "Sil", "Phos", "China", "Sep"] },
+    { "rubric": "Sweat only on face", "remedies": ["Cham", "Bell", "Baryt", "Cina", "Calc", "Sanic"] },
+    { "rubric": "Sweat only on scalp", "remedies": ["Calc", "Sil", "Sanic", "Merc", "Nat-m"] },
+    { "rubric": "Sweat only on palms", "remedies": ["Sil", "Sep", "Nat-m", "Calc", "Tub"] },
+    { "rubric": "Sweat only on feet", "remedies": ["Sil", "Baryt", "Nit-ac", "Sep", "Graph"] },
+    { "rubric": "Sweat offensive, fetid", "remedies": ["Sil", "Psor", "Graph", "Sulph", "Merc"] },
+    { "rubric": "Sweat staining yellow", "remedies": ["Nat-m", "Graph", "Sil", "Sulph", "China"] },
+    { "rubric": "Sweat staining brown", "remedies": ["Chin-s", "Sep", "Petrol", "Sulph"] },
+    { "rubric": "Sweat sticky", "remedies": ["Merc", "Sil", "Sulph", "Graph"] },
+    { "rubric": "Sweat cold", "remedies": ["Verat", "Camph", "Carb-v", "Ars", "Tabac"] },
+    { "rubric": "Sweat hot", "remedies": ["Bell", "Sulph", "Acon", "Cham", "Ferr"] },
+    { "rubric": "Sweat during sleep only", "remedies": ["Sil", "Calc", "China", "Phos", "Merc"] },
+    { "rubric": "Sweat on waking", "remedies": ["Sulph", "Phos", "China", "Sil", "Lyc"] },
+    { "rubric": "Sweat in the morning", "remedies": ["Sulph", "Calc", "Nat-m", "Sil", "Phos"] },
+    { "rubric": "Sweat at night", "remedies": ["Sil", "Phos", "China", "Tub", "Merc", "Psor"] },
+    { "rubric": "Sweat after midnight", "remedies": ["Sil", "China", "Phos", "Tub", "Ars"] },
+    { "rubric": "Sweat during fever", "remedies": ["China", "Bry", "Gels", "Phos", "Ars"] },
+    { "rubric": "Sweat relieves symptoms", "remedies": ["Gels", "Ars", "Cham", "Bell", "China"] },
+    { "rubric": "Sweat aggravates symptoms", "remedies": ["Merc", "Sep", "Sulph", "Nat-m", "Sil"] },
+    { "rubric": "Sweat sour", "remedies": ["Calc", "Sil", "Rheum", "Cham", "Graph"] },
+    { "rubric": "Sweat oily or greasy", "remedies": ["Petrol", "Sil", "Sulph", "Psor", "Thuja"] },
+    { "rubric": "Sweat clammy", "remedies": ["Ars", "China", "Verat", "Camph", "Tabac"] },
+    { "rubric": "Sweat with weakness", "remedies": ["China", "Phos", "Verat", "Ars", "Sil"] },
+    { "rubric": "Sweat with anxiety", "remedies": ["Acon", "Ars", "Gels", "Ign", "Verat"] },
+    { "rubric": "Sweat during colic", "remedies": ["Coloc", "Cham", "Mag-p", "Diosc", "Verat"] },
+    { "rubric": "Sweat after acute diseases", "remedies": ["China", "Phos-ac", "Sil", "Calc", "Psor"] },
+    { "rubric": "Sweat on covered parts only", "remedies": ["Sil", "Calc", "Nat-m", "Psor"] },
+    { "rubric": "Sweat on uncovered parts", "remedies": ["Bell", "Puls", "Sulph", "Acon"] },
+    { "rubric": "Sweat offensive on feet", "remedies": ["Sil", "Graph", "Baryt", "Sep", "Psor"] }
+  ]
+}
+{
+  "category": "Thermals",
+  "rubrics": [
+    { "rubric": "Chilly patient – generally worse from cold", "remedies": ["Ars", "Sil", "Hepar", "Psor", "Calc", "Sep", "Nat-m"] },
+    { "rubric": "Chilly but craves open air", "remedies": ["Puls", "Carb-v", "Ign", "Cocc"] },
+    { "rubric": "Chilly but worse in closed room", "remedies": ["Puls", "Sulph", "Carb-v", "Ign"] },
+    { "rubric": "Chilly and worse from slightest draft", "remedies": ["Hepar", "Psor", "Sil", "Bell"] },
+    { "rubric": "Chilly and always wants to be covered", "remedies": ["Hepar", "Psor", "Sil", "Merc", "Ars"] },
+    { "rubric": "Hot patient – worse from heat", "remedies": ["Sulph", "Lyc", "Nat-m", "Puls", "Apis", "Bry"] },
+    { "rubric": "Hot patient – desires cool air and uncovering", "remedies": ["Sulph", "Puls", "Bry", "Bell", "Apis", "Cham"] },
+    { "rubric": "Hot patient but sensitive to cold drinks", "remedies": ["Bell", "Sulph", "Cham", "Bry"] },
+    { "rubric": "Hot patient, < sun or heat of stove", "remedies": ["Glon", "Sulph", "Nat-m", "Lach", "Bell"] },
+    { "rubric": "Cold feet with hot head", "remedies": ["Sulph", "Calc", "Bell", "Sil", "Cham"] },
+    { "rubric": "One hand cold, the other hot", "remedies": ["Cham", "Ign", "Puls", "Rhus-t", "Sep"] },
+    { "rubric": "Heat flushes – menopause or otherwise", "remedies": ["Lach", "Sulph", "Sanguin", "Amyl-n", "Glon"] },
+    { "rubric": "Aversion to heat", "remedies": ["Sulph", "Nat-m", "Lyc", "Bell"] },
+    { "rubric": "Aversion to cold", "remedies": ["Sil", "Psor", "Calc", "Hepar", "Ars"] },
+    { "rubric": "Craving for warmth", "remedies": ["Ars", "Sil", "Psor", "Hepar"] },
+    { "rubric": "Craving for cool, fresh air", "remedies": ["Puls", "Sulph", "Bry", "Carb-v", "Lyc"] },
+    { "rubric": "Sensitive to temperature changes", "remedies": ["Ign", "Nux-v", "Bell", "Sulph", "Phos"] },
+    { "rubric": "Worse in summer heat", "remedies": ["Apis", "Glon", "Lach", "Nat-m", "Sulph"] },
+    { "rubric": "Worse in winter cold", "remedies": ["Sil", "Calc", "Ars", "Hepar", "Psor"] },
+    { "rubric": "Alternate hot and cold feelings", "remedies": ["Sep", "Ign", "Nux-v", "Puls", "Phos"] },
+    { "rubric": "Cold perspiration", "remedies": ["Verat", "Ars", "Camph", "Carb-v", "Tabac"] }
+  ]
+}
+{
+  "category": "Hot Patient",
+  "rubrics": [
+    {
+      "rubric": "Hot patient – generally worse from heat",
+      "remedies": ["Sulph", "Lyc", "Nat-m", "Puls", "Apis", "Bry", "Bell"]
+    },
+    {
+      "rubric": "Hot patient – better by uncovering",
+      "remedies": ["Sulph", "Puls", "Bry", "Bell", "Apis", "Cham", "Sang"]
+    },
+    {
+      "rubric": "Hot patient – better in open air",
+      "remedies": ["Puls", "Sulph", "Bry", "Glon", "Lach"]
+    },
+    {
+      "rubric": "Hot patient – worse in sun or stove heat",
+      "remedies": ["Glon", "Nat-m", "Bell", "Lach", "Sulph"]
+    },
+    {
+      "rubric": "Hot patient – hot flushes (esp. menopause)",
+      "remedies": ["Lach", "Sanguin", "Amyl-n", "Glon", "Sulph", "Sep"]
+    },
+    {
+      "rubric": "Hot patient – burning sensation internally",
+      "remedies": ["Sulph", "Ars", "Phos", "Lach", "Canth"]
+    },
+    {
+      "rubric": "Hot patient – < warmth of bed",
+      "remedies": ["Sulph", "Merc", "Puls", "Lach", "Hepar"]
+    },
+    {
+      "rubric": "Hot patient – wants feet uncovered",
+      "remedies": ["Sulph", "Cham", "Med", "Lyc", "Sil"]
+    },
+    {
+      "rubric": "Hot patient – one hand hot, one cold",
+      "remedies": ["Cham", "Puls", "Sep", "Ign", "Rhus-t"]
+    },
+    {
+      "rubric": "Hot head, cold feet",
+      "remedies": ["Sulph", "Bell", "Cham", "Calc", "Sil"]
+    },
+    {
+      "rubric": "Hot patient – desires cold drinks",
+      "remedies": ["Phos", "Bry", "Sulph", "Verat", "Ars"]
+    },
+    {
+      "rubric": "Hot patient – < tight clothing",
+      "remedies": ["Lach", "Sulph", "Bell", "Nat-m", "Sep"]
+    },
+    {
+      "rubric": "Hot patient – perspiration with heat",
+      "remedies": ["Sulph", "Nat-m", "Bry", "Cham", "Bell"]
+    }
+  ]
+}
+{
+  "category": "Sleep",
+  "rubrics": [
+    { "rubric": "Sleeplessness – without cause", "remedies": ["Coff", "Nux-v", "Sulph", "Ign", "Bell"] },
+    { "rubric": "Sleeplessness from mental activity", "remedies": ["Coff", "Nux-v", "Calc", "Lyc", "Arg-n"] },
+    { "rubric": "Sleeplessness from worry/anxiety", "remedies": ["Ars", "Coff", "Phos", "Ign", "Acon"] },
+    { "rubric": "Sleeplessness after midnight", "remedies": ["Ars", "Nux-v", "Coff", "Calc", "Lach"] },
+    { "rubric": "Sleeplessness from excitement", "remedies": ["Coff", "Cham", "Op", "Bell", "Acon"] },
+    { "rubric": "Sleep disturbed by dreams", "remedies": ["Sulph", "Phos", "Kali-c", "Lach", "Ars"] },
+    { "rubric": "Falls asleep late", "remedies": ["Nux-v", "Lyc", "Coff", "Phos", "Calc"] },
+    { "rubric": "Sleep too much (somnolence)", "remedies": ["Op", "Gels", "Phos-ac", "Ant-t", "Calc"] },
+    { "rubric": "Frequent waking", "remedies": ["Ars", "Nux-v", "Lach", "Phos", "Sulph"] },
+    { "rubric": "Wakes too early", "remedies": ["Nat-m", "Sulph", "Lyc", "Nux-v", "Sep"] },
+    { "rubric": "Yawning with sleepiness but cannot sleep", "remedies": ["Coff", "Nux-v", "Ign", "Op", "Puls"] },
+    { "rubric": "Talks during sleep", "remedies": ["Stram", "Lach", "Hyos", "Phos", "Sulph"] },
+    { "rubric": "Jerking of limbs during sleep", "remedies": ["Zinc", "Agar", "Cupr", "Phos", "Cham"] },
+    { "rubric": "Sleeps on abdomen", "remedies": ["Med", "Calc", "Lyc", "Nat-m", "Sulph"] },
+    { "rubric": "Sleeps on back – hands over head", "remedies": ["Sulph", "Calc", "Phos", "Lach", "Op"] },
+    { "rubric": "Sleeps on left side", "remedies": ["Phos", "Nat-m", "Lach", "Bry", "Sulph"] },
+    { "rubric": "Sleeps on right side", "remedies": ["Lyc", "Chel", "Med", "Kali-c", "Sep"] },
+    { "rubric": "Sleeps with knees drawn up", "remedies": ["Calc", "Med", "Sulph", "Sep", "Phos"] },
+    { "rubric": "Sleep aggravates complaints", "remedies": ["Lach", "Op", "Sulph", "Apis", "Bry"] },
+    { "rubric": "Sleep ameliorates complaints", "remedies": ["Gels", "Acon", "Ign", "Phos"] },
+    { "rubric": "Dreams – vivid", "remedies": ["Phos", "Sulph", "Kali-c", "Nat-m", "Lach"] },
+    { "rubric": "Dreams – frightful/nightmares", "remedies": ["Stram", "Op", "Bell", "Kali-br", "Puls"] },
+    { "rubric": "Dreams – of falling", "remedies": ["Borax", "Bell", "Op", "Calc", "Zinc"] },
+    { "rubric": "Dreams – of being pursued", "remedies": ["Stram", "Lach", "Puls", "Calc", "Op"] },
+    { "rubric": "Snoring in sleep", "remedies": ["Op", "Calc", "Nux-v", "Hep", "Sulph"] },
+    { "rubric": "Sleep – eyes remain half open", "remedies": ["Sulph", "Op", "Bell", "Gels", "Ign"] },
+    { "rubric": "Sleep interrupted by urination", "remedies": ["Kali-c", "Sep", "Lyc", "Con", "Sulph"] }
+  ]
+}
+{
+  "category": "Sleep",
+  "rubrics": [
+    {
+      "rubric": "Sleeplessness – without cause",
+      "remedies": ["Coff", "Nux-v", "Sulph", "Ign", "Bell"]
+    },
+    {
+      "rubric": "Sleeps on abdomen",
+      "remedies": ["Med", "Calc", "Lyc", "Nat-m", "Sulph"]
+    },
+    {
+      "rubric": "Dreams – of falling",
+      "remedies": ["Borax", "Bell", "Op", "Calc", "Zinc"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Sleeplessness without physical or emotional reason – consider Coffea, Nux-v, or Ignatia.",
+      "confirmatoryRemedies": ["Coff", "Nux-v", "Ign"]
+    },
+    {
+      "description": "Child sleeps on abdomen – seen in Calc, Medorrhinum, Sulphur.",
+      "confirmatoryRemedies": ["Med", "Calc", "Sulph"]
+    },
+    {
+      "description": "Dreams of falling often confirm Borax or Calcarea in nervous children.",
+      "confirmatoryRemedies": ["Borax", "Calc"]
+    }
+  ]
+}
+{
+  "category": "Desires and Aversions",
+  "rubrics": [
+    {
+      "rubric": "Desire for indigestible things (pica)",
+      "remedies": ["Calc", "Alum", "Verat", "China", "Sil"]
+    },
+    {
+      "rubric": "Desire for fat, greasy food",
+      "remedies": ["Puls", "Nat-c", "Iod", "Sulph", "Carb-v"]
+    },
+    {
+      "rubric": "Desire for chalk, sand, slate, pencils",
+      "remedies": ["Calc", "Alum", "Tub", "Cina", "Psor"]
+    },
+    {
+      "rubric": "Desire for sour, vinegar, pickles",
+      "remedies": ["Sep", "Nit-ac", "Phos", "Sulph", "Ant-c"]
+    },
+    {
+      "rubric": "Desire for beer, alcoholic drinks",
+      "remedies": ["Nux-v", "Sulph", "Lach", "Cann-i", "Avena"]
+    },
+    {
+      "rubric": "Desire for cold drinks",
+      "remedies": ["Phos", "Bry", "Sulph", "Verat", "Nat-m"]
+    },
+    {
+      "rubric": "Desire for warm drinks",
+      "remedies": ["Ars", "Lyc", "Calc", "Nux-v", "Sil"]
+    },
+    {
+      "rubric": "Aversion to milk",
+      "remedies": ["Sep", "Calc", "Sulph", "China", "Mag-m"]
+    },
+    {
+      "rubric": "Aversion to water (even sight)",
+      "remedies": ["Bell", "Stram", "Hyos", "Canth"]
+    },
+    {
+      "rubric": "Aversion to meat",
+      "remedies": ["Puls", "Sep", "Nit-ac", "Ign", "Ph-ac"]
+    },
+    {
+      "rubric": "Aversion to bread",
+      "remedies": ["Sulph", "Nux-v", "Lyc", "China"]
+    },
+    {
+      "rubric": "Aversion to salt",
+      "remedies": ["Sep", "Phos", "Ign", "Sil"]
+    },
+    {
+      "rubric": "Aversion to sweet things",
+      "remedies": ["Lyc", "Sulph", "Graph", "Ant-c"]
+    },
+    {
+      "rubric": "Aversion to fruits",
+      "remedies": ["Bry", "Sep", "Sil", "Nux-v"]
+    },
+    {
+      "rubric": "Desire for smoked or burned food (roasted, BBQ)",
+      "remedies": ["Carb-v", "Sulph", "Tarax", "Ant-c"]
+    },
+    {
+      "rubric": "Desire for spicy / pungent food",
+      "remedies": ["Nux-v", "Sulph", "Ars", "Iod", "Rhus-t"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Children who crave chalk, slate, or pencils often point to Calcarea or Alumina.",
+      "confirmatoryRemedies": ["Calc", "Alum"]
+    },
+    {
+      "description": "Aversion to milk or problems after milk are classic in Sepia and Calcarea.",
+      "confirmatoryRemedies": ["Sep", "Calc"]
+    },
+    {
+      "description": "Desire for vinegar or pickles is confirmatory in Sepia and Nitric acid cases.",
+      "confirmatoryRemedies": ["Sep", "Nit-ac"]
+    },
+    {
+      "description": "Strong craving for alcohol or beer – think of Nux-v, Sulphur, or Lachesis.",
+      "confirmatoryRemedies": ["Nux-v", "Sulph", "Lach"]
+    },
+    {
+      "description": "Pulsatilla dislikes fat and meat, while craving butter and pastry.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Desire for spicy food with burning – think of Nux-v and Arsenicum.",
+      "confirmatoryRemedies": ["Nux-v", "Ars"]
+    }
+  ]
+}
+{
+  "category": "Dreams",
+  "rubrics": [
+    {
+      "rubric": "Dreams – frightful, terrifying",
+      "remedies": ["Stram", "Op", "Bell", "Puls", "Kali-br"]
+    },
+    {
+      "rubric": "Dreams – of falling",
+      "remedies": ["Borax", "Calc", "Op", "Bell", "Zinc"]
+    },
+    {
+      "rubric": "Dreams – of being pursued",
+      "remedies": ["Stram", "Lach", "Puls", "Op", "Calc"]
+    },
+    {
+      "rubric": "Dreams – vivid, lifelike",
+      "remedies": ["Phos", "Sulph", "Kali-c", "Nat-m", "Lach"]
+    },
+    {
+      "rubric": "Dreams – anxious, causes waking",
+      "remedies": ["Ars", "Acon", "Coff", "Ign", "Phos"]
+    },
+    {
+      "rubric": "Dreams – of death",
+      "remedies": ["Ars", "Acon", "Lach", "Sep", "Phos"]
+    },
+    {
+      "rubric": "Dreams – of water, drowning",
+      "remedies": ["Stram", "Nat-m", "Caust", "Lach", "Sep"]
+    },
+    {
+      "rubric": "Dreams – of flying",
+      "remedies": ["Phos", "Med", "Sulph", "Lach", "Calc"]
+    },
+    {
+      "rubric": "Dreams – of snakes",
+      "remedies": ["Lach", "Phos", "Calc", "Stram", "Med"]
+    },
+    {
+      "rubric": "Dreams – prophetic (come true)",
+      "remedies": ["Phos", "Lach", "Sulph", "Calc", "Aeth"]
+    },
+    {
+      "rubric": "Dreams – of sexual nature",
+      "remedies": ["Phos", "Lach", "Sulph", "Staph", "Med"]
+    },
+    {
+      "rubric": "Dreams – of fire",
+      "remedies": ["Sulph", "Stram", "Bell", "Med", "Phos"]
+    },
+    {
+      "rubric": "Dreams – of robbers or theft",
+      "remedies": ["Puls", "Lach", "Sulph", "Stram", "Op"]
+    },
+    {
+      "rubric": "Dreams – of accidents",
+      "remedies": ["Acon", "Ign", "Ars", "Phos", "Stram"]
+    },
+    {
+      "rubric": "Dreams – of animals",
+      "remedies": ["Lach", "Stram", "Phos", "Calc", "Med"]
+    },
+    {
+      "rubric": "Dreams – of blood / bleeding",
+      "remedies": ["Phos", "Lach", "Bell", "Stram", "Ham"]
+    },
+    {
+      "rubric": "Dreams – of dead people",
+      "remedies": ["Phos", "Calc", "Ign", "Op", "Sulph"]
+    },
+    {
+      "rubric": "Dreams – of war or violence",
+      "remedies": ["Stram", "Bell", "Hyos", "Lach", "Ars"]
+    },
+    {
+      "rubric": "Dreams – of urinating / wetting bed",
+      "remedies": ["Caust", "Kreos", "Sep", "Equis", "Puls"]
+    },
+    {
+      "rubric": "Dreams – of ghosts or spirits",
+      "remedies": ["Stram", "Bell", "Phos", "Op", "Lach"]
+    },
+    {
+      "rubric": "Dreams – confused, non-sensical",
+      "remedies": ["Lach", "Nux-v", "Phos", "Verat", "Anac"]
+    },
+    {
+      "rubric": "Dreams – remembered clearly",
+      "remedies": ["Phos", "Nat-m", "Sulph", "Kali-c", "Lach"]
+    },
+    {
+      "rubric": "Dreams – disturbing but forgotten",
+      "remedies": ["Op", "Nux-v", "Stram", "Ign", "Bell"]
+    },
+    {
+      "rubric": "Dreams – of exam failure or shame",
+      "remedies": ["Anac", "Sil", "Calc", "Arg-n", "Lyc"]
+    },
+    {
+      "rubric": "Dreams – of quarrels, arguments",
+      "remedies": ["Nux-v", "Lyc", "Staph", "Ign", "Sulph"]
+    },
+    {
+      "rubric": "Dreams – of missing a train/plane",
+      "remedies": ["Arg-n", "Gels", "Lyc", "Sil", "Ign"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Frightful or violent dreams often confirm Stramonium or Belladonna in sensitive minds.",
+      "confirmatoryRemedies": ["Stram", "Bell"]
+    },
+    {
+      "description": "Dreams of falling, especially at sleep onset, confirm Borax in children.",
+      "confirmatoryRemedies": ["Borax"]
+    },
+    {
+      "description": "Flying or prophetic dreams suggest Phosphorus or Lachesis.",
+      "confirmatoryRemedies": ["Phos", "Lach"]
+    },
+    {
+      "description": "Snake dreams with fear, sexuality or mysticism point to Lachesis or Medorrhinum.",
+      "confirmatoryRemedies": ["Lach", "Med"]
+    },
+    {
+      "description": "Dreams of accidents or disasters during anxiety states may require Aconite or Arsenicum.",
+      "confirmatoryRemedies": ["Acon", "Ars"]
+    },
+    {
+      "description": "Children who wet the bed with urination dreams may benefit from Causticum or Equisetum.",
+      "confirmatoryRemedies": ["Caust", "Equis"]
+    },
+    {
+      "description": "Violent, war-like dreams in disturbed sleep states often respond to Hyos, Stram, or Bell.",
+      "confirmatoryRemedies": ["Stram", "Hyos", "Bell"]
+    },
+    {
+      "description": "Dreams of exams, failure, or social shame suggest Silicea, Arg-n, or Lycopodium.",
+      "confirmatoryRemedies": ["Sil", "Arg-n", "Lyc"]
+    },
+    {
+      "description": "Ghost or spirit dreams can reflect Stramonium’s deep subconscious fears.",
+      "confirmatoryRemedies": ["Stram"]
+    }
+  ]
+}
+{
+  "category": "Appetite",
+  "rubrics": [
+    {
+      "rubric": "Appetite increased (ravenous)",
+      "remedies": ["Phos", "Iod", "Tub", "China", "Sulph"]
+    },
+    {
+      "rubric": "Appetite decreased / lost",
+      "remedies": ["Sep", "Puls", "Nux-v", "Ign", "Ant-c"]
+    },
+    {
+      "rubric": "Appetite variable / changes frequently",
+      "remedies": ["Cycl", "Ipec", "Nux-v", "China", "Lyc"]
+    },
+    {
+      "rubric": "Hunger but cannot eat much",
+      "remedies": ["Lyc", "Chin", "Sulph", "Graph"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Excessive hunger with weight loss suggests Phosphorus or Iodum.",
+      "confirmatoryRemedies": ["Phos", "Iod"]
+    },
+    {
+      "description": "Loss of appetite with aversion to food smell – think of Sepia or Pulsatilla.",
+      "confirmatoryRemedies": ["Sep", "Puls"]
+    },
+    {
+      "description": "Variable appetite is often seen in China and Cyclamen cases.",
+      "confirmatoryRemedies": ["China", "Cycl"]
+    }
+  ]
+}
+{
+  "category": "Thirst",
+  "rubrics": [
+    {
+      "rubric": "Thirst increased (drinks large quantities)",
+      "remedies": ["Bry", "Phos", "Sulph", "Nat-m", "Ars"]
+    },
+    {
+      "rubric": "Thirstless (no desire to drink)",
+      "remedies": ["Puls", "Ant-t", "Gels", "Apis", "Ipec"]
+    },
+    {
+      "rubric": "Thirst for small quantities often",
+      "remedies": ["Ars", "China", "Phos", "Kali-c", "Merc"]
+    },
+    {
+      "rubric": "Thirst for cold drinks only",
+      "remedies": ["Phos", "Verat", "Bry", "Sulph", "Nat-m"]
+    },
+    {
+      "rubric": "Thirst for warm drinks",
+      "remedies": ["Ars", "Rhus-t", "Hepar", "Kali-c", "Psor"]
+    },
+    {
+      "rubric": "Thirst after eating",
+      "remedies": ["Nux-v", "Lyc", "Sulph", "China", "Phos"]
+    },
+    {
+      "rubric": "Thirst during fever",
+      "remedies": ["Acon", "Bry", "Bell", "Phos", "Gels"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Arsenicum drinks frequently but in small sips, especially during restlessness.",
+      "confirmatoryRemedies": ["Ars"]
+    },
+    {
+      "description": "Pulsatilla typically has thirstlessness even in dry fevers.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Phosphorus craves cold water but may vomit when it warms in stomach.",
+      "confirmatoryRemedies": ["Phos"]
+    },
+    {
+      "description": "China and Kali-c show frequent thirst but for small amounts of water.",
+      "confirmatoryRemedies": ["China", "Kali-c"]
+    },
+    {
+      "description": "Bryonia shows intense thirst for large quantities at long intervals.",
+      "confirmatoryRemedies": ["Bry"]
+    }
+  ]
+}
+{
+  "category": "Bowel Habits",
+  "rubrics": [
+    {
+      "rubric": "Constipation with ineffectual urging",
+      "remedies": ["Nux-v", "Lyc", "Sil", "Aloe", "Bry"]
+    },
+    {
+      "rubric": "Constipation with no desire for stool",
+      "remedies": ["Opium", "Alum", "Sep", "Bry", "Sulph"]
+    },
+    {
+      "rubric": "Diarrhoea after eating or drinking",
+      "remedies": ["Ars", "Phos", "China", "Podoph", "Croto-t"]
+    },
+    {
+      "rubric": "Diarrhoea in the morning, drives out of bed",
+      "remedies": ["Sulph", "Aloe", "Podoph", "Psor", "Rumex"]
+    },
+    {
+      "rubric": "Alternate constipation and diarrhoea",
+      "remedies": ["Ant-c", "Nux-v", "Sulph", "Bry", "Lyc"]
+    },
+    {
+      "rubric": "Diarrhoea painless, involuntary",
+      "remedies": ["Ars", "Ph-ac", "China", "Verat", "Mur-ac"]
+    },
+    {
+      "rubric": "Hard, dry, difficult stool",
+      "remedies": ["Bry", "Nux-v", "Alum", "Sil", "Plumb"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Nux vomica is key for ineffectual urging and constant dissatisfaction after stool.",
+      "confirmatoryRemedies": ["Nux-v"]
+    },
+    {
+      "description": "Sulphur and Aloe are best for early morning diarrhoea driving patient out of bed.",
+      "confirmatoryRemedies": ["Sulph", "Aloe"]
+    },
+    {
+      "description": "Opium and Alumina for constipation with complete inactivity of rectum.",
+      "confirmatoryRemedies": ["Opium", "Alum"]
+    },
+    {
+      "description": "China and Phosphorus: diarrhoea immediately after meals or drinks.",
+      "confirmatoryRemedies": ["China", "Phos"]
+    },
+    {
+      "description": "Silicea: constipation with straining and stool recedes back (bashful)."," 
+      "confirmatoryRemedies": ["Sil"]
+    }
+  ]
+}
+{
+  "category": "Sweat",
+  "rubrics": [
+    {
+      "rubric": "Sweat profuse at night",
+      "remedies": ["Phos", "Sil", "Calc", "Tub", "Merc"]
+    },
+    {
+      "rubric": "Sweat only on head",
+      "remedies": ["Calc", "Sil", "Sanic", "Cham", "Bell"]
+    },
+    {
+      "rubric": "Sweat on single parts (local)",
+      "remedies": ["Thuja", "Sil", "Fl-ac", "Lyc", "Phos"]
+    },
+    {
+      "rubric": "Sweat easily from least exertion",
+      "remedies": ["China", "Phos", "Calc", "Stan", "Nat-m"]
+    },
+    {
+      "rubric": "Sweat offensive / sour",
+      "remedies": ["Sil", "Rheum", "Calc", "Hepar", "Psor"]
+    },
+    {
+      "rubric": "No sweat even in heat",
+      "remedies": ["Apis", "Bell", "Am-c", "Lach", "Sulph"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Silicea and Calcarea often sweat profusely at night, especially on head and neck.",
+      "confirmatoryRemedies": ["Sil", "Calc"]
+    },
+    {
+      "description": "Sweat from slightest exertion is characteristic of China and Phosphorus.",
+      "confirmatoryRemedies": ["China", "Phos"]
+    },
+    {
+      "description": "Rheum and Silicea have sour offensive sweat, especially on scalp or soles.",
+      "confirmatoryRemedies": ["Rheum", "Sil"]
+    },
+    {
+      "description": "Thuja and Fluoric acid show sweat only on specific isolated parts.",
+      "confirmatoryRemedies": ["Thuja", "Fl-ac"]
+    },
+    {
+      "description": "Lack of sweat in high fever suggests Apis or Belladonna.",
+      "confirmatoryRemedies": ["Apis", "Bell"]
+    }
+  ]
+}
+{
+  "category": "Thermals",
+  "rubrics": [
+    {
+      "rubric": "Chilly patient (always feels cold)",
+      "remedies": ["Psor", "Sil", "Calc", "Hepar", "Ars"]
+    },
+    {
+      "rubric": "Hot patient (always feels hot)",
+      "remedies": ["Sulph", "Lach", "Bell", "Med", "Glon"]
+    },
+    {
+      "rubric": "Aversion to heat (wants open air)",
+      "remedies": ["Puls", "Lach", "Med", "Sulph", "Phos"]
+    },
+    {
+      "rubric": "Aversion to cold (wants warmth, cannot tolerate wind)",
+      "remedies": ["Hepar", "Sil", "Nux-v", "Calc", "Ars"]
+    },
+    {
+      "rubric": "Chilly yet wants uncovering",
+      "remedies": ["Camph", "Secale", "Opium", "Apis"]
+    },
+    {
+      "rubric": "Hot yet wants covering",
+      "remedies": ["Bell", "Med", "Glon", "Sulph"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Psorinum and Silicea are classic chilly patients, worse from slightest cold.",
+      "confirmatoryRemedies": ["Psor", "Sil"]
+    },
+    {
+      "description": "Sulphur and Lachesis are hot-blooded, worse from heat and crowding.",
+      "confirmatoryRemedies": ["Sulph", "Lach"]
+    },
+    {
+      "description": "Camphor and Secale show paradox – chilly but want uncovering.",
+      "confirmatoryRemedies": ["Camph", "Secale"]
+    },
+    {
+      "description": "Hepar and Nux vomica have extreme cold sensitivity and desire for warmth.",
+      "confirmatoryRemedies": ["Hepar", "Nux-v"]
+    },
+    {
+      "description": "Phosphorus craves fresh air and is aggravated in stuffy rooms.",
+      "confirmatoryRemedies": ["Phos"]
+    }
+  ]
+}
+{
+  "category": "Sleep",
+  "rubrics": [
+    {
+      "rubric": "Sleeplessness from thoughts / mental activity",
+      "remedies": ["Nux-v", "Coffea", "Arg-n", "Zinc", "Acon"]
+    },
+    {
+      "rubric": "Sleeplessness before midnight",
+      "remedies": ["Nux-v", "Sulph", "Lyc", "Bell", "Phos"]
+    },
+    {
+      "rubric": "Sleeplessness after midnight",
+      "remedies": ["Ars", "Calc", "Med", "Psor", "Sil"]
+    },
+    {
+      "rubric": "Sleepiness excessive (daytime drowsiness)",
+      "remedies": ["Opium", "Phos-ac", "Gels", "Nux-m", "Ant-t"]
+    },
+    {
+      "rubric": "Sleep disturbed by dreams",
+      "remedies": ["Sulph", "Phos", "Lach", "Nat-m", "Sep"]
+    },
+    {
+      "rubric": "Sleep position – prefers abdomen",
+      "remedies": ["Med", "Calc", "Lyc", "Phos"]
+    },
+    {
+      "rubric": "Sleep position – knee-chest position",
+      "remedies": ["Med", "Puls", "Kali-c", "Psor"]
+    },
+    {
+      "rubric": "Sleep position – on back with hands overhead",
+      "remedies": ["Sulph", "Phos", "Calc", "Med"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Coffea and Nux vomica have sleeplessness due to racing thoughts or excitement.",
+      "confirmatoryRemedies": ["Coffea", "Nux-v"]
+    },
+    {
+      "description": "Arsenicum and Psorinum often wake after midnight with restlessness.",
+      "confirmatoryRemedies": ["Ars", "Psor"]
+    },
+    {
+      "description": "Medorrhinum and Kali carbonicum prefer knee-chest sleep position.",
+      "confirmatoryRemedies": ["Med", "Kali-c"]
+    },
+    {
+      "description": "Sulphur, Phosphorus, and Calcarea lie on their back with arms overhead.",
+      "confirmatoryRemedies": ["Sulph", "Phos", "Calc"]
+    },
+    {
+      "description": "Gelsemium and Nux moschata show excessive daytime sleepiness with heaviness.",
+      "confirmatoryRemedies": ["Gels", "Nux-m"]
+    }
+  ]
+}{
+  "category": "Desires and Aversions",
+  "rubrics": [
+    {
+      "rubric": "Desire for sweets",
+      "remedies": ["Arg-n", "Lyc", "Sulph", "Phos", "Nat-m"]
+    },
+    {
+      "rubric": "Aversion to sweets",
+      "remedies": ["Sep", "Lyc", "Iod", "Nux-v"]
+    },
+    {
+      "rubric": "Desire for salt / salty things",
+      "remedies": ["Phos", "Nat-m", "Caust", "Tub", "Calc"]
+    },
+    {
+      "rubric": "Aversion to salt",
+      "remedies": ["Sep", "Graph", "Phos-ac"]
+    },
+    {
+      "rubric": "Desire for sour things (pickles, vinegar, etc)",
+      "remedies": ["Puls", "Phos", "Nat-m", "Sep", "Cham"]
+    },
+    {
+      "rubric": "Aversion to sour things",
+      "remedies": ["Ant-c", "Calc", "Lyc"]
+    },
+    {
+      "rubric": "Desire for spicy / pungent things",
+      "remedies": ["Sulph", "Nux-v", "Caps", "Tub", "Kali-c"]
+    },
+    {
+      "rubric": "Aversion to spicy food",
+      "remedies": ["Puls", "Sep", "Nat-c"]
+    },
+    {
+      "rubric": "Desire for milk",
+      "remedies": ["Calc", "Sep", "Sulph", "Phos", "Lyc"]
+    },
+    {
+      "rubric": "Aversion to milk",
+      "remedies": ["Nat-c", "Aeth", "Sulph", "Puls"]
+    },
+    {
+      "rubric": "Desire for cold drinks",
+      "remedies": ["Phos", "Sulph", "Verat", "Bry", "Nat-m"]
+    },
+    {
+      "rubric": "Aversion to cold drinks",
+      "remedies": ["Ars", "Hepar", "Calc"]
+    },
+    {
+      "rubric": "Desire for eggs",
+      "remedies": ["Sulph", "Psor", "Calc", "Sil"]
+    },
+    {
+      "rubric": "Aversion to eggs",
+      "remedies": ["Thuja", "Puls", "Nux-v"]
+    },
+    {
+      "rubric": "Desire for indigestible / unusual things (chalk, mud, etc)",
+      "remedies": ["Alum", "Verat", "Calc", "Sil", "Phos"]
+    },
+    {
+      "rubric": "Aversion to meat / fat",
+      "remedies": ["Puls", "Sep", "Nat-c", "Ferr"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Natrum muriaticum has strong craving for salt and sour, but aversion to bread and fat.",
+      "confirmatoryRemedies": ["Nat-m"]
+    },
+    {
+      "description": "Phosphorus craves cold drinks, sweets, and spicy foods, but may dislike warm food.",
+      "confirmatoryRemedies": ["Phos"]
+    },
+    {
+      "description": "Pulsatilla dislikes fatty and spicy food, craves sour and sweets but milk disagrees.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Sepia has aversion to meat, milk, and sweets but may crave vinegar or sour food.",
+      "confirmatoryRemedies": ["Sep"]
+    },
+    {
+      "description": "Calcarea carbonica craves eggs, milk, and indigestible things like chalk.",
+      "confirmatoryRemedies": ["Calc"]
+    }
+  ]
+}
+{
+  "category": "Modalities – Motion",
+  "rubrics": [
+    {
+      "rubric": "Aggravation from motion",
+      "remedies": ["Bry", "Ferr", "Apis", "Kali-c", "Coloc"]
+    },
+    {
+      "rubric": "Amelioration from motion (restless, better walking)",
+      "remedies": ["Rhus-t", "Sep", "Puls", "Kali-bi", "Ars"]
+    },
+    {
+      "rubric": "Aggravation from slightest motion",
+      "remedies": ["Bry", "Nux-v", "Bell", "Apis", "Spig"]
+    },
+    {
+      "rubric": "Constant desire to move (restlessness)",
+      "remedies": ["Rhus-t", "Ars", "Cham", "Tarent", "Zinc"]
+    },
+    {
+      "rubric": "Unable to move due to pain (pain prevents motion)",
+      "remedies": ["Bry", "Coloc", "Ruta", "Bell"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Bryonia and Apis are worse from slightest motion – want total rest.",
+      "confirmatoryRemedies": ["Bry", "Apis"]
+    },
+    {
+      "description": "Rhus tox and Arsenicum feel better by moving constantly, despite fatigue.",
+      "confirmatoryRemedies": ["Rhus-t", "Ars"]
+    },
+    {
+      "description": "Colocynth and Belladonna experience pain so intense it prevents any movement.",
+      "confirmatoryRemedies": ["Coloc", "Bell"]
+    },
+    {
+      "description": "Zincum and Tarentula show restless fidgeting, cannot stay still.",
+      "confirmatoryRemedies": ["Zinc", "Tarent"]
+    }
+  ]
+}
+{
+  "category": "Modalities – Position",
+  "rubrics": [
+    {
+      "rubric": "Aggravation lying on painful side",
+      "remedies": ["Bry", "Bell", "Spig", "Puls"]
+    },
+    {
+      "rubric": "Amelioration lying on painful side",
+      "remedies": ["Mag-p", "Coloc", "Lyc"]
+    },
+    {
+      "rubric": "Aggravation lying on left side",
+      "remedies": ["Phos", "Lach", "Nat-m"]
+    },
+    {
+      "rubric": "Aggravation lying on right side",
+      "remedies": ["Merc", "Puls", "Chel"]
+    },
+    {
+      "rubric": "Amelioration lying on abdomen",
+      "remedies": ["Coloc", "Med", "Lyc", "Calc"]
+    },
+    {
+      "rubric": "Worse lying on back",
+      "remedies": ["Lach", "Sulph", "Phos", "Puls"]
+    },
+    {
+      "rubric": "Better lying on back",
+      "remedies": ["Bell", "Nux-v", "Ars"]
+    },
+    {
+      "rubric": "Aggravation while sitting",
+      "remedies": ["Sulph", "Kali-bi", "Caust"]
+    },
+    {
+      "rubric": "Amelioration while sitting bent forward",
+      "remedies": ["Coloc", "Ipecac", "Kali-c"]
+    },
+    {
+      "rubric": "Amelioration in knee-chest position",
+      "remedies": ["Med", "Psor", "Puls", "Kali-c"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Bryonia and Belladonna are worse lying on painful or affected side.",
+      "confirmatoryRemedies": ["Bry", "Bell"]
+    },
+    {
+      "description": "Colocynth is better lying on abdomen or bending forward due to colic pain.",
+      "confirmatoryRemedies": ["Coloc"]
+    },
+    {
+      "description": "Lachesis worsens on left side and lying on back, typical left-sided remedy.",
+      "confirmatoryRemedies": ["Lach"]
+    },
+    {
+      "description": "Medorrhinum and Kali carbonicum prefer knee-chest posture during pain.",
+      "confirmatoryRemedies": ["Med", "Kali-c"]
+    },
+    {
+      "description": "Sulphur aggravates from sitting or lying on back, prefers standing or walking.",
+      "confirmatoryRemedies": ["Sulph"]
+    }
+  ]
+}
+{
+  "category": "Modalities – Clothing",
+  "rubrics": [
+    {
+      "rubric": "Aggravation from tight clothing (especially around waist/neck)",
+      "remedies": ["Lach", "Carbo-v", "Sulph", "Ign", "Sep"]
+    },
+    {
+      "rubric": "Aversion to clothing/touch on affected part",
+      "remedies": ["Cham", "Apis", "Hyper", "Lach", "Hep"]
+    },
+    {
+      "rubric": "Wants to be uncovered / cannot tolerate clothes",
+      "remedies": ["Sulph", "Ant-t", "Secale", "Camph", "Verat"]
+    },
+    {
+      "rubric": "Wants to be covered warmly despite heat",
+      "remedies": ["Ars", "Camph", "Calc", "Psor"]
+    },
+    {
+      "rubric": "Better from loosening clothes",
+      "remedies": ["Lach", "Carbo-v", "Cina"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Lachesis cannot tolerate any tight clothing around neck or waist, feels suffocated.",
+      "confirmatoryRemedies": ["Lach"]
+    },
+    {
+      "description": "Sulphur and Secale feel better when completely uncovered, even if chilly.",
+      "confirmatoryRemedies": ["Sulph", "Secale"]
+    },
+    {
+      "description": "Arsenicum and Psorinum need to stay covered, even during fever or warmth.",
+      "confirmatoryRemedies": ["Ars", "Psor"]
+    },
+    {
+      "description": "Chamomilla and Apis can't tolerate even light touch on inflamed areas.",
+      "confirmatoryRemedies": ["Cham", "Apis"]
+    },
+    {
+      "description": "Carbo veg improves by loosening tight garments around chest and abdomen.",
+      "confirmatoryRemedies": ["Carbo-v"]
+    }
+  ]
+}
+{
+  "category": "Modalities – Bathing",
+  "rubrics": [
+    {
+      "rubric": "Aggravation from bathing (general)",
+      "remedies": ["Sil", "Sulph", "Sep", "Calc", "Nux-v"]
+    },
+    {
+      "rubric": "Aggravation from cold bathing",
+      "remedies": ["Rhus-t", "Sulph", "Calc", "Hep", "Nux-v"]
+    },
+    {
+      "rubric": "Aggravation from warm bathing",
+      "remedies": ["Sulph", "Med", "Psor", "Ant-t"]
+    },
+    {
+      "rubric": "Amelioration from cold bathing",
+      "remedies": ["Apis", "Secale", "Camph", "Verat"]
+    },
+    {
+      "rubric": "Amelioration from warm bathing",
+      "remedies": ["Ars", "Rhus-t", "Calc", "Mag-p"]
+    },
+    {
+      "rubric": "Aversion to bathing",
+      "remedies": ["Sulph", "Sil", "Psor", "Med"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Sulphur aggravates from bathing generally, worse from both hot and cold water.",
+      "confirmatoryRemedies": ["Sulph"]
+    },
+    {
+      "description": "Silicea and Psorinum dislike bathing and may get sick after it.",
+      "confirmatoryRemedies": ["Sil", "Psor"]
+    },
+    {
+      "description": "Rhus tox improves from warm bathing, while cold bathing worsens pains.",
+      "confirmatoryRemedies": ["Rhus-t"]
+    },
+    {
+      "description": "Apis and Secale are better from cold bathing, especially in burning complaints.",
+      "confirmatoryRemedies": ["Apis", "Secale"]
+    },
+    {
+      "description": "Medorrhinum and Antimonium tart worsen from hot bathing due to skin reactivity.",
+      "confirmatoryRemedies": ["Med", "Ant-t"]
+    }
+  ]
+}
+{
+  "category": "Generals – Menses Related",
+  "rubrics": [
+    {
+      "rubric": "Menses too early",
+      "remedies": ["Calc", "Bell", "Nux-v", "Psor", "Sulph"]
+    },
+    {
+      "rubric": "Menses too late",
+      "remedies": ["Sep", "Puls", "Graph", "Sil", "Nat-m"]
+    },
+    {
+      "rubric": "Menses scanty",
+      "remedies": ["Puls", "Sep", "Con", "Nat-m", "Ferr"]
+    },
+    {
+      "rubric": "Menses profuse",
+      "remedies": ["Bell", "Calc", "Ipecac", "Sabin", "Secale"]
+    },
+    {
+      "rubric": "Menses suppressed (amenorrhea)",
+      "remedies": ["Puls", "Sep", "Lach", "Graph", "Nat-m"]
+    },
+    {
+      "rubric": "Menses painful (dysmenorrhea)",
+      "remedies": ["Mag-p", "Cham", "Coloc", "Bell", "Lach"]
+    },
+    {
+      "rubric": "Menses irregular",
+      "remedies": ["Sep", "Puls", "Calc", "Lach", "Nat-m"]
+    },
+    {
+      "rubric": "Menses offensive odor",
+      "remedies": ["Psor", "Med", "Kreos", "Sulph", "Lach"]
+    },
+    {
+      "rubric": "Menses dark / clotted",
+      "remedies": ["Lach", "Croc", "Cycl", "Ign", "Sep"]
+    },
+    {
+      "rubric": "Menses bright red",
+      "remedies": ["Bell", "Ipecac", "Sabin"]
+    },
+    {
+      "rubric": "Menses aggravate all complaints",
+      "remedies": ["Lach", "Actea", "Xer", "Ign", "Med"]
+    },
+    {
+      "rubric": "Complaints better during menses",
+      "remedies": ["Tub", "Zinc", "Med", "Kali-c"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Pulsatilla, Sepia, and Natrum mur are the leading remedies for late, scanty or suppressed menses.",
+      "confirmatoryRemedies": ["Puls", "Sep", "Nat-m"]
+    },
+    {
+      "description": "Lachesis typically has dark, offensive, clotted menses that aggravate all complaints.",
+      "confirmatoryRemedies": ["Lach"]
+    },
+    {
+      "description": "Belladonna and Sabina show profuse, bright red bleeding with cramps.",
+      "confirmatoryRemedies": ["Bell", "Sabin"]
+    },
+    {
+      "description": "Mag phos and Chamomilla are useful in painful menses better from heat and pressure.",
+      "confirmatoryRemedies": ["Mag-p", "Cham"]
+    },
+    {
+      "description": "Medorrhinum and Psorinum are often used when menses are offensive, irregular, or suppress other conditions.",
+      "confirmatoryRemedies": ["Med", "Psor"]
+    }
+  ]
+}
+{
+  "category": "Generals – Fever Modalities",
+  "rubrics": [
+    {
+      "rubric": "Fever with thirst",
+      "remedies": ["Acon", "Bry", "Nux-v", "Ars", "Phos"]
+    },
+    {
+      "rubric": "Fever without thirst",
+      "remedies": ["Puls", "Gels", "Ant-t", "Ferr-p"]
+    },
+    {
+      "rubric": "Fever with chilliness",
+      "remedies": ["Ars", "Nux-v", "Ign", "Sil"]
+    },
+    {
+      "rubric": "Fever with sweating (profuse)",
+      "remedies": ["Merc", "Chin", "Sulph", "Ferr-p"]
+    },
+    {
+      "rubric": "Fever with delirium",
+      "remedies": ["Bell", "Stram", "Hyos", "Zinc", "Verat"]
+    },
+    {
+      "rubric": "Fever periodic (recurring at regular intervals)",
+      "remedies": ["Chin", "Nat-m", "Ars", "Carb-v"]
+    },
+    {
+      "rubric": "Fever worse at night",
+      "remedies": ["Ars", "Merc", "Sulph", "Phos"]
+    },
+    {
+      "rubric": "Fever with bone pains",
+      "remedies": ["Eup-per", "Rhus-t", "Bry", "China"]
+    },
+    {
+      "rubric": "Fever with restlessness",
+      "remedies": ["Acon", "Ars", "Rhus-t", "Bell"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Pulsatilla is a classic remedy for fever without thirst, especially in children.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Arsenicum has fever with intense chilliness, restlessness, and thirst for sips.",
+      "confirmatoryRemedies": ["Ars"]
+    },
+    {
+      "description": "Belladonna and Stramonium show high fever with delirium and red face.",
+      "confirmatoryRemedies": ["Bell", "Stram"]
+    },
+    {
+      "description": "China (Chin) is known for periodic fever with profuse sweating and weakness.",
+      "confirmatoryRemedies": ["Chin"]
+    },
+    {
+      "description": "Eupatorium perfoliatum has fever with intense bone pains and chill before fever.",
+      "confirmatoryRemedies": ["Eup-per"]
+    }
+  ]
+}
+{
+  "category": "Generals – Perspiration / Sweat Modalities",
+  "rubrics": [
+    {
+      "rubric": "Sweat profuse at night",
+      "remedies": ["Sil", "Merc", "Calc", "Tub", "Phos"]
+    },
+    {
+      "rubric": "Sweat with slightest exertion",
+      "remedies": ["Merc", "Chin", "Phos", "Nat-m"]
+    },
+    {
+      "rubric": "Sweat offensive odor",
+      "remedies": ["Sulph", "Psor", "Sil", "Hepar"]
+    },
+    {
+      "rubric": "Sweat on head (especially in sleep)",
+      "remedies": ["Calc", "Sil", "Sanic", "Baryta-c"]
+    },
+    {
+      "rubric": "Sweat stains yellow",
+      "remedies": ["Chin", "Nat-m", "Nit-ac", "Sulph"]
+    },
+    {
+      "rubric": "Sweat during sleep",
+      "remedies": ["Calc", "Sil", "Merc", "Phos-ac"]
+    },
+    {
+      "rubric": "Sweat after acute diseases (exhausting)",
+      "remedies": ["Chin", "Carb-v", "Phos-ac", "Sulph"]
+    },
+    {
+      "rubric": "Sweat absent during fever",
+      "remedies": ["Bell", "Gels", "Bry", "Apis"]
+    },
+    {
+      "rubric": "Sweat only on upper part of body",
+      "remedies": ["Lach", "Phos", "Thuja"]
+    },
+    {
+      "rubric": "Sweat only on lower part of body",
+      "remedies": ["Sep", "Calc", "Am-m"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Calcarea and Silicea are well known for head sweat during sleep, especially in children.",
+      "confirmatoryRemedies": ["Calc", "Sil"]
+    },
+    {
+      "description": "Mercurius has offensive, profuse sweat even from slight exertion.",
+      "confirmatoryRemedies": ["Merc"]
+    },
+    {
+      "description": "Sulphur and Psorinum have strong body odor and offensive sweating patterns.",
+      "confirmatoryRemedies": ["Sulph", "Psor"]
+    },
+    {
+      "description": "Chin and Phos-ac are key in debilitating, exhaustive sweating after acute illness.",
+      "confirmatoryRemedies": ["Chin", "Phos-ac"]
+    },
+    {
+      "description": "Sweat pattern localization (upper/lower body) is key in remedy selection – e.g., Lach, Sep, Thuja.",
+      "confirmatoryRemedies": ["Lach", "Sep"]
+    }
+  ]
+}
+{
+  "category": "Generals – Chill Modalities",
+  "rubrics": [
+    {
+      "rubric": "Chilliness with thirst",
+      "remedies": ["Ars", "Nux-v", "Bry", "Acon"]
+    },
+    {
+      "rubric": "Chilliness without thirst",
+      "remedies": ["Puls", "Gels", "Ant-t", "Ign"]
+    },
+    {
+      "rubric": "Chilliness after uncovering",
+      "remedies": ["Hepar", "Sil", "Nux-v", "Calc"]
+    },
+    {
+      "rubric": "Chill with gooseflesh",
+      "remedies": ["Dulc", "Camph", "Ant-t", "Psor"]
+    },
+    {
+      "rubric": "Chill worse in open air",
+      "remedies": ["Nux-v", "Sil", "Calc", "Ars"]
+    },
+    {
+      "rubric": "Chill ameliorated by warm drinks",
+      "remedies": ["Ars", "Rhus-t", "Nux-v"]
+    },
+    {
+      "rubric": "Chill during urination",
+      "remedies": ["Phos", "Sep", "Nat-m"]
+    },
+    {
+      "rubric": "Chill in single parts (localized chills)",
+      "remedies": ["Ign", "Calc", "Sulph", "Kali-c"]
+    },
+    {
+      "rubric": "Chill begins in back",
+      "remedies": ["Rhus-t", "Eup-per", "Ars", "Gels"]
+    },
+    {
+      "rubric": "Chill alternating with heat",
+      "remedies": ["Chin", "Bell", "Ign", "Ars"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Pulsatilla and Gelsemium are commonly indicated in chilliness without thirst, worse in closed room.",
+      "confirmatoryRemedies": ["Puls", "Gels"]
+    },
+    {
+      "description": "Nux vomica shows chilliness from uncovering, worse in open air, better by warmth.",
+      "confirmatoryRemedies": ["Nux-v"]
+    },
+    {
+      "description": "Arsenicum chills often start with intense thirst, anxiety, and restlessness.",
+      "confirmatoryRemedies": ["Ars"]
+    },
+    {
+      "description": "Eupatorium perfoliatum shows chills starting in the back with bone pain, followed by fever.",
+      "confirmatoryRemedies": ["Eup-per"]
+    },
+    {
+      "description": "Hepar sulph and Silicea are very sensitive to draft and uncovering.",
+      "confirmatoryRemedies": ["Hepar", "Sil"]
+    }
+  ]
+}
+{
+  "category": "Generals – Heat Modalities",
+  "rubrics": [
+    {
+      "rubric": "Heat with thirst",
+      "remedies": ["Bry", "Acon", "Ars", "Bell", "Phos"]
+    },
+    {
+      "rubric": "Heat without thirst",
+      "remedies": ["Puls", "Gels", "Ant-t", "Apis"]
+    },
+    {
+      "rubric": "Heat with anxiety and restlessness",
+      "remedies": ["Ars", "Acon", "Bell", "Rhus-t"]
+    },
+    {
+      "rubric": "Heat with red face",
+      "remedies": ["Bell", "Stram", "Ferr-p", "Acon"]
+    },
+    {
+      "rubric": "Heat with desire to uncover",
+      "remedies": ["Sulph", "Sec", "Camph", "Bell"]
+    },
+    {
+      "rubric": "Heat worse from covering",
+      "remedies": ["Sulph", "Apis", "Bell", "Camph"]
+    },
+    {
+      "rubric": "Heat in flushes (menopausal, sudden)",
+      "remedies": ["Lach", "Sep", "Sanguin", "Amyl-n", "Glon"]
+    },
+    {
+      "rubric": "Heat alternating with chill",
+      "remedies": ["Chin", "Ign", "Ars", "Bell"]
+    },
+    {
+      "rubric": "Burning heat in palms/soles",
+      "remedies": ["Sulph", "Phos", "Med", "Kali-carb"]
+    },
+    {
+      "rubric": "Heat with desire for fanning or fresh air",
+      "remedies": ["Puls", "Carb-v", "Lach", "Iod"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Belladonna has intense heat with red face, throbbing pulse, and desire to uncover.",
+      "confirmatoryRemedies": ["Bell"]
+    },
+    {
+      "description": "Sulphur and Apis have strong aggravation from heat and coverings.",
+      "confirmatoryRemedies": ["Sulph", "Apis"]
+    },
+    {
+      "description": "Lachesis, Sepia, and Glonoinum are indicated in flushes of heat during menopause.",
+      "confirmatoryRemedies": ["Lach", "Sep", "Glon"]
+    },
+    {
+      "description": "Arsenicum and Aconitum combine heat with anxiety, restlessness, and thirst for sips.",
+      "confirmatoryRemedies": ["Ars", "Acon"]
+    },
+    {
+      "description": "Pulsatilla has heat without thirst, wants fresh air and fanning.",
+      "confirmatoryRemedies": ["Puls"]
+    }
+  ]
+}
+{
+  "category": "Skin – Sensations and Modalities",
+  "rubrics": [
+    {
+      "rubric": "Itching, worse from heat or warmth",
+      "remedies": ["Sulph", "Psor", "Hepar", "Petrol"]
+    },
+    {
+      "rubric": "Itching, better by scratching",
+      "remedies": ["Sulph", "Graph", "Psor", "Lyc"]
+    },
+    {
+      "rubric": "Itching, worse after scratching",
+      "remedies": ["Apis", "Ant-c", "Graph", "Urt-u"]
+    },
+    {
+      "rubric": "Burning sensation on skin",
+      "remedies": ["Ars", "Canth", "Sulph", "Rhus-t"]
+    },
+    {
+      "rubric": "Formication (sensation of ants crawling)",
+      "remedies": ["Agar", "Zinc", "Sulph", "Lach"]
+    },
+    {
+      "rubric": "Tingling sensation",
+      "remedies": ["Phos", "Zinc", "Acon", "Ars"]
+    },
+    {
+      "rubric": "Numbness of skin",
+      "remedies": ["Plb", "Phos", "Acon", "Zinc"]
+    },
+    {
+      "rubric": "Skin eruptions with oozing",
+      "remedies": ["Graph", "Rhus-t", "Petrol", "Mez"]
+    },
+    {
+      "rubric": "Eruptions worse in winter",
+      "remedies": ["Petrol", "Graph", "Psor", "Dulc"]
+    },
+    {
+      "rubric": "Eruptions worse in summer",
+      "remedies": ["Nat-m", "Sulph", "Ant-c", "Urt-u"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Sulphur, Graphites, and Psorinum are top remedies for intense itching, better by scratching but worse later.",
+      "confirmatoryRemedies": ["Sulph", "Graph", "Psor"]
+    },
+    {
+      "description": "Formication is a hallmark of Agaricus and Zincum with nervous origin.",
+      "confirmatoryRemedies": ["Agar", "Zinc"]
+    },
+    {
+      "description": "Petroleum and Graphites are indicated for dry, cracked, oozing skin worse in winter.",
+      "confirmatoryRemedies": ["Petrol", "Graph"]
+    },
+    {
+      "description": "Burning skin with restlessness and anxiety – think Arsenicum and Rhus tox.",
+      "confirmatoryRemedies": ["Ars", "Rhus-t"]
+    },
+    {
+      "description": "Ant crudum and Urtica urens often cover summer-aggravated itching and rashes.",
+      "confirmatoryRemedies": ["Ant-c", "Urt-u"]
+    }
+  ]
+}
+{
+  "category": "Discharges – Color, Odor, Consistency",
+  "rubrics": [
+    {
+      "rubric": "Discharges – yellow, thick",
+      "remedies": ["Puls", "Kali-s", "Merc", "Calc"]
+    },
+    {
+      "rubric": "Discharges – greenish, acrid",
+      "remedies": ["Merc", "Thuja", "Nit-ac", "Med"]
+    },
+    {
+      "rubric": "Discharges – bloody",
+      "remedies": ["Ham", "Phos", "Kreos", "Ferr"]
+    },
+    {
+      "rubric": "Discharges – offensive, putrid",
+      "remedies": ["Psor", "Sil", "Carb-an", "Kreos"]
+    },
+    {
+      "rubric": "Discharges – milky, bland",
+      "remedies": ["Calc", "Puls", "Borx", "Sep"]
+    },
+    {
+      "rubric": "Discharges – ropy, stringy",
+      "remedies": ["Kali-bi", "Hydr", "Crot-t", "Phos"]
+    },
+    {
+      "rubric": "Discharges – watery, excoriating",
+      "remedies": ["Ars", "Rhus-t", "Merc", "Sulph"]
+    },
+    {
+      "rubric": "Discharges – thick, white",
+      "remedies": ["Borx", "Calc", "Nat-m", "Sep"]
+    },
+    {
+      "rubric": "Discharges – cheesy or curd-like",
+      "remedies": ["Kreos", "Sep", "Calc", "Med"]
+    },
+    {
+      "rubric": "Discharges – staining linen yellow or green",
+      "remedies": ["Merc", "Kali-s", "Psor", "Nit-ac"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Mercurius and Kreosotum are known for acrid, offensive, greenish discharges.",
+      "confirmatoryRemedies": ["Merc", "Kreos"]
+    },
+    {
+      "description": "Kali bichromicum produces stringy, ropy mucus from any orifice.",
+      "confirmatoryRemedies": ["Kali-bi"]
+    },
+    {
+      "description": "Calcarea and Pulsatilla cover bland, thick, white or milky discharges especially in children and females.",
+      "confirmatoryRemedies": ["Calc", "Puls"]
+    },
+    {
+      "description": "Hamamelis and Phosphorus suit bleeding discharges with bright blood.",
+      "confirmatoryRemedies": ["Ham", "Phos"]
+    },
+    {
+      "description": "Psorinum and Silicea are top for horribly offensive, long-standing discharges.",
+      "confirmatoryRemedies": ["Psor", "Sil"]
+    }
+  ]
+}
+{
+  "category": "Urine – Odor, Color, Sediment",
+  "rubrics": [
+    {
+      "rubric": "Urine – offensive odor",
+      "remedies": ["Berb-v", "Nit-ac", "Benzoic acid", "Kreos"]
+    },
+    {
+      "rubric": "Urine – ammoniacal odor",
+      "remedies": ["Benzoic acid", "Chimaph", "Sars", "Nit-ac"]
+    },
+    {
+      "rubric": "Urine – fishy odor",
+      "remedies": ["Med", "Merc-c", "Sep"]
+    },
+    {
+      "rubric": "Urine – dark brown or black",
+      "remedies": ["Nit-ac", "Ars", "Sec", "Crot-h"]
+    },
+    {
+      "rubric": "Urine – red, bloody",
+      "remedies": ["Ham", "Tereb", "Canth", "Phos"]
+    },
+    {
+      "rubric": "Urine – milky or cloudy",
+      "remedies": ["Sars", "Calc", "Ph-ac", "Cann-s"]
+    },
+    {
+      "rubric": "Urine – contains thick white sediment",
+      "remedies": ["Lyc", "Sep", "Sars", "Calc"]
+    },
+    {
+      "rubric": "Urine – brick-dust sediment",
+      "remedies": ["Lyc", "Sars", "Caust", "Colch"]
+    },
+    {
+      "rubric": "Urine – greenish",
+      "remedies": ["Chel", "Berb-v", "Canth"]
+    },
+    {
+      "rubric": "Urine – very scanty and high colored",
+      "remedies": ["Apis", "Nit-ac", "Phos-ac", "Ars"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Benzoic acid and Nitric acid cover highly offensive, strong-smelling urine with sediment.",
+      "confirmatoryRemedies": ["Benzoic acid", "Nit-ac"]
+    },
+    {
+      "description": "Lycopodium and Sarsaparilla are key for thick, white or red brick-dust sediment in urine.",
+      "confirmatoryRemedies": ["Lyc", "Sars"]
+    },
+    {
+      "description": "Hamamelis and Terebinthina are classic for hematuria (bloody urine).",
+      "confirmatoryRemedies": ["Ham", "Tereb"]
+    },
+    {
+      "description": "Sepia, Medorrhinum, and Merc cor suit fishy, putrid urine often linked with vaginal discharge or STIs.",
+      "confirmatoryRemedies": ["Sep", "Med", "Merc-c"]
+    },
+    {
+      "description": "Apis and Arsenicum are suited for dark, scanty, burning urine with restlessness.",
+      "confirmatoryRemedies": ["Apis", "Ars"]
+    }
+  ]
+}
+{
+  "category": "Cravings – Non-food / Strange Substances",
+  "rubrics": [
+    {
+      "rubric": "Craving – chalk, lime, pencils",
+      "remedies": ["Calc", "Alum", "Sil", "Phos"]
+    },
+    {
+      "rubric": "Craving – clay, earth, mud",
+      "remedies": ["Alum", "Cina", "Nat-m", "Psor"]
+    },
+    {
+      "rubric": "Craving – soap",
+      "remedies": ["Alum", "Pica", "Sil", "Calc"]
+    },
+    {
+      "rubric": "Craving – coal, charcoal",
+      "remedies": ["Carb-v", "Sil", "Pica", "Nat-c"]
+    },
+    {
+      "rubric": "Craving – paper, rags, wool",
+      "remedies": ["Pica", "Alum", "Calc", "Stram"]
+    },
+    {
+      "rubric": "Craving – hair, thread, string",
+      "remedies": ["Stram", "Alum", "Pica"]
+    },
+    {
+      "rubric": "Craving – sand",
+      "remedies": ["Alum", "Pica", "Sil"]
+    },
+    {
+      "rubric": "Craving – raw rice or uncooked grains",
+      "remedies": ["Calc", "Alum", "Sil", "Cina"]
+    },
+    {
+      "rubric": "Craving – urine or to drink own urine",
+      "remedies": ["Stram", "Med", "Syph"]
+    },
+    {
+      "rubric": "Craving – disgusting things (filth, feces, garbage)",
+      "remedies": ["Syph", "Med", "Stram", "Verat"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Calcarea and Alumina commonly show desire for chalk, pencils, or clay – classic pica symptoms in anemia.",
+      "confirmatoryRemedies": ["Calc", "Alum"]
+    },
+    {
+      "description": "Pica is a nosode and remedy name associated with strange cravings including soap, paper, rags.",
+      "confirmatoryRemedies": ["Pica"]
+    },
+    {
+      "description": "Stramonium and Syphilinum cover darkest forms of cravings, such as for urine, feces, or filth.",
+      "confirmatoryRemedies": ["Stram", "Syph"]
+    },
+    {
+      "description": "Silicea, Cina, and Alumina also cover dirt/earth cravings, especially in children or women with nutrient deficiencies.",
+      "confirmatoryRemedies": ["Sil", "Cina", "Alum"]
+    }
+  ]
+}
+{
+  "category": "Food – Aggravations and Ameliorations",
+  "rubrics": [
+    {
+      "rubric": "Aggravation from milk",
+      "remedies": ["Aeth", "Calc", "Mag-m", "Nat-c"]
+    },
+    {
+      "rubric": "Aggravation from eggs",
+      "remedies": ["Calc", "Sulph", "Nat-c", "Nux-v"]
+    },
+    {
+      "rubric": "Aggravation from fats, rich food",
+      "remedies": ["Puls", "Iod", "Carb-v", "Nux-v"]
+    },
+    {
+      "rubric": "Aggravation from cold drinks",
+      "remedies": ["Ars", "Phos", "Lach", "Bry"]
+    },
+    {
+      "rubric": "Aggravation from fruits",
+      "remedies": ["Ant-c", "Ars", "Nat-c", "Ferr"]
+    },
+    {
+      "rubric": "Aggravation from cabbage, beans, etc.",
+      "remedies": ["Coloc", "China", "Lyc", "Carb-v"]
+    },
+    {
+      "rubric": "Aggravation from farinaceous food (bread, rice, etc.)",
+      "remedies": ["Nat-m", "Calc", "Sil", "Alum"]
+    },
+    {
+      "rubric": "Amelioration from warm drinks",
+      "remedies": ["Ars", "Lyc", "Phos", "Nux-v"]
+    },
+    {
+      "rubric": "Amelioration from eating",
+      "remedies": ["Anac", "Chel", "Ign", "Lyc"]
+    },
+    {
+      "rubric": "Amelioration from sour things (pickles, vinegar, lemon)",
+      "remedies": ["Sep", "Ant-c", "Nat-m", "Ipec"]
+    },
+    {
+      "rubric": "Aggravation from ice cream",
+      "remedies": ["Phos", "Sulph", "Calc", "Bry"]
+    },
+    {
+      "rubric": "Amelioration from cold food and drinks",
+      "remedies": ["Phos", "Puls", "Verat", "Lach"]
+    },
+    {
+      "rubric": "Aggravation from spicy food",
+      "remedies": ["Sulph", "Nux-v", "Nat-m", "Phos"]
+    },
+    {
+      "rubric": "Aggravation from meat",
+      "remedies": ["Puls", "Nit-ac", "Carb-v", "Kali-c"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Pulsatilla is aggravated by rich, fatty foods and meat, yet desires them.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Phosphorus and Veratrum album prefer cold drinks and ice cream which often relieve symptoms.",
+      "confirmatoryRemedies": ["Phos", "Verat"]
+    },
+    {
+      "description": "Arsenicum is worse from fruits and cold drinks, but better with warmth.",
+      "confirmatoryRemedies": ["Ars"]
+    },
+    {
+      "description": "Natrum carbonicum and Calcarea are frequently aggravated by milk and eggs.",
+      "confirmatoryRemedies": ["Nat-c", "Calc"]
+    },
+    {
+      "description": "Lycopodium is better after warm drinks and food, and worse from beans or farinaceous food.",
+      "confirmatoryRemedies": ["Lyc"]
+    }
+  ]
+}
+{
+  "category": "Sleep – Positions, Time Modalities, Disturbances",
+  "rubrics": [
+    {
+      "rubric": "Sleep – on abdomen",
+      "remedies": ["Med", "Puls", "Sulph", "Phos"]
+    },
+    {
+      "rubric": "Sleep – on back",
+      "remedies": ["Phos", "Kali-c", "Lyc", "Sulph"]
+    },
+    {
+      "rubric": "Sleep – on side (right/left specific)",
+      "remedies": ["Lyc (right)", "Phos (left)", "Sep"]
+    },
+    {
+      "rubric": "Sleep – knees drawn up",
+      "remedies": ["Coloc", "Calc", "Puls", "Zinc"]
+    },
+    {
+      "rubric": "Sleep – arms over head",
+      "remedies": ["Sulph", "Lach", "Phos", "Med"]
+    },
+    {
+      "rubric": "Sleep – disturbed at 2–3 a.m.",
+      "remedies": ["Sulph", "Ars", "Lach", "Nux-v"]
+    },
+    {
+      "rubric": "Sleep – disturbed after midnight",
+      "remedies": ["Ars", "Lach", "Sulph", "Phos"]
+    },
+    {
+      "rubric": "Sleep – falls asleep late despite tiredness",
+      "remedies": ["Nux-v", "Coffea", "Ign", "Sulph"]
+    },
+    {
+      "rubric": "Sleep – unrefreshing",
+      "remedies": ["Phos-ac", "Nux-v", "Sulph", "Calc"]
+    },
+    {
+      "rubric": "Sleep – feels drowsy all day, sleepless at night",
+      "remedies": ["Nux-v", "Sulph", "Phos", "Kali-ph"]
+    },
+    {
+      "rubric": "Sleep – aggravation before midnight",
+      "remedies": ["Sulph", "Nux-v", "Coffea"]
+    },
+    {
+      "rubric": "Sleep – talking or groaning in sleep",
+      "remedies": ["Stram", "Bell", "Sulph", "Phos"]
+    },
+    {
+      "rubric": "Sleep – sleep-walking (somnambulism)",
+      "remedies": ["Kali-br", "Phos", "Stram", "Sil"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Sulphur has many sleep modalities – arms overhead, worse after midnight, talking in sleep, and waking at 2–3 a.m.",
+      "confirmatoryRemedies": ["Sulph"]
+    },
+    {
+      "description": "Nux vomica – trouble falling asleep, sleeps late despite fatigue, drowsy in day and sleepless at night.",
+      "confirmatoryRemedies": ["Nux-v"]
+    },
+    {
+      "description": "Phosphorus prefers left side, has unrefreshing sleep, and may talk in sleep or wake late.",
+      "confirmatoryRemedies": ["Phos"]
+    },
+    {
+      "description": "Stramonium and Belladonna are notable for night terrors, talking/groaning, and somnambulism.",
+      "confirmatoryRemedies": ["Stram", "Bell"]
+    },
+    {
+      "description": "Kali carbonicum shows marked aggravation on back, and may also wake early or feel unrefreshed.",
+      "confirmatoryRemedies": ["Kali-c"]
+    }
+  ]
+}
+{
+  "category": "Dreams and Nightmares",
+  "rubrics": [
+    {
+      "rubric": "Dreams – of falling",
+      "remedies": ["Calc", "Sulph", "Op", "Phos"]
+    },
+    {
+      "rubric": "Dreams – of being pursued or chased",
+      "remedies": ["Stram", "Bell", "Lyc", "Nat-m"]
+    },
+    {
+      "rubric": "Dreams – of death",
+      "remedies": ["Acon", "Ars", "Lach", "Kali-c"]
+    },
+    {
+      "rubric": "Dreams – of snakes",
+      "remedies": ["Lach", "Sulph", "Phos", "Arg-n"]
+    },
+    {
+      "rubric": "Dreams – of robbers, murderers, danger",
+      "remedies": ["Bell", "Stram", "Hyos", "Acon"]
+    },
+    {
+      "rubric": "Dreams – vivid, can recall in detail",
+      "remedies": ["Phos", "Sulph", "Kali-p", "Cann-i"]
+    },
+    {
+      "rubric": "Dreams – frightful, wakes terrified",
+      "remedies": ["Stram", "Bell", "Op", "Acon"]
+    },
+    {
+      "rubric": "Dreams – anxious, restless sleep",
+      "remedies": ["Ars", "Nux-v", "Ign", "Kali-c"]
+    },
+    {
+      "rubric": "Dreams – of animals (dogs, lions, etc.)",
+      "remedies": ["Stram", "Lach", "Bell", "Lyss"]
+    },
+    {
+      "rubric": "Dreams – of flying",
+      "remedies": ["Phos", "Cann-i", "Lach", "Op"]
+    },
+    {
+      "rubric": "Dreams – erotic/sexual",
+      "remedies": ["Lyc", "Phos", "Agn", "Graph"]
+    },
+    {
+      "rubric": "Dreams – of urinating/defecating",
+      "remedies": ["Sep", "Caust", "Sulph", "Nat-m"]
+    },
+    {
+      "rubric": "Dreams – prophetic or symbolic",
+      "remedies": ["Lach", "Phos", "Cann-i", "Med"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Stramonium and Belladonna show intense, frightening dreams – chased, murdered, animals, night terrors.",
+      "confirmatoryRemedies": ["Stram", "Bell"]
+    },
+    {
+      "description": "Phosphorus often has vivid, flying or erotic dreams, can recall in detail.",
+      "confirmatoryRemedies": ["Phos"]
+    },
+    {
+      "description": "Lachesis dreams of snakes, symbolic or prophetic events, and sometimes erotic content.",
+      "confirmatoryRemedies": ["Lach"]
+    },
+    {
+      "description": "Opium and Aconite show frightful dreams with sudden waking in terror.",
+      "confirmatoryRemedies": ["Op", "Acon"]
+    },
+    {
+      "description": "Cannabis indica has vivid, colorful, symbolic and sometimes prophetic dreams.",
+      "confirmatoryRemedies": ["Cann-i"]
+    }
+  ]
+}
+{
+  "category": "Discharges – Color, Odor, Consistency",
+  "rubrics": [
+    {
+      "rubric": "Discharges – acrid, excoriating",
+      "remedies": ["Ars", "Med", "Merc", "Sulph"]
+    },
+    {
+      "rubric": "Discharges – bland, non-irritating",
+      "remedies": ["Puls", "Calc", "Sep", "Sil"]
+    },
+    {
+      "rubric": "Discharges – thick, yellow-green",
+      "remedies": ["Kali-s", "Puls", "Hep", "Merc"]
+    },
+    {
+      "rubric": "Discharges – offensive, putrid odor",
+      "remedies": ["Psor", "Merc", "Carb-an", "Sil"]
+    },
+    {
+      "rubric": "Discharges – fishy smell",
+      "remedies": ["Sep", "Nit-ac", "Med", "Lyc"]
+    },
+    {
+      "rubric": "Discharges – watery, profuse",
+      "remedies": ["Nat-m", "Phos-ac", "Sil", "Rhus-t"]
+    },
+    {
+      "rubric": "Discharges – stringy, ropy",
+      "remedies": ["Kali-bi", "Hydr", "Crot-h", "Gels"]
+    },
+    {
+      "rubric": "Discharges – white, milky",
+      "remedies": ["Calc", "Borx", "Nat-m", "Sep"]
+    },
+    {
+      "rubric": "Discharges – bloody or brownish",
+      "remedies": ["Kreos", "Lach", "Phos", "Nit-ac"]
+    },
+    {
+      "rubric": "Discharges – greenish",
+      "remedies": ["Merc", "Puls", "Nit-ac", "Thuja"]
+    },
+    {
+      "rubric": "Discharges – tenacious, sticky",
+      "remedies": ["Kali-bi", "Graph", "Hydr", "Merc"]
+    },
+    {
+      "rubric": "Discharges – cheese-like smell",
+      "remedies": ["Borx", "Kreos", "Sep", "Merc"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Pulsatilla and Calcarea often have bland, thick white or yellowish discharges, non-excoriating.",
+      "confirmatoryRemedies": ["Puls", "Calc"]
+    },
+    {
+      "description": "Arsenicum, Mercurius and Sulphur show acrid, excoriating, and offensive discharges.",
+      "confirmatoryRemedies": ["Ars", "Merc", "Sulph"]
+    },
+    {
+      "description": "Kali bichromicum has thick, ropy, stringy, sticky and tenacious yellow discharges.",
+      "confirmatoryRemedies": ["Kali-bi"]
+    },
+    {
+      "description": "Sepia and Nitric acid are known for fishy-smelling or cheese-like offensive discharges.",
+      "confirmatoryRemedies": ["Sep", "Nit-ac"]
+    },
+    {
+      "description": "Phosphorus and Kreosote have bloody, watery, or brown discharges, sometimes offensive.",
+      "confirmatoryRemedies": ["Phos", "Kreos"]
+    }
+  ]
+}
+{
+  "category": "Thermal State – Chilliness vs Warmth",
+  "rubrics": [
+    {
+      "rubric": "Chilly patient – always wants warmth",
+      "remedies": ["Sil", "Psor", "Calc", "Ars", "Sep"]
+    },
+    {
+      "rubric": "Chilly – aggravated by cold air or cold bath",
+      "remedies": ["Sil", "Ars", "Nux-v", "Rhus-t"]
+    },
+    {
+      "rubric": "Chilly – yet worse from overheating",
+      "remedies": ["Sulph", "Nux-v", "Ign"]
+    },
+    {
+      "rubric": "Chilly – wants head and feet covered",
+      "remedies": ["Sil", "Calc", "Sep"]
+    },
+    {
+      "rubric": "Chilly – worse uncovering even a part",
+      "remedies": ["Psor", "Ars", "Sil"]
+    },
+    {
+      "rubric": "Hot patient – cannot tolerate heat",
+      "remedies": ["Sulph", "Lach", "Puls", "Med"]
+    },
+    {
+      "rubric": "Hot – worse in sun, summer, warm room",
+      "remedies": ["Sulph", "Glon", "Nat-m", "Lach"]
+    },
+    {
+      "rubric": "Hot – desires open air, cool breeze",
+      "remedies": ["Puls", "Lyc", "Phos", "Sulph"]
+    },
+    {
+      "rubric": "Hot – sleeps uncovered",
+      "remedies": ["Sulph", "Med", "Lach", "Phos"]
+    },
+    {
+      "rubric": "Hot – aggravated by warm food or drink",
+      "remedies": ["Lach", "Sulph", "Puls"]
+    },
+    {
+      "rubric": "Thermals – changeable (alternating hot and cold)",
+      "remedies": ["Ign", "Phos", "Merc", "Sep"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Silicea and Psorinum are extremely chilly – want full covering, worse uncovering, need warmth always.",
+      "confirmatoryRemedies": ["Sil", "Psor"]
+    },
+    {
+      "description": "Sulphur, Lachesis, and Pulsatilla are classic hot patients – worse from heat, crave open air, sleep uncovered.",
+      "confirmatoryRemedies": ["Sulph", "Lach", "Puls"]
+    },
+    {
+      "description": "Nux vomica and Ignatia show contradictions – chilly yet worse from heat or overheating.",
+      "confirmatoryRemedies": ["Nux-v", "Ign"]
+    },
+    {
+      "description": "Phosphorus shows changeable thermal state – hot but can be chilly, needs open air but worse from draft.",
+      "confirmatoryRemedies": ["Phos"]
+    },
+    {
+      "description": "Calcarea carbonica is chilly but may sweat easily – especially on head, and wants warmth to sleep.",
+      "confirmatoryRemedies": ["Calc"]
+    }
+  ]
+}
+{
+  "category": "Sensitivities – Touch, Light, Sound, Odors",
+  "rubrics": [
+    {
+      "rubric": "Sensitive – to touch",
+      "remedies": ["Cham", "China", "Nux-v", "Hepar", "Sil"]
+    },
+    {
+      "rubric": "Sensitive – to noise",
+      "remedies": ["Bell", "Coff", "Nux-v", "Ign", "China"]
+    },
+    {
+      "rubric": "Sensitive – to light",
+      "remedies": ["Bell", "Glon", "Nat-m", "Phos", "Sulph"]
+    },
+    {
+      "rubric": "Sensitive – to odors",
+      "remedies": ["Colch", "Phos", "Sep", "Lyc", "Puls"]
+    },
+    {
+      "rubric": "Sensitive – to music (causes weeping, emotions)",
+      "remedies": ["Nat-m", "Ign", "Phos", "Puls"]
+    },
+    {
+      "rubric": "Sensitive – to vibration or jar",
+      "remedies": ["Bry", "Bell", "Hepar", "Nux-v"]
+    },
+    {
+      "rubric": "Sensitive – to pressure (clothes, tight band)",
+      "remedies": ["Lach", "Carb-v", "Bry", "Apis"]
+    },
+    {
+      "rubric": "Sensitive – to being looked at or spoken to",
+      "remedies": ["Ign", "Nat-m", "Carc", "Sil"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Nux vomica, Chamomilla, and Hepar are highly sensitive to touch and noise – irritable, angry type.",
+      "confirmatoryRemedies": ["Nux-v", "Cham", "Hepar"]
+    },
+    {
+      "description": "Belladonna shows extreme photophobia and noise sensitivity, especially in acute conditions.",
+      "confirmatoryRemedies": ["Bell"]
+    },
+    {
+      "description": "Natrum mur and Phosphorus are emotionally sensitive – to music, odors, touch.",
+      "confirmatoryRemedies": ["Nat-m", "Phos"]
+    },
+    {
+      "description": "Lachesis cannot bear pressure – hates tight clothes or bands, especially around neck or abdomen.",
+      "confirmatoryRemedies": ["Lach"]
+    },
+    {
+      "description": "Ignatia and Carcinosin are emotionally hypersensitive – dislike being looked at or spoken to.",
+      "confirmatoryRemedies": ["Ign", "Carc"]
+    }
+  ]
+}
+{
+  "category": "Weather Modalities",
+  "rubrics": [
+    {
+      "rubric": "Aggravation from cold, dry weather",
+      "remedies": ["Bry", "Acon", "Caust", "Nux-v"]
+    },
+    {
+      "rubric": "Aggravation from cold, damp weather",
+      "remedies": ["Rhus-t", "Dulc", "Calc", "Nat-s"]
+    },
+    {
+      "rubric": "Aggravation from hot, dry weather",
+      "remedies": ["Bell", "Glon", "Lach", "Sulph"]
+    },
+    {
+      "rubric": "Aggravation from hot, humid weather",
+      "remedies": ["Ant-c", "Nat-c", "Carb-v", "Ipec"]
+    },
+    {
+      "rubric": "Aggravation from sudden change of weather",
+      "remedies": ["Hep", "Merc", "Phos", "Sil"]
+    },
+    {
+      "rubric": "Aggravation before storm / thunderstorm",
+      "remedies": ["Phos", "Rhod", "Nat-c", "Sil"]
+    },
+    {
+      "rubric": "Aggravation in cloudy, overcast weather",
+      "remedies": ["Nat-m", "Ign", "Aur", "Sep"]
+    },
+    {
+      "rubric": "Aggravation in windy weather",
+      "remedies": ["Rhus-t", "Phos", "Sep", "Calc"]
+    },
+    {
+      "rubric": "Amelioration in open air",
+      "remedies": ["Puls", "Lyc", "Sulph", "Phos"]
+    },
+    {
+      "rubric": "Aggravation in open air",
+      "remedies": ["Nux-v", "Hepar", "Ars", "Coccul"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Rhus tox and Dulcamara are worse in cold damp weather; common in joint, back, and skin complaints.",
+      "confirmatoryRemedies": ["Rhus-t", "Dulc"]
+    },
+    {
+      "description": "Phosphorus and Silicea are weather-sensitive – worse before storms or during atmospheric changes.",
+      "confirmatoryRemedies": ["Phos", "Sil"]
+    },
+    {
+      "description": "Pulsatilla and Sulphur feel better in open air, while Nux vomica and Hepar are aggravated by it.",
+      "confirmatoryRemedies": ["Puls", "Sulph", "Nux-v", "Hepar"]
+    },
+    {
+      "description": "Natrum mur and Ignatia worsen in gloomy, cloudy, or overcast weather – affecting mood and energy.",
+      "confirmatoryRemedies": ["Nat-m", "Ign"]
+    },
+    {
+      "description": "Belladonna and Glonoinum are very heat-sensitive – aggravated in hot, dry sun and heat stroke-like states.",
+      "confirmatoryRemedies": ["Bell", "Glon"]
+    }
+  ]
+}
+{
+  "category": "Sweat – Time, Location, Odor, Nature",
+  "rubrics": [
+    {
+      "rubric": "Sweat – profuse at night",
+      "remedies": ["Phos", "Sil", "China", "Merc", "Calc"]
+    },
+    {
+      "rubric": "Sweat – during sleep, but not when awake",
+      "remedies": ["Sil", "Kali-c", "Sanic", "China"]
+    },
+    {
+      "rubric": "Sweat – only on head",
+      "remedies": ["Calc", "Sil", "Merc", "Sanic"]
+    },
+    {
+      "rubric": "Sweat – only on face",
+      "remedies": ["Bry", "Lyc", "Sep", "Puls"]
+    },
+    {
+      "rubric": "Sweat – on hands and feet",
+      "remedies": ["Sil", "Calc", "Baryt-c", "Nat-m"]
+    },
+    {
+      "rubric": "Sweat – offensive, strong odor",
+      "remedies": ["Sil", "Sulph", "Merc", "Graph"]
+    },
+    {
+      "rubric": "Sweat – staining linen yellow or brown",
+      "remedies": ["Merc", "Sulph", "Chin-s", "Psor"]
+    },
+    {
+      "rubric": "Sweat – cold, clammy",
+      "remedies": ["Verat", "Carb-v", "Camph", "Tab"]
+    },
+    {
+      "rubric": "Sweat – oily or sticky",
+      "remedies": ["Sil", "Phos", "Thuja", "Graph"]
+    },
+    {
+      "rubric": "Sweat – from slightest exertion",
+      "remedies": ["Phos", "China", "Calc", "Carb-v"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Silicea and Calcarea carbonica sweat on head, feet, and at night – useful in children and weak constitutions.",
+      "confirmatoryRemedies": ["Sil", "Calc"]
+    },
+    {
+      "description": "Phosphorus and China show weakness from slight exertion with sweating – night sweats common.",
+      "confirmatoryRemedies": ["Phos", "China"]
+    },
+    {
+      "description": "Mercurius has offensive sweat that stains linen – with general weakness and salivation.",
+      "confirmatoryRemedies": ["Merc"]
+    },
+    {
+      "description": "Veratrum and Carbo veg show cold, clammy sweat – especially during collapse or shock states.",
+      "confirmatoryRemedies": ["Verat", "Carb-v"]
+    },
+    {
+      "description": "Graphites and Thuja show sticky, oily sweat – often on genitals or flexures.",
+      "confirmatoryRemedies": ["Graph", "Thuja"]
+    }
+  ]
+}
+{
+  "category": "Time Modalities – Aggravation & Amelioration",
+  "rubrics": [
+    {
+      "rubric": "Aggravation – morning (on waking, early hours)",
+      "remedies": ["Nux-v", "Sulph", "Puls", "Lyc"]
+    },
+    {
+      "rubric": "Aggravation – forenoon",
+      "remedies": ["Sep", "Sulph", "Lyc", "Kali-c"]
+    },
+    {
+      "rubric": "Aggravation – afternoon",
+      "remedies": ["Apis", "Staph", "Lach", "Phos"]
+    },
+    {
+      "rubric": "Aggravation – evening",
+      "remedies": ["Puls", "Rhus-t", "Sulph", "Phos"]
+    },
+    {
+      "rubric": "Aggravation – night (before midnight)",
+      "remedies": ["Ars", "Rhus-t", "Sulph", "Cham"]
+    },
+    {
+      "rubric": "Aggravation – after midnight",
+      "remedies": ["Ars", "Merc", "Phos", "Kali-c"]
+    },
+    {
+      "rubric": "Aggravation – 2–3 a.m.",
+      "remedies": ["Ars", "Kali-c", "Nat-s", "China"]
+    },
+    {
+      "rubric": "Aggravation – 4–5 p.m.",
+      "remedies": ["Lyc", "Bell", "Apis", "Glon"]
+    },
+    {
+      "rubric": "Amelioration – at night",
+      "remedies": ["Bry", "Nux-v", "Gels"]
+    },
+    {
+      "rubric": "Amelioration – in morning",
+      "remedies": ["Sep", "Nat-m", "Sil"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Nux vomica and Sulphur are typically worse in the early morning hours – irritable and sluggish.",
+      "confirmatoryRemedies": ["Nux-v", "Sulph"]
+    },
+    {
+      "description": "Arsenicum and Kali carbonicum have aggravation after midnight, especially around 2–3 a.m.",
+      "confirmatoryRemedies": ["Ars", "Kali-c"]
+    },
+    {
+      "description": "Lycopodium has marked aggravation from 4–8 p.m., with gas, weakness, and irritability.",
+      "confirmatoryRemedies": ["Lyc"]
+    },
+    {
+      "description": "Pulsatilla and Rhus tox worsen in the evening and night, but Pulsatilla often improves in open air.",
+      "confirmatoryRemedies": ["Puls", "Rhus-t"]
+    },
+    {
+      "description": "Sepia and Natrum mur feel better in the morning, worse in forenoon or evening.",
+      "confirmatoryRemedies": ["Sep", "Nat-m"]
+    }
+  ]
+}
+{
+  "category": "Fever & Chill Modalities",
+  "rubrics": [
+    {
+      "rubric": "Chill begins in back",
+      "remedies": ["Gels", "Eup-per", "Nux-v", "Ars"]
+    },
+    {
+      "rubric": "Chill begins in extremities",
+      "remedies": ["Ars", "Bell", "Rhus-t", "Verat"]
+    },
+    {
+      "rubric": "Chill without thirst",
+      "remedies": ["Puls", "Gels", "Ign", "Dulc"]
+    },
+    {
+      "rubric": "Chill with intense thirst",
+      "remedies": ["Ars", "Bry", "China", "Eup-per"]
+    },
+    {
+      "rubric": "Chill worse by uncovering",
+      "remedies": ["Nux-v", "Ars", "Sil", "Dulc"]
+    },
+    {
+      "rubric": "Chill ameliorated by warm drinks",
+      "remedies": ["Ars", "Nux-v", "China"]
+    },
+    {
+      "rubric": "Fever with intense restlessness",
+      "remedies": ["Ars", "Acon", "Rhus-t"]
+    },
+    {
+      "rubric": "Fever with drowsiness",
+      "remedies": ["Gels", "Op", "Bapt", "Nux-m"]
+    },
+    {
+      "rubric": "Fever with great thirst",
+      "remedies": ["Bry", "Ars", "China"]
+    },
+    {
+      "rubric": "Fever with no thirst",
+      "remedies": ["Puls", "Gels", "Ign"]
+    },
+    {
+      "rubric": "Sweat during fever stage",
+      "remedies": ["Chin-s", "Gels", "Merc"]
+    },
+    {
+      "rubric": "Fever worse at night",
+      "remedies": ["Ars", "Rhus-t", "Cham", "Bell"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Arsenicum has chill beginning in extremities, thirst, restlessness, and desire for warmth.",
+      "confirmatoryRemedies": ["Ars"]
+    },
+    {
+      "description": "Gelsemium chills start in back, no thirst, with drowsiness and dullness.",
+      "confirmatoryRemedies": ["Gels"]
+    },
+    {
+      "description": "Pulsatilla and Ignatia have chill or fever with no thirst – common in mild fevers.",
+      "confirmatoryRemedies": ["Puls", "Ign"]
+    },
+    {
+      "description": "Bryonia and Eupatorium have high fever with intense body pain and great thirst.",
+      "confirmatoryRemedies": ["Bry", "Eup-per"]
+    },
+    {
+      "description": "China and Nux vomica are suited in malarial fevers with chills and weakness after sweating.",
+      "confirmatoryRemedies": ["China", "Nux-v"]
+    }
+  ]
+}
+{
+  "category": "Food Modalities & Digestion",
+  "rubrics": [
+    {
+      "rubric": "Aggravation after eating even small quantities",
+      "remedies": ["Lyc", "Nux-v", "Sep", "China"]
+    },
+    {
+      "rubric": "Aggravation after fatty or rich food",
+      "remedies": ["Puls", "Nux-v", "Ant-c", "Ipec"]
+    },
+    {
+      "rubric": "Aggravation after fruit or sour food",
+      "remedies": ["Ant-c", "Ars", "Bry", "Nat-s"]
+    },
+    {
+      "rubric": "Aggravation after cold drinks or ice cream",
+      "remedies": ["Phos", "Bry", "Sil", "Ars"]
+    },
+    {
+      "rubric": "Aggravation after milk",
+      "remedies": ["Calc", "Sep", "Mag-m", "Aeth"]
+    },
+    {
+      "rubric": "Amelioration after eating",
+      "remedies": ["Ign", "Anac", "Petroleum", "Lob"]
+    },
+    {
+      "rubric": "Desire for warm food/drink",
+      "remedies": ["Ars", "Nux-v", "Lyc", "Phos"]
+    },
+    {
+      "rubric": "Desire for cold food/drink",
+      "remedies": ["Phos", "Sulph", "Puls", "Verat"]
+    },
+    {
+      "rubric": "Flatulence and bloating after meals",
+      "remedies": ["Lyc", "Carb-v", "China", "Coloc"]
+    },
+    {
+      "rubric": "Eructations – sour or offensive",
+      "remedies": ["Ant-c", "Carb-v", "Nux-v", "Lyc"]
+    },
+    {
+      "rubric": "Heartburn after meals",
+      "remedies": ["Nux-v", "Robin", "Ars", "Carb-v"]
+    },
+    {
+      "rubric": "Nausea after eating",
+      "remedies": ["Ipec", "Sep", "Nux-v", "Ant-c"]
+    },
+    {
+      "rubric": "Empty feeling in stomach not better by eating",
+      "remedies": ["Sep", "Ign", "Petroleum", "Sulph"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Lycopodium has bloating, flatulence, and aggravation after small quantities – especially dinner.",
+      "confirmatoryRemedies": ["Lyc"]
+    },
+    {
+      "description": "Pulsatilla, Ant crudum, and Nux vomica aggravate after fatty, rich, or spicy foods.",
+      "confirmatoryRemedies": ["Puls", "Nux-v", "Ant-c"]
+    },
+    {
+      "description": "Sepia and Calcarea show intolerance to milk and nausea after eating.",
+      "confirmatoryRemedies": ["Sep", "Calc"]
+    },
+    {
+      "description": "Phosphorus and Sulphur prefer cold drinks but are often aggravated by them.",
+      "confirmatoryRemedies": ["Phos", "Sulph"]
+    },
+    {
+      "description": "Ignatia and Anacardium improve after eating – also indicated in emotional suppression with hunger pangs.",
+      "confirmatoryRemedies": ["Ign", "Anac"]
+    }
+  ]
+}
+{
+  "category": "Menses Modalities",
+  "rubrics": [
+    {
+      "rubric": "Menses too early",
+      "remedies": ["Calc", "Nux-v", "Bell", "Sulph"]
+    },
+    {
+      "rubric": "Menses too late",
+      "remedies": ["Sep", "Puls", "Sil", "Graph"]
+    },
+    {
+      "rubric": "Menses scanty",
+      "remedies": ["Sep", "Puls", "Sil", "Nat-m"]
+    },
+    {
+      "rubric": "Menses profuse",
+      "remedies": ["Bell", "Calc", "Phos", "Sabin"]
+    },
+    {
+      "rubric": "Menses irregular",
+      "remedies": ["Puls", "Sep", "Graph", "Cycl"]
+    },
+    {
+      "rubric": "Pain before menses",
+      "remedies": ["Lach", "Cimic", "Sep", "Bell"]
+    },
+    {
+      "rubric": "Pain during menses",
+      "remedies": ["Mag-p", "Cham", "Cimic", "Coloc"]
+    },
+    {
+      "rubric": "Pain after menses",
+      "remedies": ["Puls", "Graph", "Kali-c"]
+    },
+    {
+      "rubric": "Menses with clots",
+      "remedies": ["Sabin", "Bell", "Calc", "Lach"]
+    },
+    {
+      "rubric": "Menses offensive odor",
+      "remedies": ["Cham", "Lach", "Sulph", "Sep"]
+    },
+    {
+      "rubric": "Menses suppressed from emotions",
+      "remedies": ["Ign", "Puls", "Sep", "Nat-m"]
+    },
+    {
+      "rubric": "Menses dark or black",
+      "remedies": ["Lach", "Croc", "Sep", "Sulph"]
+    },
+    {
+      "rubric": "Menses bright red",
+      "remedies": ["Bell", "Phos", "Sabin", "Ferr"]
+    },
+    {
+      "rubric": "Menses painful and late",
+      "remedies": ["Sep", "Sil", "Puls", "Graph"]
+    },
+    {
+      "rubric": "Menses aggravates all complaints",
+      "remedies": ["Lach", "Sep", "Kali-c"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Pulsatilla is key in late, scanty, changeable menses with emotional sensitivity.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Sepia has irregular menses, bearing down pains, and emotional indifference.",
+      "confirmatoryRemedies": ["Sep"]
+    },
+    {
+      "description": "Lachesis often has dark, offensive, profuse flow worse before menses.",
+      "confirmatoryRemedies": ["Lach"]
+    },
+    {
+      "description": "Belladonna and Sabina suit bright red or clotty menses with cramping pain.",
+      "confirmatoryRemedies": ["Bell", "Sabin"]
+    },
+    {
+      "description": "Silicea and Graphites help painful, delayed, or suppressed menstruation with weakness.",
+      "confirmatoryRemedies": ["Sil", "Graph"]
+    }
+  ]
+}
+{
+  "category": "Discharges – Odor, Color, Consistency",
+  "rubrics": [
+    {
+      "rubric": "Discharges offensive/foul smelling",
+      "remedies": ["Merc", "Psor", "Kreos", "Lach", "Sulph"]
+    },
+    {
+      "rubric": "Discharges bland (non-irritating)",
+      "remedies": ["Puls", "Calc", "Borax", "Nat-m"]
+    },
+    {
+      "rubric": "Discharges acrid, excoriating",
+      "remedies": ["Kreos", "Ars", "Med", "Merc"]
+    },
+    {
+      "rubric": "Discharges yellow",
+      "remedies": ["Kali-bi", "Nat-s", "Sulph", "Merc"]
+    },
+    {
+      "rubric": "Discharges green",
+      "remedies": ["Kreos", "Merc", "Sep", "Med"]
+    },
+    {
+      "rubric": "Discharges thick and sticky",
+      "remedies": ["Kali-bi", "Calc", "Sil", "Borax"]
+    },
+    {
+      "rubric": "Discharges thin and watery",
+      "remedies": ["Nat-m", "Phos-ac", "Sep", "Kali-i"]
+    },
+    {
+      "rubric": "Discharges white, milky",
+      "remedies": ["Borax", "Calc", "Puls", "Sep"]
+    },
+    {
+      "rubric": "Discharges blood-stained",
+      "remedies": ["Kreos", "Merc", "Sabin", "Lach"]
+    },
+    {
+      "rubric": "Discharges with fishy odor",
+      "remedies": ["Med", "Kreos", "Psor", "Sulph"]
+    },
+    {
+      "rubric": "Discharges with itching",
+      "remedies": ["Sep", "Sulph", "Graph", "Borax"]
+    },
+    {
+      "rubric": "Discharges worse at night",
+      "remedies": ["Merc", "Sulph", "Psor", "Kali-bi"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Kreosote is top for acrid, bloody, fishy, and green discharges that cause soreness.",
+      "confirmatoryRemedies": ["Kreos"]
+    },
+    {
+      "description": "Pulsatilla has bland, white, creamy, non-irritating discharges that often change character.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Sepia has thin, yellow-green, offensive or fishy discharges with marked itching.",
+      "confirmatoryRemedies": ["Sep"]
+    },
+    {
+      "description": "Mercurius and Medorrhinum cover foul, excoriating, green or yellow discharge with odor.",
+      "confirmatoryRemedies": ["Merc", "Med"]
+    },
+    {
+      "description": "Borax and Calcarea suit thick, white or sticky discharges in children and mild adults.",
+      "confirmatoryRemedies": ["Borax", "Calc"]
+    }
+  ]
+}
+{
+  "category": "Dreams – Thematic Categories",
+  "rubrics": [
+    {
+      "rubric": "Dreams of falling",
+      "remedies": ["Sulph", "Calc", "Op", "Puls"]
+    },
+    {
+      "rubric": "Dreams of being chased",
+      "remedies": ["Stram", "Bell", "Kali-br", "Lyss"]
+    },
+    {
+      "rubric": "Dreams of death",
+      "remedies": ["Ars", "Ign", "Lach", "Sep"]
+    },
+    {
+      "rubric": "Dreams of snakes",
+      "remedies": ["Lach", "Arg-n", "Phos", "Crot-h"]
+    },
+    {
+      "rubric": "Dreams of water or drowning",
+      "remedies": ["Sil", "Kali-br", "Nat-m", "Calc"]
+    },
+    {
+      "rubric": "Dreams of flying",
+      "remedies": ["Phos", "Op", "Puls", "Sulph"]
+    },
+    {
+      "rubric": "Dreams of fire",
+      "remedies": ["Stram", "Phos", "Sulph", "Bell"]
+    },
+    {
+      "rubric": "Dreams of robbers or thieves",
+      "remedies": ["Calc", "Lyc", "Ars", "Nux-v"]
+    },
+    {
+      "rubric": "Dreams of exams or failure",
+      "remedies": ["Anac", "Sil", "Arg-n", "Lyc"]
+    },
+    {
+      "rubric": "Dreams of loved ones dying",
+      "remedies": ["Ign", "Nat-m", "Phos", "Sep"]
+    },
+    {
+      "rubric": "Dreams of sexual content",
+      "remedies": ["Phos", "Lach", "Med", "Sulph"]
+    },
+    {
+      "rubric": "Dreams of animals",
+      "remedies": ["Stram", "Lyc", "Calc", "Sep"]
+    },
+    {
+      "rubric": "Dreams of ghosts or supernatural",
+      "remedies": ["Stram", "Calc", "Op", "Phos"]
+    },
+    {
+      "rubric": "Dreams of quarrels or anger",
+      "remedies": ["Nux-v", "Staph", "Cham", "Coloc"]
+    },
+    {
+      "rubric": "Dreams of being trapped",
+      "remedies": ["Stram", "Bell", "Lach", "Hyos"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Stramonium often has vivid, fearful dreams of darkness, ghosts, and being pursued.",
+      "confirmatoryRemedies": ["Stram"]
+    },
+    {
+      "description": "Lachesis and Phosphorus frequently dream of snakes, death, or sexual themes.",
+      "confirmatoryRemedies": ["Lach", "Phos"]
+    },
+    {
+      "description": "Silicea and Argentum-nitricum are key in performance anxiety dreams (exams, failure).",
+      "confirmatoryRemedies": ["Sil", "Arg-n"]
+    },
+    {
+      "description": "Sulphur and Pulsatilla often dream of falling or flying – symbolic of insecurity or freedom.",
+      "confirmatoryRemedies": ["Sulph", "Puls"]
+    },
+    {
+      "description": "Ignatia and Natrum mur reflect suppressed grief in dreams of death or loved ones lost.",
+      "confirmatoryRemedies": ["Ign", "Nat-m"]
+    }
+  ]
+}
+{
+  "category": "Modalities – Weather, Light, Sound, Environment",
+  "rubrics": [
+    {
+      "rubric": "Aggravation from cold weather",
+      "remedies": ["Rhus-t", "Sil", "Calc", "Caust", "Hepar"]
+    },
+    {
+      "rubric": "Aggravation from hot weather",
+      "remedies": ["Glon", "Lach", "Nat-m", "Sulph"]
+    },
+    {
+      "rubric": "Aggravation in damp/humid weather",
+      "remedies": ["Dulc", "Rhus-t", "Nat-s", "Kali-s"]
+    },
+    {
+      "rubric": "Aggravation before or during a storm",
+      "remedies": ["Phos", "Rhod", "Sil", "Arg-n"]
+    },
+    {
+      "rubric": "Aggravation in cloudy, overcast weather",
+      "remedies": ["Nat-c", "Phos", "Calc", "Ign"]
+    },
+    {
+      "rubric": "Aggravation from change of weather",
+      "remedies": ["Merc", "Rhus-t", "Bry", "Dulc"]
+    },
+    {
+      "rubric": "Aggravation from wind",
+      "remedies": ["Hepar", "Sil", "Caust", "Nux-v"]
+    },
+    {
+      "rubric": "Aggravation from bright light",
+      "remedies": ["Bell", "Glon", "Nat-c", "Iris"]
+    },
+    {
+      "rubric": "Aggravation from noise",
+      "remedies": ["Nux-v", "Bell", "Kali-br", "Ign"]
+    },
+    {
+      "rubric": "Aggravation from strong odors",
+      "remedies": ["Sep", "Colch", "Bell", "Lyc"]
+    },
+    {
+      "rubric": "Aggravation from artificial light",
+      "remedies": ["Nat-c", "Phos", "Iris", "Glon"]
+    },
+    {
+      "rubric": "Aggravation from crowded places",
+      "remedies": ["Arg-n", "Lyc", "Carc", "Puls"]
+    },
+    {
+      "rubric": "Aggravation from closed room",
+      "remedies": ["Puls", "Carbo-v", "Lach", "Sulph"]
+    },
+    {
+      "rubric": "Amelioration in open air",
+      "remedies": ["Puls", "Sulph", "Lach", "Carbo-v"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Rhus tox and Dulcamara are top for aggravation in damp or rainy weather.",
+      "confirmatoryRemedies": ["Rhus-t", "Dulc"]
+    },
+    {
+      "description": "Natrum carbonicum and Phosphorus are highly sensitive to cloudy weather and light changes.",
+      "confirmatoryRemedies": ["Nat-c", "Phos"]
+    },
+    {
+      "description": "Belladonna, Nux vomica, and Glonoine react intensely to light, sound, or odors.",
+      "confirmatoryRemedies": ["Bell", "Nux-v", "Glon"]
+    },
+    {
+      "description": "Pulsatilla is generally better in open air and worse in warm, stuffy rooms.",
+      "confirmatoryRemedies": ["Puls"]
+    },
+    {
+      "description": "Argentum nitricum and Lycopodium dislike crowded places or anticipation of environmental triggers.",
+      "confirmatoryRemedies": ["Arg-n", "Lyc"]
+    }
+  ]
+}
+{
+  "category": "Sleep – Position, Time, Disturbances",
+  "rubrics": [
+    { "rubric": "Sleep – position – on abdomen", "remedies": ["Med", "Puls", "Calc", "Sulph"] },
+    { "rubric": "Sleep – position – on back", "remedies": ["Lyc", "Ars", "Phos", "Nux-m"] },
+    { "rubric": "Sleep – position – on side (left/right)", "remedies": ["Phos" ,"Sulph", "Bry", "Ign"] },
+    { "rubric": "Sleep – position – knees drawn up", "remedies": ["Coloc", "Mag-p", "Sulph"] },
+    { "rubric": "Sleep – position – hands over head", "remedies": ["Sulph", "Med", "Calc"] },
+
+    { "rubric": "Sleep – time – disturbed after midnight", "remedies": ["Ars", "Lyc", "Nux-v", "Kali-c"] },
+    { "rubric": "Sleep – time – disturbed before midnight", "remedies": ["Puls", "Sulph", "Phos"] },
+    { "rubric": "Sleep – time – disturbed at 3 a.m.", "remedies": ["Ars", "Kali-c", "Lach"] },
+    { "rubric": "Sleep – time – always wakes at same hour", "remedies": ["Sulph", "Nux-v", "Phos-ac"] },
+
+    { "rubric": "Sleep – disturbed by dreams", "remedies": ["Phos", "Lyc", "Nux-v", "Kali-br"] },
+    { "rubric": "Sleep – disturbed by noises", "remedies": ["Bell", "Cham", "Nux-v"] },
+    { "rubric": "Sleep – disturbed by heat", "remedies": ["Sulph", "Puls", "Lach"] },
+    { "rubric": "Sleep – disturbed by chilliness", "remedies": ["Ars", "Sil", "Nux-v"] },
+
+    { "rubric": "Sleep – too much sleep (hypersomnia)", "remedies": ["Phos-ac", "Nux-m", "Calc", "Sep"] },
+    { "rubric": "Sleep – too little sleep (insomnia)", "remedies": ["Coff", "Nux-v", "Ars", "Ign"] },
+    { "rubric": "Sleep – unrefreshing", "remedies": ["Phos-ac", "Sulph", "Kali-ph"] },
+    { "rubric": "Sleep – falling asleep difficult", "remedies": ["Coff", "Nux-v", "Op", "Zinc"] },
+    { "rubric": "Sleep – waking too early", "remedies": ["Sulph", "Lyc", "Kali-c"] }
+  ],
+  "keyPoints": [
+    { "description": "Sulphur is a leading remedy across all sleep modalities: heat, position, waking time, unrefreshing sleep.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Nux-v and Ars are major remedies for insomnia, disturbed sleep after midnight, and irritability.", "confirmatoryRemedies": ["Nux-v", "Ars"] },
+    { "description": "Coffea and Zincum cover difficulty falling asleep from mental activity or nervous excitation.", "confirmatoryRemedies": ["Coff", "Zinc"] },
+    { "description": "Phosphorus and Kali-carb commonly wake at 3 a.m. or same hour every night.", "confirmatoryRemedies": ["Phos", "Kali-c"] }
+  ]
+}
+{
+  "category": "Discharge Modalities – Color, Odor, Consistency, Modalities",
+  "rubrics": [
+    { "rubric": "Discharges – thick, yellow, bland", "remedies": ["Puls", "Kali-s", "Calc"] },
+    { "rubric": "Discharges – thick, yellow, acrid", "remedies": ["Graph", "Merc", "Sulph"] },
+    { "rubric": "Discharges – greenish, offensive", "remedies": ["Med", "Nit-ac", "Kreos"] },
+    { "rubric": "Discharges – blood-stained", "remedies": ["Ars", "Phos", "Sabin"] },
+    { "rubric": "Discharges – watery, irritating", "remedies": ["Ars", "Rhus-t", "Sulph"] },
+    { "rubric": "Discharges – white, milky, bland", "remedies": ["Calc", "Puls", "Borax"] },
+    { "rubric": "Discharges – gluey, sticky, ropy", "remedies": ["Kali-b", "Hydr", "Graph"] },
+    { "rubric": "Discharges – cheesy, foul-smelling", "remedies": ["Psor", "Mez", "Carc"] },
+    { "rubric": "Discharges – copious", "remedies": ["Nat-m", "Sulph", "Kali-m"] },
+    { "rubric": "Discharges – scanty", "remedies": ["Sep", "Nat-m", "Cycl"] },
+    { "rubric": "Discharges – excoriating", "remedies": ["Merc", "Kreos", "Sulph"] },
+    { "rubric": "Discharges – non-excoriating", "remedies": ["Puls", "Calc", "Borax"] },
+    { "rubric": "Discharges – offensive odor", "remedies": ["Psor", "Kreos", "Med"] },
+    { "rubric": "Discharges – fishy odor", "remedies": ["Kreos", "Med", "Sep"] },
+    { "rubric": "Discharges – during coition", "remedies": ["Sep", "Kreos", "Nit-ac"] },
+    { "rubric": "Discharges – worse at night", "remedies": ["Sil", "Sulph", "Med"] },
+    { "rubric": "Discharges – better by washing", "remedies": ["Borax", "Sulph", "Graph"] }
+  ],
+  "keyPoints": [
+    { "description": "Pulsatilla and Calcarea are useful for thick, bland, white/yellow discharges without irritation.", "confirmatoryRemedies": ["Puls", "Calc"] },
+    { "description": "Kreosote and Medorrhinum are strongly indicated for offensive, fishy, acrid discharges.", "confirmatoryRemedies": ["Kreos", "Med"] },
+    { "description": "Kali-bichrome and Hydrastis for sticky, ropy, stringy discharges especially from nose or cervix.", "confirmatoryRemedies": ["Kali-b", "Hydr"] },
+    { "description": "Mercurius and Sulphur for excoriating, yellow-greenish, burning discharges.", "confirmatoryRemedies": ["Merc", "Sulph"] }
+  ]
+}
+{
+  "category": "Menses-related Modalities",
+  "rubrics": [
+    { "rubric": "Menses – aggravated during menses", "remedies": ["Sep", "Lach", "Cycl", "Graph"] },
+    { "rubric": "Menses – symptoms before menses", "remedies": ["Puls", "Nat-m", "Sep", "Lach"] },
+    { "rubric": "Menses – symptoms during menses", "remedies": ["Cycl", "Lach", "Nux-v", "Kali-c"] },
+    { "rubric": "Menses – symptoms after menses", "remedies": ["Graph", "Puls", "Carc"] },
+
+    { "rubric": "Menses – suppressed menses with complaints", "remedies": ["Puls", "Lach", "Sep", "Calc"] },
+    { "rubric": "Menses – too early and profuse", "remedies": ["Bell", "Calc", "Nux-v"] },
+    { "rubric": "Menses – too late and scanty", "remedies": ["Sep", "Graph", "Puls", "Con"] },
+    { "rubric": "Menses – painful (dysmenorrhea)", "remedies": ["Mag-p", "Cham", "Coloc", "Cimic"] },
+
+    { "rubric": "Menses – offensive odor", "remedies": ["Kreos", "Med", "Sulph"] },
+    { "rubric": "Menses – clotted blood", "remedies": ["Sabin", "Kali-carb", "Bell"] },
+    { "rubric": "Menses – flow dark and thick", "remedies": ["Lach", "Kali-c", "Am-c"] },
+    { "rubric": "Menses – flow bright red and profuse", "remedies": ["Bell", "Sec", "Ipec"] },
+
+    { "rubric": "Menses – worse by motion", "remedies": ["Bry", "Cimic", "Bell"] },
+    { "rubric": "Menses – worse by standing or walking", "remedies": ["Cycl", "Sep", "Calc"] },
+    { "rubric": "Menses – better by bending forward or lying down", "remedies": ["Coloc", "Mag-p"] },
+    { "rubric": "Menses – worse by cold applications", "remedies": ["Cham", "Bell"] },
+    { "rubric": "Menses – better by heat", "remedies": ["Mag-p", "Cham", "Coloc"] }
+  ],
+  "keyPoints": [
+    { "description": "Sepia is a key remedy when symptoms are worse during or after menses, especially with pelvic heaviness.", "confirmatoryRemedies": ["Sep"] },
+    { "description": "Lachesis often has symptoms before or during menses, with intolerance to tight clothing and left-sided symptoms.", "confirmatoryRemedies": ["Lach"] },
+    { "description": "Pulsatilla is indicated for late, scanty, changeable flow, and better in open air.", "confirmatoryRemedies": ["Puls"] },
+    { "description": "Mag-phos and Colocynthis are top remedies for painful menses relieved by heat or pressure.", "confirmatoryRemedies": ["Mag-p", "Coloc"] }
+  ]
+}
+{
+  "category": "Rare Confirmatory Physical Generals",
+  "rubrics": [
+    { "rubric": "General – better in open air", "remedies": ["Puls", "Sulph", "Lyc"] },
+    { "rubric": "General – worse in open air", "remedies": ["Acon", "Hepar", "Psor"] },
+
+    { "rubric": "General – worse from touch (even light touch)", "remedies": ["Lach", "Cham", "China"] },
+    { "rubric": "General – better from pressure", "remedies": ["Coloc", "Mag-p", "Bry"] },
+    { "rubric": "General – worse from pressure", "remedies": ["Apis", "Bell", "Arn"] },
+
+    { "rubric": "General – worse from noise", "remedies": ["Nux-v", "Bell", "China"] },
+    { "rubric": "General – worse from light", "remedies": ["Glon", "Bell", "Nat-c"] },
+    { "rubric": "General – worse from odors", "remedies": ["Colch", "Ign", "Kali-bi"] },
+
+    { "rubric": "General – worse from jar, stepping, concussion", "remedies": ["Bell", "Bry", "Nux-v"] },
+    { "rubric": "General – worse lying on painful side", "remedies": ["Bry", "Chel", "Kali-c"] },
+    { "rubric": "General – better lying on painful side", "remedies": ["Coloc", "Mag-p", "Ipec"] },
+    { "rubric": "General – better bending forward", "remedies": ["Coloc", "Mag-p", "Iris"] },
+    { "rubric": "General – worse bending forward", "remedies": ["Sulph", "Phos", "Kali-bi"] },
+
+    { "rubric": "General – worse from tight clothing", "remedies": ["Lach", "Carc", "Sep"] },
+    { "rubric": "General – worse from uncovering", "remedies": ["Hepar", "Sil", "Psor"] },
+    { "rubric": "General – better from uncovering", "remedies": ["Sulph", "Puls", "Cham"] }
+  ],
+  "keyPoints": [
+    { "description": "Pulsatilla is a keynote for improvement in open air and intolerance to warm, closed rooms.", "confirmatoryRemedies": ["Puls"] },
+    { "description": "Colocynth and Mag-phos show marked relief from pressure and bending double in colic or neuralgic pains.", "confirmatoryRemedies": ["Coloc", "Mag-p"] },
+    { "description": "Lachesis is highly sensitive to touch and tight clothing, with worse from left side lying.", "confirmatoryRemedies": ["Lach"] },
+    { "description": "Hepar and Silicea are chilly, worse from uncovering or slightest exposure to cold.", "confirmatoryRemedies": ["Hepar", "Sil"] }
+  ]
+}
+

@@ -1,0 +1,696 @@
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    {
+      "rubric": "Eruptions – vesicular (blister-like)",
+      "remedies": ["Rhus-t", "Mez", "Canth", "Sulph"]
+    },
+    {
+      "rubric": "Eruptions – pustular (pus-filled)",
+      "remedies": ["Merc", "Hepar", "Sil", "Graph"]
+    },
+    {
+      "rubric": "Eruptions – dry and scaly",
+      "remedies": ["Ars", "Psor", "Sulph", "Petrol"]
+    },
+    {
+      "rubric": "Eruptions – moist and oozing",
+      "remedies": ["Graph", "Mez", "Rhus-t", "Calc"]
+    },
+    {
+      "rubric": "Eruptions – itching < night",
+      "remedies": ["Sulph", "Psor", "Merc", "Graph"]
+    },
+    {
+      "rubric": "Eruptions – itching < heat",
+      "remedies": ["Sulph", "Rhus-t", "Petrol", "Apis"]
+    },
+    {
+      "rubric": "Eruptions – itching > cold application",
+      "remedies": ["Apis", "Sulph", "Urt-u", "Mez"]
+    },
+    {
+      "rubric": "Eruptions – burning sensation",
+      "remedies": ["Ars", "Canth", "Sulph", "Mez"]
+    },
+    {
+      "rubric": "Eruptions – bleeding on scratching",
+      "remedies": ["Graph", "Psor", "Mez", "Sulph"]
+    },
+    {
+      "rubric": "Skin – cracks and fissures",
+      "remedies": ["Graph", "Petrol", "Sulph", "Nit-ac"]
+    },
+    {
+      "rubric": "Skin – thickened, indurated",
+      "remedies": ["Sil", "Calc-f", "Graph", "Thuja"]
+    },
+    {
+      "rubric": "Skin – ulcers with offensive discharge",
+      "remedies": ["Merc", "Hep", "Ars", "Sil"]
+    },
+    {
+      "rubric": "Skin – eczema < winter",
+      "remedies": ["Petrol", "Graph", "Psor", "Sulph"]
+    },
+    {
+      "rubric": "Skin – eczema > summer",
+      "remedies": ["Sulph", "Psor", "Calc", "Nat-m"]
+    },
+    {
+      "rubric": "Skin – warts",
+      "remedies": ["Thuja", "Caust", "Ant-c", "Nit-ac"]
+    }
+  ],
+  "keyPoints": [
+    {
+      "description": "Rhus tox and Mezereum are top for vesicular eruptions that itch and burn intensely.",
+      "confirmatoryRemedies": ["Rhus-t", "Mez"]
+    },
+    {
+      "description": "Graphites and Petroleum are excellent for cracked, oozing, or fissured skin, especially in cold weather.",
+      "confirmatoryRemedies": ["Graph", "Petrol"]
+    },
+    {
+      "description": "Sulphur is a master remedy for burning, itching, and offensive skin eruptions worse at night.",
+      "confirmatoryRemedies": ["Sulph"]
+    },
+    {
+      "description": "Thuja and Causticum are commonly used for various forms of warts, especially on hands or genitals.",
+      "confirmatoryRemedies": ["Thuja", "Caust"]
+    },
+    {
+      "description": "Psorinum is deep-acting in chronic eczema with dirty, offensive skin and severe night itching.",
+      "confirmatoryRemedies": ["Psor"]
+    }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Eruptions – vesicular (blister-like)", "remedies": ["Rhus-t", "Mez", "Canth", "Sulph"] },
+    { "rubric": "Eruptions – pustular (pus-filled)", "remedies": ["Merc", "Hepar", "Sil", "Graph"] },
+    { "rubric": "Eruptions – dry and scaly", "remedies": ["Ars", "Psor", "Sulph", "Petrol"] },
+    { "rubric": "Eruptions – moist and oozing", "remedies": ["Graph", "Mez", "Rhus-t", "Calc"] },
+    { "rubric": "Eruptions – itching < night", "remedies": ["Sulph", "Psor", "Merc", "Graph"] },
+    { "rubric": "Eruptions – itching < heat", "remedies": ["Sulph", "Rhus-t", "Petrol", "Apis"] },
+    { "rubric": "Eruptions – itching > cold application", "remedies": ["Apis", "Sulph", "Urt-u", "Mez"] },
+    { "rubric": "Eruptions – burning sensation", "remedies": ["Ars", "Canth", "Sulph", "Mez"] },
+    { "rubric": "Eruptions – bleeding on scratching", "remedies": ["Graph", "Psor", "Mez", "Sulph"] },
+    { "rubric": "Skin – cracks and fissures", "remedies": ["Graph", "Petrol", "Sulph", "Nit-ac"] },
+    { "rubric": "Skin – thickened, indurated", "remedies": ["Sil", "Calc-f", "Graph", "Thuja"] },
+    { "rubric": "Skin – ulcers with offensive discharge", "remedies": ["Merc", "Hep", "Ars", "Sil"] },
+    { "rubric": "Skin – eczema < winter", "remedies": ["Petrol", "Graph", "Psor", "Sulph"] },
+    { "rubric": "Skin – eczema > summer", "remedies": ["Sulph", "Psor", "Calc", "Nat-m"] },
+    { "rubric": "Skin – warts", "remedies": ["Thuja", "Caust", "Ant-c", "Nit-ac"] },
+
+    { "rubric": "Urticaria – from shellfish, allergic origin", "remedies": ["Urt-u", "Histaminum", "Nat-m", "Apis"] },
+    { "rubric": "Urticaria – itching, red raised wheals", "remedies": ["Apis", "Urt-u", "Dulc", "Rhus-t"] },
+    { "rubric": "Urticaria – < heat, > cold applications", "remedies": ["Apis", "Urt-u", "Mez", "Sulph"] },
+    { "rubric": "Urticaria – < emotional excitement", "remedies": ["Ign", "Nat-m", "Puls", "Sulph"] },
+    { "rubric": "Urticaria – < bathing or undressing", "remedies": ["Sulph", "Psor", "Rhus-t", "Urt-u"] },
+    { "rubric": "Urticaria – chronic, recurring at same time daily", "remedies": ["Urt-u", "Nat-m", "Sulph", "Kali-ar"] }
+  ],
+  "keyPoints": [
+    { "description": "Apis and Urtica urens are top for urticaria with intense burning, redness, and < heat.", "confirmatoryRemedies": ["Apis", "Urt-u"] },
+    { "description": "Urtica urens covers shellfish-related urticaria, red wheals, and recurring patterns.", "confirmatoryRemedies": ["Urt-u"] },
+    { "description": "Sulphur and Psorinum aggravate after bathing and in chronic itchy urticaria.", "confirmatoryRemedies": ["Sulph", "Psor"] },
+    { "description": "Ignatia and Natrum mur are helpful when urticaria is triggered by suppressed emotions.", "confirmatoryRemedies": ["Ign", "Nat-m"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Boils – recurrent, suppurative", "remedies": ["Hepar", "Sil", "Merc", "Echinacea"] },
+    { "rubric": "Boils – extremely painful, sensitive to touch", "remedies": ["Hepar", "Bell", "Ars", "Tarent"] },
+    { "rubric": "Boils – with tendency to form abscesses", "remedies": ["Sil", "Merc", "Calc-s", "Myristica"] },
+    { "rubric": "Boils – that discharge thin offensive pus", "remedies": ["Hep", "Merc", "Ars", "Sulph"] },
+    { "rubric": "Boils – that do not heal easily", "remedies": ["Sil", "Graph", "Fluor-ac", "Calc-f"] },
+    { "rubric": "Boils – aggravated during menstruation", "remedies": ["Puls", "Sep", "Kali-s", "Lach"] },
+    { "rubric": "Boils – on buttocks or thighs", "remedies": ["Echinacea", "Hep", "Tarent", "Sil"] },
+    { "rubric": "Boils – staphylococcal infections", "remedies": ["Pyrogen", "Echinacea", "Hep", "Tarent"] }
+  ],
+  "keyPoints": [
+    { "description": "Hepar sulph is highly sensitive to touch and helps hasten suppuration in boils.", "confirmatoryRemedies": ["Hepar"] },
+    { "description": "Silicea helps chronic boils and promotes expulsion of pus or foreign bodies.", "confirmatoryRemedies": ["Sil"] },
+    { "description": "Echinacea and Myristica are great for septic boils with poor healing.", "confirmatoryRemedies": ["Echinacea", "Myristica"] },
+    { "description": "Mercurius and Arsenicum work well for foul-smelling discharges and unhealthy skin.", "confirmatoryRemedies": ["Merc", "Ars"] },
+    { "description": "Boils recurring around menses point to Sepia or Pulsatilla.", "confirmatoryRemedies": ["Sep", "Puls"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Acne – face (forehead, cheeks, chin)", "remedies": ["Sil", "Kali-brom", "Hepar", "Sulph"] },
+    { "rubric": "Acne – during puberty", "remedies": ["Calc-p", "Kali-brom", "Puls", "Sulph"] },
+    { "rubric": "Acne – before or during menses", "remedies": ["Sep", "Puls", "Kali-carb", "Nat-m"] },
+    { "rubric": "Acne – pustular, painful, inflamed", "remedies": ["Hepar", "Sil", "Bell", "Merc"] },
+    { "rubric": "Acne – with oily skin and large pores", "remedies": ["Sulph", "Psor", "Nat-m", "Kali-brom"] },
+    { "rubric": "Acne – indurated, slow to heal", "remedies": ["Sil", "Calc-f", "Fluor-ac", "Graph"] },
+    { "rubric": "Acne – < sweets, fried food", "remedies": ["Sulph", "Nat-m", "Puls", "Ant-c"] },
+    { "rubric": "Acne – leaving scars or pits", "remedies": ["Sil", "Graph", "Thuja", "Fluor-ac"] }
+  ],
+  "keyPoints": [
+    { "description": "Kali bromatum is specific for adolescent acne with bluish-red pustules and scarring.", "confirmatoryRemedies": ["Kali-brom"] },
+    { "description": "Hepar sulph and Silicea are great for painful, pus-filled acne with tendency to form boils.", "confirmatoryRemedies": ["Hepar", "Sil"] },
+    { "description": "Sepia and Pulsatilla help acne related to hormonal changes during menses.", "confirmatoryRemedies": ["Sep", "Puls"] },
+    { "description": "Sulphur and Natrum mur are best when acne is oily, recurring, and worsened by sweets.", "confirmatoryRemedies": ["Sulph", "Nat-m"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Herpes – lips (herpes labialis)", "remedies": ["Nat-m", "Rhus-t", "Apis", "Mez"] },
+    { "rubric": "Herpes – genital (herpes genitalis)", "remedies": ["Nat-m", "Petrol", "Thuja", "Clem"] },
+    { "rubric": "Herpes – burning, stinging pain", "remedies": ["Ars", "Canth", "Mez", "Apis"] },
+    { "rubric": "Herpes – eruptions grouped in clusters", "remedies": ["Rhus-t", "Mez", "Nat-m", "Graph"] },
+    { "rubric": "Herpes – < during fever or menses", "remedies": ["Nat-m", "Sep", "Puls", "Rhus-t"] },
+    { "rubric": "Herpes – recurring in same spot", "remedies": ["Nat-m", "Rhus-t", "Sulph", "Graph"] },
+    { "rubric": "Herpes – < touch, > cold application", "remedies": ["Mez", "Apis", "Canth", "Ars"] },
+    { "rubric": "Herpes – with itching followed by burning", "remedies": ["Mez", "Rhus-t", "Sulph", "Canth"] }
+  ],
+  "keyPoints": [
+    { "description": "Natrum mur is a top remedy for recurring herpes labialis or genitalis, especially < sun or stress.", "confirmatoryRemedies": ["Nat-m"] },
+    { "description": "Mezereum is very effective in herpes with intense itching followed by burning, especially < touch.", "confirmatoryRemedies": ["Mez"] },
+    { "description": "Rhus tox is suited for herpes with clustered vesicles, especially when < damp weather or cold air.", "confirmatoryRemedies": ["Rhus-t"] },
+    { "description": "Arsenicum and Apis are indicated in herpes with burning, stinging pain and restlessness.", "confirmatoryRemedies": ["Ars", "Apis"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Eczema – dry, scaly, itchy", "remedies": ["Sulph", "Graph", "Psor", "Ars"] },
+    { "rubric": "Eczema – moist, oozing, crusty", "remedies": ["Graph", "Mez", "Calc", "Rhus-t"] },
+    { "rubric": "Eczema – < winter, cold dry weather", "remedies": ["Petrol", "Psor", "Sulph", "Graph"] },
+    { "rubric": "Eczema – < warmth of bed or bathing", "remedies": ["Sulph", "Psor", "Rhus-t", "Mez"] },
+    { "rubric": "Eczema – < milk (in children)", "remedies": ["Calc", "Sil", "Psor", "Lyc"] },
+    { "rubric": "Eczema – < night, < scratching", "remedies": ["Sulph", "Psor", "Mez", "Graph"] },
+    { "rubric": "Eczema – with intense itching, bleeding on scratching", "remedies": ["Mez", "Graph", "Psor", "Sulph"] },
+    { "rubric": "Eczema – behind ears (auricular)", "remedies": ["Graph", "Mez", "Calc", "Sil"] },
+    { "rubric": "Eczema – in bends of joints (antecubital, popliteal)", "remedies": ["Graph", "Petrol", "Calc", "Sulph"] }
+  ],
+  "keyPoints": [
+    { "description": "Graphites is suited for moist, crusty eczema, especially behind ears or joint folds.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Petroleum is key for eczema < winter, with painful cracks and extreme dryness.", "confirmatoryRemedies": ["Petrol"] },
+    { "description": "Sulphur is excellent for eczema with night itching and < bathing or warmth.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Psorinum covers dirty-looking skin, foul odor, and aggravation after scratching.", "confirmatoryRemedies": ["Psor"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Warts – hard, horny, rough", "remedies": ["Thuja", "Ant-c", "Caust", "Calc-f"] },
+    { "rubric": "Warts – flat, smooth", "remedies": ["Thuja", "Nat-m", "Caust", "Sabina"] },
+    { "rubric": "Warts – bleeding easily on touch", "remedies": ["Caust", "Nit-ac", "Thuja", "Cinnabaris"] },
+    { "rubric": "Warts – around nails (periungual)", "remedies": ["Caust", "Nit-ac", "Thuja", "Sil"] },
+    { "rubric": "Warts – genital (condylomata)", "remedies": ["Thuja", "Nit-ac", "Med", "Sabina"] },
+    { "rubric": "Warts – soft, pedunculated", "remedies": ["Thuja", "Nit-ac", "Caust", "Dulc"] },
+    { "rubric": "Warts – painful, stinging or burning", "remedies": ["Nit-ac", "Caust", "Thuja", "Cinnabaris"] },
+    { "rubric": "Warts – on face", "remedies": ["Thuja", "Ant-c", "Caust", "Nat-m"] },
+    { "rubric": "Warts – < during puberty or pregnancy", "remedies": ["Thuja", "Nit-ac", "Sabina", "Sep"] }
+  ],
+  "keyPoints": [
+    { "description": "Thuja is the most commonly indicated remedy in all types of warts, especially moist, cauliflower-like or genital.", "confirmatoryRemedies": ["Thuja"] },
+    { "description": "Nitric acid is indicated in warts that bleed easily, are sensitive and painful to touch.", "confirmatoryRemedies": ["Nit-ac"] },
+    { "description": "Causticum covers flat or pedunculated warts, especially around nails or that bleed on touch.", "confirmatoryRemedies": ["Caust"] },
+    { "description": "Sabina and Sepia are suited to warts arising or worsening during hormonal phases like pregnancy.", "confirmatoryRemedies": ["Sabina", "Sep"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Ringworm – circular patches with clear center", "remedies": ["Tellurium", "Sep", "Thuja", "Graph"] },
+    { "rubric": "Ringworm – < heat and sweating", "remedies": ["Tellurium", "Graph", "Sulph", "Sep"] },
+    { "rubric": "Ringworm – recurring despite treatment", "remedies": ["Sep", "Psor", "Tub", "Tellurium"] },
+    { "rubric": "Ringworm – with intense itching, < night", "remedies": ["Sulph", "Psor", "Tellurium", "Graph"] },
+    { "rubric": "Ringworm – scalp (tinea capitis)", "remedies": ["Tellurium", "Mez", "Sep", "Sil"] },
+    { "rubric": "Ringworm – in children", "remedies": ["Sep", "Sil", "Tellurium", "Psor"] },
+    { "rubric": "Ringworm – with offensive odor", "remedies": ["Tellurium", "Psor", "Sulph", "Mez"] },
+    { "rubric": "Ringworm – < bathing or scratching", "remedies": ["Tellurium", "Psor", "Sulph", "Graph"] }
+  ],
+  "keyPoints": [
+    { "description": "Tellurium is highly effective in circular ringworm with clear center and < heat/sweat.", "confirmatoryRemedies": ["Tellurium"] },
+    { "description": "Sepia suits chronic or recurring ringworm, especially on scalp or in children.", "confirmatoryRemedies": ["Sep"] },
+    { "description": "Psorinum is indicated in offensive-smelling, itchy, recurring fungal skin eruptions.", "confirmatoryRemedies": ["Psor"] },
+    { "description": "Graphites helps when ringworm coexists with eczema or crust formation.", "confirmatoryRemedies": ["Graph"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Psoriasis – thick, dry, silvery scales", "remedies": ["Ars", "Graph", "Mez", "Petrol"] },
+    { "rubric": "Psoriasis – < winter or cold weather", "remedies": ["Petrol", "Psor", "Graph", "Ars"] },
+    { "rubric": "Psoriasis – with intense itching and burning", "remedies": ["Ars", "Sulph", "Mez", "Psor"] },
+    { "rubric": "Psoriasis – < night, < warm bath", "remedies": ["Sulph", "Psor", "Petrol", "Mez"] },
+    { "rubric": "Psoriasis – bleeding on scratching", "remedies": ["Graph", "Mez", "Ars", "Sulph"] },
+    { "rubric": "Psoriasis – on scalp with dandruff", "remedies": ["Graph", "Mez", "Lyc", "Psor"] },
+    { "rubric": "Psoriasis – in folds of skin", "remedies": ["Graph", "Petrol", "Sep", "Mez"] },
+    { "rubric": "Psoriasis – < stress, < suppressed emotions", "remedies": ["Psor", "Nat-m", "Ars", "Sep"] },
+    { "rubric": "Psoriasis – < after vaccination or illness", "remedies": ["Thuja", "Sil", "Sulph", "Psor"] }
+  ],
+  "keyPoints": [
+    { "description": "Graphites is top for dry, cracked skin with thick scales and bleeding on scratching.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Arsenicum album covers burning, itching psoriasis with restlessness and < cold.", "confirmatoryRemedies": ["Ars"] },
+    { "description": "Petroleum suits dry psoriasis < winter, with painful cracks and < bathing.", "confirmatoryRemedies": ["Petrol"] },
+    { "description": "Psorinum works well for dirty-looking, offensive-smelling, chronic psoriasis < night.", "confirmatoryRemedies": ["Psor"] },
+    { "description": "Sulphur addresses itching, redness, scaling < heat and < bathing.", "confirmatoryRemedies": ["Sulph"] }
+  ]
+}{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Shingles – burning, stinging pain", "remedies": ["Mez", "Iris", "Rhus-t", "Ars"] },
+    { "rubric": "Shingles – right-sided eruption", "remedies": ["Lyc", "Rhus-t", "Apis", "Mez"] },
+    { "rubric": "Shingles – left-sided eruption", "remedies": ["Lach", "Thuja", "Spig", "Rhus-t"] },
+    { "rubric": "Shingles – with severe neuralgia post-eruption (post-herpetic)", "remedies": ["Mez", "Hyper", "Iris", "Ars"] },
+    { "rubric": "Shingles – < night, < touch, < cold air", "remedies": ["Mez", "Rhus-t", "Ars", "Iris"] },
+    { "rubric": "Shingles – > warm application, > rest", "remedies": ["Rhus-t", "Mez", "Hyper", "Iris"] },
+    { "rubric": "Shingles – recurrent attacks", "remedies": ["Mez", "Thuja", "Rhus-t", "Sulph"] },
+    { "rubric": "Shingles – accompanied by itching vesicles", "remedies": ["Mez", "Rhus-t", "Graph", "Sulph"] }
+  ],
+  "keyPoints": [
+    { "description": "Mezereum is top remedy for shingles with intense burning, neuralgic pains and post-herpetic pain.", "confirmatoryRemedies": ["Mez"] },
+    { "description": "Rhus toxicodendron is suited for herpes zoster < cold, < night, > warmth, with restless feeling.", "confirmatoryRemedies": ["Rhus-t"] },
+    { "description": "Hypericum helps in neuralgic pains following shingles, especially shooting along nerves.", "confirmatoryRemedies": ["Hyper"] },
+    { "description": "Lachesis for left-sided shingles, and Lycopodium for right-sided eruptions.", "confirmatoryRemedies": ["Lach", "Lyc"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Xerosis – dry, rough skin with scaling", "remedies": ["Petrol", "Graph", "Sulph", "Ars"] },
+    { "rubric": "Xerosis – < winter and cold weather", "remedies": ["Petrol", "Psor", "Graph", "Ars"] },
+    { "rubric": "Xerosis – with cracks and bleeding", "remedies": ["Graph", "Petrol", "Mez", "Sulph"] },
+    { "rubric": "Xerosis – < bathing or water contact", "remedies": ["Petrol", "Sulph", "Graph", "Psor"] },
+    { "rubric": "Xerosis – < heat or warm room", "remedies": ["Sulph", "Psor", "Ars", "Petrol"] },
+    { "rubric": "Xerosis – < in elderly or thin persons", "remedies": ["Ars", "Psor", "Sulph", "Calc"] },
+    { "rubric": "Xerosis – itching < at night", "remedies": ["Sulph", "Psor", "Graph", "Petrol"] },
+    { "rubric": "Xerosis – with burning sensation", "remedies": ["Ars", "Sulph", "Psor", "Petrol"] }
+  ],
+  "keyPoints": [
+    { "description": "Petroleum is top remedy for extremely dry, cracked skin < winter, < washing.", "confirmatoryRemedies": ["Petrol"] },
+    { "description": "Graphites suits xerosis with fissures, cracks, oozing and bleeding areas.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Sulphur covers intense itching, heat, dryness < bathing or warm room.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Psorinum for dirty, itchy, dry skin worse in cold and at night.", "confirmatoryRemedies": ["Psor"] },
+    { "description": "Arsenicum album indicated in aged, chilly patients with burning and dry skin.", "confirmatoryRemedies": ["Ars"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Lichen planus – purple, flat-topped papules", "remedies": ["Ars", "Sulph", "Thuja", "Graph"] },
+    { "rubric": "Lichen planus – < stress or emotional strain", "remedies": ["Nat-m", "Ign", "Sep", "Ars"] },
+    { "rubric": "Lichen planus – with intense itching", "remedies": ["Sulph", "Ars", "Graph", "Mez"] },
+    { "rubric": "Lichen planus – oral involvement (mouth ulcers, burning)", "remedies": ["Borax", "Nit-ac", "Merc", "Ars"] },
+    { "rubric": "Lichen planus – genital involvement", "remedies": ["Kreos", "Nit-ac", "Thuja", "Ars"] },
+    { "rubric": "Lichen planus – < night, < warmth of bed", "remedies": ["Sulph", "Ars", "Mez", "Psor"] },
+    { "rubric": "Lichen planus – < winter", "remedies": ["Petrol", "Graph", "Sulph", "Psor"] },
+    { "rubric": "Lichen planus – with scaling and pigmentation", "remedies": ["Graph", "Sep", "Sulph", "Ars"] }
+  ],
+  "keyPoints": [
+    { "description": "Arsenicum album is suited for lichen planus with burning, restlessness, < night, < stress.", "confirmatoryRemedies": ["Ars"] },
+    { "description": "Sulphur addresses intense itching, < night, with papular, scaling eruptions.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Graphites works for chronic, scaly lichen planus with pigmentation.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Natrum mur and Ignatia useful when emotional factors trigger or worsen the condition.", "confirmatoryRemedies": ["Nat-m", "Ign"] },
+    { "description": "Thuja for warty or ulcerative forms, especially with genital involvement.", "confirmatoryRemedies": ["Thuja"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Contact dermatitis – itching, redness, and burning", "remedies": ["Graph", "Sulph", "Rhus-t", "Mez"] },
+    { "rubric": "Contact dermatitis – < soaps, chemicals, detergents", "remedies": ["Graph", "Rhus-t", "Sulph", "Petrol"] },
+    { "rubric": "Contact dermatitis – blistering or oozing eruptions", "remedies": ["Rhus-t", "Graph", "Mez", "Canth"] },
+    { "rubric": "Contact dermatitis – < warm water or bathing", "remedies": ["Sulph", "Petrol", "Psor", "Graph"] },
+    { "rubric": "Contact dermatitis – < scratching (burning follows)", "remedies": ["Sulph", "Mez", "Graph", "Rhus-t"] },
+    { "rubric": "Contact dermatitis – with chronic lichenification (thickened skin)", "remedies": ["Graph", "Sulph", "Psor", "Petrol"] },
+    { "rubric": "Contact dermatitis – allergic type (delayed hypersensitivity)", "remedies": ["Rhus-t", "Sulph", "Graph", "Thuja"] },
+    { "rubric": "Contact dermatitis – < change of weather or humidity", "remedies": ["Graph", "Sulph", "Psor", "Petrol"] }
+  ],
+  "keyPoints": [
+    { "description": "Graphites is suited to contact dermatitis with thick, cracked, oozing eruptions < soaps, < winter.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Rhus toxicodendron covers vesicular eruptions with intense itching and blistering < washing.", "confirmatoryRemedies": ["Rhus-t"] },
+    { "description": "Sulphur works for itching, burning, dry skin conditions < heat, < bathing.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Petroleum helps when skin is very dry, cracked, or worsened by detergents and winter.", "confirmatoryRemedies": ["Petrol"] },
+    { "description": "Mezereum for oozing eruptions, with burning and < scratching or warmth.", "confirmatoryRemedies": ["Mez"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Eczema – dry, cracked skin with itching", "remedies": ["Graph", "Sulph", "Psor", "Petrol"] },
+    { "rubric": "Eczema – weeping, oozing eruptions (moist eczema)", "remedies": ["Graph", "Mez", "Rhus-t", "Calc"] },
+    { "rubric": "Eczema – < bathing, < soaps and detergents", "remedies": ["Sulph", "Petrol", "Graph", "Psor"] },
+    { "rubric": "Eczema – < night, < warmth of bed", "remedies": ["Sulph", "Psor", "Graph", "Rhus-t"] },
+    { "rubric": "Eczema – < winter, < dry weather", "remedies": ["Petrol", "Psor", "Graph", "Sulph"] },
+    { "rubric": "Eczema – in flexures (elbow, knees, folds)", "remedies": ["Graph", "Petrol", "Mez", "Sulph"] },
+    { "rubric": "Eczema – children, with itching and scratching till bleeding", "remedies": ["Cham", "Graph", "Sulph", "Calc"] },
+    { "rubric": "Eczema – < suppressed eruptions (past skin suppression)", "remedies": ["Psor", "Sulph", "Med", "Calc"] }
+  ],
+  "keyPoints": [
+    { "description": "Graphites is key for dry, cracked, thickened eczema with honey-like oozing.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Sulphur suits itching, burning eczema < night, < heat, < bathing.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Petroleum is excellent for winter eczema with fissures, cracks, and < washing.", "confirmatoryRemedies": ["Petrol"] },
+    { "description": "Psorinum helps in recurring eczema with < winter, < bathing, < suppressed eruptions.", "confirmatoryRemedies": ["Psor"] },
+    { "description": "Chamomilla and Calcarea for restless children with intense itching and bleeding eruptions.", "confirmatoryRemedies": ["Cham", "Calc"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Vitiligo – white depigmented patches on skin", "remedies": ["Ars", "Syph", "Sep", "Sulph"] },
+    { "rubric": "Vitiligo – < after suppressed skin disease", "remedies": ["Psor", "Sulph", "Med", "Syph"] },
+    { "rubric": "Vitiligo – < emotional stress or grief", "remedies": ["Ign", "Nat-m", "Sep", "Phos"] },
+    { "rubric": "Vitiligo – < sun exposure (contrast increase)", "remedies": ["Sep", "Sulph", "Psor", "Phos"] },
+    { "rubric": "Vitiligo – associated with hormonal changes (menses, pregnancy)", "remedies": ["Sep", "Puls", "Lyc", "Phos"] },
+    { "rubric": "Vitiligo – < family history of autoimmune diseases", "remedies": ["Med", "Syph", "Psor", "Sulph"] },
+    { "rubric": "Vitiligo – < winter or cold weather", "remedies": ["Psor", "Sulph", "Ars", "Petrol"] },
+    { "rubric": "Vitiligo – with itching or burning", "remedies": ["Ars", "Sulph", "Psor", "Graph"] }
+  ],
+  "keyPoints": [
+    { "description": "Arsenicum album for vitiligo with itching or burning, < winter, < anxiety.", "confirmatoryRemedies": ["Ars"] },
+    { "description": "Sulphur is suited for chronic skin conditions with dryness, suppressed eruptions, < heat.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Sepia for hormonally triggered vitiligo or with menstrual disturbances.", "confirmatoryRemedies": ["Sep"] },
+    { "description": "Psorinum and Medorrhinum useful when vitiligo follows suppression or has miasmatic history.", "confirmatoryRemedies": ["Psor", "Med"] },
+    { "description": "Natrum mur and Ignatia for stress-triggered or grief-related onset of vitiligo.", "confirmatoryRemedies": ["Nat-m", "Ign"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Pemphigus – large, flaccid blisters with raw base", "remedies": ["Canth", "Mez", "Apis", "Rhus-t"] },
+    { "rubric": "Pemphigus – < slightest touch or friction", "remedies": ["Canth", "Apis", "Mez", "Rhus-t"] },
+    { "rubric": "Pemphigus – burning pain in the skin", "remedies": ["Ars", "Canth", "Mez", "Sulph"] },
+    { "rubric": "Pemphigus – with offensive discharges", "remedies": ["Sulph", "Psor", "Mez", "Merc"] },
+    { "rubric": "Pemphigus – < warmth, < night", "remedies": ["Sulph", "Ars", "Psor", "Rhus-t"] },
+    { "rubric": "Pemphigus – mouth or mucous membrane involvement", "remedies": ["Borax", "Nit-ac", "Merc", "Sulph"] },
+    { "rubric": "Pemphigus – relapsing or chronic course", "remedies": ["Psor", "Sulph", "Med", "Mez"] },
+    { "rubric": "Pemphigus – autoimmune or idiopathic etiology", "remedies": ["Med", "Psor", "Syph", "Sulph"] }
+  ],
+  "keyPoints": [
+    { "description": "Cantharis covers large, painful blisters with raw surfaces, intense burning, < touch.", "confirmatoryRemedies": ["Canth"] },
+    { "description": "Mezereum suits pustular or bullous eruptions with burning, thick crusts, < night.", "confirmatoryRemedies": ["Mez"] },
+    { "description": "Sulphur addresses chronic, burning, foul-smelling skin disorders with < heat.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Psorinum and Medorrhinum indicated in autoimmune, relapsing forms or post-suppression.", "confirmatoryRemedies": ["Psor", "Med"] },
+    { "description": "Borax and Nitric acid for mucous membrane erosions with burning pain.", "confirmatoryRemedies": ["Borax", "Nit-ac"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Lupus vulgaris – reddish-brown lesions with ulceration", "remedies": ["Tub", "Kali-i", "Ars", "Sil"] },
+    { "rubric": "Lupus – butterfly rash across cheeks and nose", "remedies": ["Sep", "Ars", "Sulph", "Phos"] },
+    { "rubric": "Lupus – < sun exposure (photosensitivity)", "remedies": ["Sep", "Nat-m", "Sulph", "Phos"] },
+    { "rubric": "Lupus – ulcerative type with crusts and disfigurement", "remedies": ["Kali-i", "Ars", "Tub", "Sil"] },
+    { "rubric": "Lupus – autoimmune background with systemic involvement", "remedies": ["Tub", "Med", "Syph", "Psor"] },
+    { "rubric": "Lupus – < cold, < winter, < stress", "remedies": ["Ars", "Sil", "Nat-m", "Phos"] },
+    { "rubric": "Lupus – < suppression of skin disease in past", "remedies": ["Psor", "Sulph", "Med", "Tub"] }
+  ],
+  "keyPoints": [
+    { "description": "Tuberculinum suits ulcerative or recurring lupus with family TB history or suppressed eruptions.", "confirmatoryRemedies": ["Tub"] },
+    { "description": "Sepia is indicated in facial butterfly rash, < sun, < hormonal stress.", "confirmatoryRemedies": ["Sep"] },
+    { "description": "Arsenicum album suits ulcerative lupus with burning, < cold, < night.", "confirmatoryRemedies": ["Ars"] },
+    { "description": "Silicea helps in indurated, slow-healing lupus with cold aggravation and disfigurement.", "confirmatoryRemedies": ["Sil"] },
+    { "description": "Kali iodatum addresses deep ulceration with yellow crusts, < night.", "confirmatoryRemedies": ["Kali-i"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Tinea – circular ring-shaped eruptions with itching", "remedies": ["Tell", "Sep", "Sulph", "Graph"] },
+    { "rubric": "Tinea – < night, < warmth of bed", "remedies": ["Sulph", "Psor", "Tell", "Rhus-t"] },
+    { "rubric": "Tinea – with dry, scaly eruptions and thick crusts", "remedies": ["Graph", "Sep", "Mez", "Tell"] },
+    { "rubric": "Tinea – < damp weather, < bathing", "remedies": ["Psor", "Tell", "Sulph", "Petrol"] },
+    { "rubric": "Tinea – eruptions behind ears, scalp, groins", "remedies": ["Tell", "Graph", "Mez", "Sulph"] },
+    { "rubric": "Tinea – recurring eruptions, suppressed in past", "remedies": ["Psor", "Sulph", "Tell", "Med"] },
+    { "rubric": "Tinea – intense itching with scratching till bleeding", "remedies": ["Sulph", "Psor", "Tell", "Mez"] }
+  ],
+  "keyPoints": [
+    { "description": "Tellurium is specific for ring-shaped lesions with offensive odor and < night.", "confirmatoryRemedies": ["Tell"] },
+    { "description": "Sulphur suits itching, burning tinea with < heat, < bathing, < suppression.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Graphites for scaly, moist tinea with cracks and eruptions behind ears.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Psorinum covers suppressed, recurring tinea with < damp weather and foul discharges.", "confirmatoryRemedies": ["Psor"] },
+    { "description": "Sepia and Mezereum useful when eruptions are dry, thick, and appear in folds or scalp.", "confirmatoryRemedies": ["Sep", "Mez"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Lichen sclerosus – white, atrophic patches (esp. genitals)", "remedies": ["Sep", "Thuj", "Med", "Borax"] },
+    { "rubric": "Lichen sclerosus – intense itching < night", "remedies": ["Psor", "Sulph", "Sep", "Mez"] },
+    { "rubric": "Lichen sclerosus – painful fissures, burning, dryness", "remedies": ["Borax", "Nit-ac", "Kreos", "Thuj"] },
+    { "rubric": "Lichen sclerosus – < menses, < coition", "remedies": ["Sep", "Kreos", "Med", "Thuj"] },
+    { "rubric": "Lichen sclerosus – autoimmune tendency or family history", "remedies": ["Med", "Thuj", "Psor", "Sulph"] },
+    { "rubric": "Lichen sclerosus – < washing, < touch", "remedies": ["Borax", "Nit-ac", "Sep", "Sulph"] },
+    { "rubric": "Lichen sclerosus – associated with suppressed eruptions or grief", "remedies": ["Psor", "Ign", "Nat-m", "Sep"] }
+  ],
+  "keyPoints": [
+    { "description": "Sepia is most suited in genital lichen sclerosis with dryness, < sexual activity, < washing.", "confirmatoryRemedies": ["Sep"] },
+    { "description": "Borax addresses painful mucosal dryness and soreness, < touch, < washing.", "confirmatoryRemedies": ["Borax"] },
+    { "description": "Thuja suits autoimmune-related mucosal atrophy or warts-like texture.", "confirmatoryRemedies": ["Thuj"] },
+    { "description": "Psorinum and Medorrhinum cover deep miasmatic layers with suppressed skin issues.", "confirmatoryRemedies": ["Psor", "Med"] },
+    { "description": "Nitric acid and Kreosotum help with fissured, painful mucosa with bleeding or burning.", "confirmatoryRemedies": ["Nit-ac", "Kreos"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Hyperpigmentation – brown patches on face (melasma)", "remedies": ["Sep", "Sulph", "Thuja", "Cadm-s"] },
+    { "rubric": "Hyperpigmentation – after sun exposure (photo-induced)", "remedies": ["Nat-m", "Sep", "Sulph", "Phos"] },
+    { "rubric": "Hyperpigmentation – hormonal cause (pregnancy, OCPs)", "remedies": ["Sep", "Lyc", "Puls", "Thuja"] },
+    { "rubric": "Hyperpigmentation – post-inflammatory (after eczema, acne, injury)", "remedies": ["Graph", "Sulph", "Kali-s", "Mez"] },
+    { "rubric": "Hyperpigmentation – < during menses or menopause", "remedies": ["Sep", "Lach", "Puls", "Sulph"] },
+    { "rubric": "Hyperpigmentation – associated with dryness and rough skin", "remedies": ["Graph", "Sulph", "Petrol", "Sep"] },
+    { "rubric": "Hyperpigmentation – constitutional tendency with sluggish {
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Pityriasis versicolor – scaly, discolored patches (mostly trunk, shoulders)", "remedies": ["Tell", "Sulph", "Sep", "Kali-s"] },
+    { "rubric": "Pityriasis – < heat, < perspiration, < bathing", "remedies": ["Sulph", "Tell", "Psor", "Graph"] },
+    { "rubric": "Pityriasis – itching or burning with scaling", "remedies": ["Sulph", "Tell", "Mez", "Petrol"] },
+    { "rubric": "Pityriasis – recurrent in humid weather or summer", "remedies": ["Tell", "Nat-s", "Sulph", "Sep"] },
+    { "rubric": "Pityriasis – dry, flaky eruptions with no sensation", "remedies": ["Graph", "Sep", "Kali-s", "Nat-m"] },
+    { "rubric": "Pityriasis – < night, < warmth of bed", "remedies": ["Sulph", "Psor", "Tell", "Mez"] }
+  ],
+  "keyPoints": [
+    { "description": "Tellurium suits discolored scaly patches on trunk, < sweat, < bathing.", "confirmatoryRemedies": ["Tell"] },
+    { "description": "Sulphur is ideal for itchy, scaling eruptions < heat, < night, < bathing.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Kali sulphuricum helps in dry, flaking eruptions without itching.", "confirmatoryRemedies": ["Kali-s"] },
+    { "description": "Graphites helps in flaky, dry pityriasis with cracks and no itching.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Psorinum covers recurrent pityriasis with suppressed history and < winter.", "confirmatoryRemedies": ["Psor"] }
+  ]
+}
+liver", "remedies": ["Sulph", "Nat-s", "Chel", "Sep"] }
+  ],
+  "keyPoints": [
+    { "description": "Sepia is top remedy for melasma, hormonal pigmentation, < during menses or sun exposure.", "confirmatoryRemedies": ["Sep"] },
+    { "description": "Sulphur suits dirty, blotchy skin with roughness, < warmth, < suppression.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Natrum mur addresses pigmentation from grief, sun, or chronic headaches.", "confirmatoryRemedies": ["Nat-m"] },
+    { "description": "Graphites suits dry, rough skin with discoloration post-inflammation.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Cadmium sulph is useful in persistent, toxic-induced pigmentation (e.g., chemo).", "confirmatoryRemedies": ["Cadm-s"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Pityriasis versicolor – scaly, discolored patches (mostly trunk, shoulders)", "remedies": ["Tell", "Sulph", "Sep", "Kali-s"] },
+    { "rubric": "Pityriasis – < heat, < perspiration, < bathing", "remedies": ["Sulph", "Tell", "Psor", "Graph"] },
+    { "rubric": "Pityriasis – itching or burning with scaling", "remedies": ["Sulph", "Tell", "Mez", "Petrol"] },
+    { "rubric": "Pityriasis – recurrent in humid weather or summer", "remedies": ["Tell", "Nat-s", "Sulph", "Sep"] },
+    { "rubric": "Pityriasis – dry, flaky eruptions with no sensation", "remedies": ["Graph", "Sep", "Kali-s", "Nat-m"] },
+    { "rubric": "Pityriasis – < night, < warmth of bed", "remedies": ["Sulph", "Psor", "Tell", "Mez"] }
+  ],
+  "keyPoints": [
+    { "description": "Tellurium suits discolored scaly patches on trunk, < sweat, < bathing.", "confirmatoryRemedies": ["Tell"] },
+    { "description": "Sulphur is ideal for itchy, scaling eruptions < heat, < night, < bathing.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Kali sulphuricum helps in dry, flaking eruptions without itching.", "confirmatoryRemedies": ["Kali-s"] },
+    { "description": "Graphites helps in flaky, dry pityriasis with cracks and no itching.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Psorinum covers recurrent pityriasis with suppressed history and < winter.", "confirmatoryRemedies": ["Psor"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Ichthyosis – dry, rough, fish-scale-like skin", "remedies": ["Petrol", "Alum", "Sulph", "Graph"] },
+    { "rubric": "Ichthyosis – < winter, < bathing", "remedies": ["Petrol", "Alum", "Mez", "Sulph"] },
+    { "rubric": "Ichthyosis – cracked, bleeding skin with scaling", "remedies": ["Graph", "Mez", "Petrol", "Nit-ac"] },
+    { "rubric": "Ichthyosis – thickened skin on palms and soles", "remedies": ["Sil", "Graph", "Petrol", "Sulph"] },
+    { "rubric": "Ichthyosis – congenital or hereditary tendency", "remedies": ["Psor", "Tub", "Sulph", "Med"] },
+    { "rubric": "Ichthyosis – < heat, < woolens", "remedies": ["Sulph", "Psor", "Petrol", "Alum"] }
+  ],
+  "keyPoints": [
+    { "description": "Petroleum is a top remedy for excessively dry, cracked skin < winter, < bathing.", "confirmatoryRemedies": ["Petrol"] },
+    { "description": "Graphites helps with cracked, rough skin and fissures, especially in folds and behind ears.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Alumina suits dry, non-elastic skin with constipation and sluggishness.", "confirmatoryRemedies": ["Alum"] },
+    { "description": "Psorinum and Tuberculinum cover inherited ichthyosis with suppressed eruptions.", "confirmatoryRemedies": ["Psor", "Tub"] },
+    { "description": "Sulphur is broadly useful in dirty, scaling, dry skin < warmth, < wool.", "confirmatoryRemedies": ["Sulph"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Seborrheic dermatitis – oily, scaly eruptions on scalp, eyebrows, or face", "remedies": ["Graph", "Kali-s", "Sulph", "Sanic"] },
+    { "rubric": "Seborrheic dermatitis – yellowish, greasy scales with itching", "remedies": ["Kali-s", "Graph", "Petrol", "Thuja"] },
+    { "rubric": "Seborrheic dermatitis – worse in winter or cold weather", "remedies": ["Petrol", "Graph", "Sulph"] },
+    { "rubric": "Seborrheic dermatitis – < bathing, < sweating, < woolens", "remedies": ["Sulph", "Psor", "Sanic", "Petrol"] },
+    { "rubric": "Seborrheic dermatitis – with cracked, fissured skin behind ears or in folds", "remedies": ["Graph", "Petrol", "Mez", "Sulph"] }
+  ],
+  "keyPoints": [
+    { "description": "Graphites suits thick, sticky eruptions with cracks behind ears and greasy scales.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Kali sulphuricum for yellow, oily scales especially on scalp or eyebrows.", "confirmatoryRemedies": ["Kali-s"] },
+    { "description": "Petroleum for < winter, dry and fissured skin with offensive discharge.", "confirmatoryRemedies": ["Petrol"] },
+    { "description": "Sulphur suits itchy, greasy eruptions aggravated by heat and wool.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Sanicula suits dirty-looking skin with itching < bathing, < perspiration.", "confirmatoryRemedies": ["Sanic"] }
+  ]
+}
+{
+  "category": "Skin – Modalities and Eruptions",
+  "rubrics": [
+    { "rubric": "Erysipelas/Cellulitis – red, hot, swollen skin with burning and stinging", "remedies": ["Apis", "Bell", "Rhus-t", "Canth", "Ars"] },
+    { "rubric": "Erysipelas – with shiny, tense, edematous skin", "remedies": ["Apis", "Bell", "Rhus-t"] },
+    { "rubric": "Erysipelas – < heat, < touch, < pressure", "remedies": ["Apis", "Canth", "Ars"] },
+    { "rubric": "Erysipelas – with vesicles or blisters", "remedies": ["Rhus-t", "Canth", "Bell", "Mez"] },
+    { "rubric": "Erysipelas – migratory or recurring", "remedies": ["Rhus-t", "Psor", "Sulph"] },
+    { "rubric": "Cellulitis – with pus formation or abscess", "remedies": ["Hepar-s", "Sil", "Merc", "Bell"] }
+  ],
+  "keyPoints": [
+    { "description": "Apis is top remedy for red, swollen, burning, shiny skin < heat and touch.", "confirmatoryRemedies": ["Apis"] },
+    { "description": "Rhus tox suits erysipelas with vesicles, < rest, > warmth, restlessness.", "confirmatoryRemedies": ["Rhus-t"] },
+    { "description": "Belladonna suits sudden intense redness with throbbing and high fever.", "confirmatoryRemedies": ["Bell"] },
+    { "description": "Cantharis covers blistering erysipelas with burning, raw sensation.", "confirmatoryRemedies": ["Canth"] },
+    { "description": "Hepar sulph and Silicea help when cellulitis becomes suppurative (pus).", "confirmatoryRemedies": ["Hepar-s", "Sil"] }
+  ]
+}
+{
+  "category": "Skin – Modalities",
+  "rubrics": [
+    { "rubric": "Skin complaints – < heat", "remedies": ["Sulph", "Psor", "Ars", "Med", "Rhus-t"] },
+    { "rubric": "Skin complaints – > cold applications", "remedies": ["Apis", "Sulph", "Ars", "Puls"] },
+    { "rubric": "Skin complaints – < bathing or washing", "remedies": ["Sulph", "Psor", "Sanic", "Petrol"] },
+    { "rubric": "Skin complaints – < woolen clothing", "remedies": ["Sulph", "Psor", "Lyc", "Kali-ar"] },
+    { "rubric": "Skin complaints – < undressing or exposure to air", "remedies": ["Rhus-t", "Hepar-s", "Sil", "Calc"] },
+    { "rubric": "Skin complaints – < touch or scratching", "remedies": ["Apis", "Mez", "Hepar-s", "Sulph"] },
+    { "rubric": "Skin – itching < warmth of bed", "remedies": ["Sulph", "Psor", "Med", "Ars"] },
+    { "rubric": "Skin – itching > scratching, but followed by burning", "remedies": ["Sulph", "Graph", "Mez", "Canth"] },
+    { "rubric": "Skin – tendency to suppurate (form pus)", "remedies": ["Hepar-s", "Sil", "Merc", "Calc-s"] }
+  ],
+  "keyPoints": [
+    { "description": "Sulphur is most commonly indicated for < heat, < bathing, < wool, and itching < in bed.", "confirmatoryRemedies": ["Sulph"] },
+    { "description": "Hepar sulph works in painful, sensitive eruptions that < touch, < cold, and suppurate easily.", "confirmatoryRemedies": ["Hepar-s"] },
+    { "description": "Psorinum is highly chilly, dirty looking skin, < cold, < bathing, and < heat.", "confirmatoryRemedies": ["Psor"] },
+    { "description": "Mezereum suits eruptions with violent itching and burning < scratching.", "confirmatoryRemedies": ["Mez"] },
+    { "description": "Apis and Ars cover < heat, < touch, > cold, burning, and stinging skin.", "confirmatoryRemedies": ["Apis", "Ars"] }
+  ]
+}
+{
+  "category": "Skin – Modalities (Extended)",
+  "rubrics": [
+    { "rubric": "Skin complaints – < at night", "remedies": ["Sulph", "Ars", "Psor", "Med"] },
+    { "rubric": "Skin complaints – < during spring or rainy season", "remedies": ["Rhus-t", "Dulc", "Sulph"] },
+    { "rubric": "Skin complaints – > open air", "remedies": ["Puls", "Sulph", "Apis"] },
+    { "rubric": "Skin complaints – < cold applications", "remedies": ["Hepar-s", "Sil", "Rhus-t"] },
+    { "rubric": "Skin complaints – < motion or physical exertion", "remedies": ["Bry", "Ferr", "Phos"] },
+    { "rubric": "Skin complaints – > warmth (general)", "remedies": ["Ars", "Rhus-t", "Calc"] },
+    { "rubric": "Skin eruptions – < from anger or emotional excitement", "remedies": ["Staph", "Ign", "Nux-v"] },
+    { "rubric": "Skin – bleeds easily from slightest scratch or touch", "remedies": ["Lach", "Merc", "Crot-h"] },
+    { "rubric": "Skin – < perspiration or during sweating", "remedies": ["Sulph", "Psor", "Sanic", "Petrol"] }
+  ],
+  "keyPoints": [
+    { "description": "Sulphur and Psorinum are worse at night and from sweating, itching violently.", "confirmatoryRemedies": ["Sulph", "Psor"] },
+    { "description": "Rhus tox and Dulcamara are worse in rainy or damp weather, especially skin eruptions.", "confirmatoryRemedies": ["Rhus-t", "Dulc"] },
+    { "description": "Hepar sulph and Silicea are worse from cold applications, helpful in boils and abscesses.", "confirmatoryRemedies": ["Hepar-s", "Sil"] },
+    { "description": "Lachesis and Mercurius bleed easily on scratching, useful in purpura and ulcerative skin lesions.", "confirmatoryRemedies": ["Lach", "Merc"] }
+  ]
+}
+
+{
+  "category": "Skin – Discharges (Color, Odor, Consistency)",
+  "rubrics": [
+    { "rubric": "Skin discharge – yellow, thick", "remedies": ["Hepar-s", "Graph", "Merc", "Calc-s"] },
+    { "rubric": "Skin discharge – greenish, purulent", "remedies": ["Merc", "Sil", "Nit-ac", "Hepar-s"] },
+    { "rubric": "Skin discharge – offensive, putrid odor", "remedies": ["Psor", "Sulph", "Hepar-s", "Tarent"] },
+    { "rubric": "Skin discharge – gluey, sticky", "remedies": ["Graph", "Petrol", "Kali-s", "Thuja"] },
+    { "rubric": "Skin discharge – watery, acrid", "remedies": ["Mez", "Rhus-t", "Sulph", "Ars"] },
+    { "rubric": "Skin discharge – bloody (with ulcers or cracks)", "remedies": ["Lach", "Merc", "Crot-h", "Nit-ac"] },
+    { "rubric": "Skin discharge – creamy, copious", "remedies": ["Calc-s", "Sil", "Hepar-s"] }
+  ],
+  "keyPoints": [
+    { "description": "Hepar sulph and Mercurius are common in yellow or green purulent discharges, often offensive.", "confirmatoryRemedies": ["Hepar-s", "Merc"] },
+    { "description": "Graphites is key for sticky, gluey, thick discharges with cracked skin.", "confirmatoryRemedies": ["Graph"] },
+    { "description": "Psorinum and Tarentula have very offensive, foul-smelling skin discharges.", "confirmatoryRemedies": ["Psor", "Tarent"] },
+    { "description": "Lachesis and Nitric acid cover bleeding discharges, especially in ulcerated or fissured skin.", "confirmatoryRemedies": ["Lach", "Nit-ac"] }
+  ]
+}
+{
+  "category": "Skin – General States",
+  "rubrics": [
+    { "rubric": "Skin – dryness", "remedies": ["Petrol", "Alum", "Sulph", "Psor"] },
+    { "rubric": "Skin – itching without eruption", "remedies": ["Sulph", "Psor", "Calad", "Ars"] },
+    { "rubric": "Skin – burning sensation", "remedies": ["Ars", "Sulph", "Mez", "Canth"] },
+    { "rubric": "Skin – cracked and bleeding", "remedies": ["Graph", "Petrol", "Nit-ac", "Lach"] },
+    { "rubric": "Skin – thickened / lichenified", "remedies": ["Sulph", "Graph", "Psor", "Mez"] },
+    { "rubric": "Skin – scaling / desquamation", "remedies": ["Ars", "Lyc", "Sil", "Graph"] },
+    { "rubric": "Skin – raw and excoriated", "remedies": ["Mez", "Rhus-t", "Canth", "Sulph"] },
+    { "rubric": "Skin – very sensitive to touch", "remedies": ["Hepar-s", "Cham", "Lach", "Apis"] },
+    { "rubric": "Skin – tendency to ulcerate", "remedies": ["Sil", "Merc", "Nit-ac", "Ars"] },
+    { "rubric": "Skin – unhealthy, every injury suppurates", "remedies": ["Hepar-s", "Sil", "Graph", "Calend"] }
+  ],
+  "keyPoints": [
+    { "description": "Petroleum, Graphites, and Sulphur are leading in dry, cracked, bleeding skin with rawness.", "confirmatoryRemedies": ["Petrol", "Graph", "Sulph"] },
+    { "description": "Psorinum and Caladium show itching without eruptions, worse from warmth.", "confirmatoryRemedies": ["Psor", "Calad"] },
+    { "description": "Silicea and Hepar-s are important when skin easily ulcerates or forms pus from minor injuries.", "confirmatoryRemedies": ["Sil", "Hepar-s"] },
+    { "description": "Arsenicum, Cantharis, and Lachesis are key in burning or highly sensitive inflamed skin.", "confirmatoryRemedies": ["Ars", "Canth", "Lach"] }
+  ]
+}
+{
+  "category": "Skin – Location-Based Rubrics",
+  "rubrics": [
+    { "rubric": "Skin eruptions – face", "remedies": ["Sulph", "Psor", "Calc", "Hepar-s"] },
+    { "rubric": "Skin eruptions – scalp", "remedies": ["Mez", "Graph", "Fl-ac", "Sulph"] },
+    { "rubric": "Skin eruptions – behind ears (retroauricular)", "remedies": ["Graph", "Petrol", "Sil"] },
+    { "rubric": "Skin eruptions – neck", "remedies": ["Calc", "Lyc", "Dulc"] },
+    { "rubric": "Skin eruptions – axillae", "remedies": ["Merc", "Sil", "Lach"] },
+    { "rubric": "Skin eruptions – back / scapular region", "remedies": ["Sulph", "Psor", "Mez"] },
+    { "rubric": "Skin eruptions – chest / sternum area", "remedies": ["Lach", "Phos", "Sulph"] },
+    { "rubric": "Skin eruptions – abdomen / umbilicus", "remedies": ["Lyc", "Calc", "Ars"] },
+    { "rubric": "Skin eruptions – groins / inguinal folds", "remedies": ["Graph", "Thuja", "Nit-ac"] },
+    { "rubric": "Skin eruptions – buttocks", "remedies": ["Petrol", "Rhus-t", "Mez"] },
+    { "rubric": "Skin eruptions – genitals (male/female)", "remedies": ["Thuja", "Nit-ac", "Merc"] },
+    { "rubric": "Skin eruptions – thighs (inner) / flexor aspect", "remedies": ["Graph", "Petrol", "Sulph"] },
+    { "rubric": "Skin eruptions – legs / calves", "remedies": ["Ars", "Sil", "Sulph"] },
+    { "rubric": "Skin eruptions – hands / palms", "remedies": ["Sep", "Graph", "Nat-m"] },
+    { "rubric": "Skin eruptions – feet / soles", "remedies": ["Sil", "Sulph", "Psor"] },
+    { "rubric": "Skin eruptions – between fingers or toes", "remedies": ["Graph", "Thuja", "Nat-m"] }
+  ],
+  "keyPoints": [
+    { "description": "Graphites and Petroleum are commonly indicated in eruptions in flexures, behind ears, and groins.", "confirmatoryRemedies": ["Graph", "Petrol"] },
+    { "description": "Silicea and Sulphur are versatile and appear across multiple skin locations like scalp, feet, and limbs.", "confirmatoryRemedies": ["Sil", "Sulph"] },
+    { "description": "Thuja and Nit-ac are frequently indicated in genital and intertriginous area skin eruptions.", "confirmatoryRemedies": ["Thuja", "Nit-ac"] },
+    { "description": "Mezereum is well-suited for scalp, back, and moist vesicular eruptions.", "confirmatoryRemedies": ["Mez"] }
+  ]
+}
+{
+  "category": "Skin - Extended & Rare Rubrics",
+  "rubrics": [
+    { "rubric": "Skin – bluish discoloration", "remedies": ["Carbo-v", "Lach", "Crot-h"] },
+    { "rubric": "Skin – yellow discoloration (jaundiced)", "remedies": ["Chel", "Merc", "Card-m", "Chin"] },
+    { "rubric": "Skin – red, flushed patches", "remedies": ["Bell", "Apis", "Sulph"] },
+    { "rubric": "Skin – mottled or marbled", "remedies": ["Camph", "Carbo-v", "Verat"] },
+    { "rubric": "Skin – numbness", "remedies": ["Acon", "Agar", "Zinc", "Phos"] },
+    { "rubric": "Skin – crawling sensation / formication", "remedies": ["Ars", "Tarent", "Zinc", "Agar"] },
+    { "rubric": "Skin – horny growths / hard thick crusts", "remedies": ["Ant-c", "Calc", "Thuja", "Sil"] },
+    { "rubric": "Skin – nodules, lumps under skin", "remedies": ["Sil", "Con", "Calc", "Kali-carb"] },
+    { "rubric": "Skin – painful scars (cicatrices)", "remedies": ["Fl-ac", "Caust", "Graph"] },
+    { "rubric": "Skin – eruptions after vaccination", "remedies": ["Thuja", "Sil", "Mez"] },
+    { "rubric": "Skin – eruptions suppressed, bad effects", "remedies": ["Sulph", "Psor", "Graph", "Mez"] },
+    { "rubric": "Skin – eruptions alternating with asthma / diarrhea", "remedies": ["Psor", "Sulph", "Med"] },
+    { "rubric": "Skin – itching, worse before menses", "remedies": ["Graph", "Sulph", "Lach"] },
+    { "rubric": "Skin – coppery color", "remedies": ["Merc", "Crot-h", "Syphilinum"] },
+    { "rubric": "Skin – dirty appearance, unwashed look", "remedies": ["Psor", "Sulph"] }
+  ],
+  "keyPoints": [
+    { "description": "Thuja, Silicea, and Mezereum are highly indicated for skin issues after vaccination.", "confirmatoryRemedies": ["Thuja", "Sil", "Mez"] },
+    { "description": "Psorinum and Sulphur are important for suppressed eruptions and alternating skin complaints.", "confirmatoryRemedies": ["Psor", "Sulph"] },
+    { "description": "Agaricus and Zincum cover crawling, tingling sensations on skin.", "confirmatoryRemedies": ["Agar", "Zinc"] },
+    { "description": "Graphites and Fluoric acid are useful when skin has thick crusts or painful old scars.", "confirmatoryRemedies": ["Graph", "Fl-ac"] }
+  ]
+}
+
