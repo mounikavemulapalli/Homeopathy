@@ -212,31 +212,51 @@ const CaseSheetForm = () => {
 
       // Step 2: Get remedy + dosage from internal brain logic
       // Corrected AI Brain Logic Call
-      const aiResponse = await fetch(
-        "http://localhost:5000/api/brain/analyze",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(
-            selectedRubrics.length > 0
-              ? { rubrics: selectedRubrics } // Use rubric override if selected
-              : {
-                  caseInput: {
-                    symptoms:
-                      caseData.chiefComplaints
-                        ?.map((c) => c.description)
-                        .join(", ") || "",
-                    thermal: caseData.personalHistory?.thermal || "",
-                    cravings: caseData.personalHistory?.cravingsAversions || "",
-                    mentals: caseData.mentalSymptoms || "",
-                  },
-                }
-          ),
-        }
-      );
-
-      const brainData = await aiResponse.json();
-      setBrainResult(brainData); // Set the brainResult state
+      // const aiResponse = await fetch(
+      //   "http://localhost:5000/api/brain/analyze",
+      //   {
+      //     method: "POST",
+      //     headers: { "Content-Type": "application/json" },
+      //     body: JSON.stringify(
+      //       selectedRubrics.length > 0
+      //         ? { rubrics: selectedRubrics } // Use rubric override if selected
+      //         : {
+      //             caseInput: {
+      //               symptoms:
+      //                 caseData.chiefComplaints
+      //                   ?.map((c) => c.description)
+      //                   .join(", ") || "",
+      //               thermal: caseData.personalHistory?.thermal || "",
+      //               cravings: caseData.personalHistory?.cravingsAversions || "",
+      //               mentals: caseData.mentalSymptoms || "",
+      //             },
+      //           }
+      //     ),
+      //   }
+      // );
+      const caseInput = {
+        symptoms: caseData.chiefComplaints?.map((c) => c.description).join(", ") || "",
+        thermal: caseData.personalHistory?.thermal || "",
+        cravings: caseData.personalHistory?.cravingsAversions || "",
+        mentals: caseData.mentalSymptoms || "",
+      };
+      
+      const requestBody = {
+        rubrics: selectedRubrics || [],
+        caseInput,
+      };
+      
+      const brainResponse = await fetch("http://localhost:5000/api/brain/analyze", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
+      
+      const brainData = await brainResponse.json();
+      setBrainResult(brainData);
+      
 
       // Combine summary and AI remedy suggestion
       const finalSummary = `

@@ -1,0 +1,21 @@
+{
+  "case_input": {
+    "mind_symptoms": "Grief after accident, withdrawn, irritability",
+    "physical_symptoms": "Migraine, constipation, scaly scalp",
+    "modalities": {
+      "agg_by": ["sunlight", "stress"],
+      "better_by": ["cold room", "darkness"]
+    },
+    "facial_features": ["sunken eyes", "dark circles"],
+    "language": "telugu"
+  },
+  "toggles": {
+    "pioneer_explanation": true,
+    "remedy_comparison": true,
+    "miasm_explanation": true,
+    "modalities_match": true,
+    "image_lab_comment": true,
+    "short_mode": false,
+    "remedy_dosage": true
+  }
+}
