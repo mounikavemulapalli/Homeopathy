@@ -39,7 +39,6 @@ const upload = multer({
 // @desc    Submit new case with image and chief complaint images
 router.post("/", upload.any(), async (req, res) => {
   try {
-    // Parse and validate input data
     if (!req.body.data) {
       return res.status(400).json({ message: "Missing data field" });
     }
@@ -49,14 +48,12 @@ router.post("/", upload.any(), async (req, res) => {
       data.chiefComplaints = [];
     }
 
-    // Initialize image fields
     data.imageUrl = "";
     data.chiefComplaints = data.chiefComplaints.map((c) => ({
       ...c,
       skinImageUrl: "",
     }));
 
-    // Process all uploaded files
     (req.files || []).forEach((file) => {
       if (file.fieldname === "image") {
         data.imageUrl = `/uploads/${file.filename}`;
@@ -71,7 +68,6 @@ router.post("/", upload.any(), async (req, res) => {
       }
     });
 
-    // Save to MongoDB
     const newCase = new Case(data);
     await newCase.save();
 
@@ -93,20 +89,48 @@ router.get("/", async (req, res) => {
   }
 });
 
+// ✅ New Route: GET /api/cases/:id
+router.get("/:id", async (req, res) => {
+  try {
+    const singleCase = await Case.findById(req.params.id);
+    if (!singleCase) {
+      return res.status(404).json({ message: "Case not found" });
+    }
+    res.json(singleCase);
+  } catch (error) {
+    console.error("Error fetching case by ID:", error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
+
 // @route   PUT /api/cases/:id
 router.put("/:id", async (req, res) => {
   try {
+    const updatedData = {
+      name: req.body.name,
+  phone: req.body.phone,
+  age: req.body.age,
+  gender: req.body.gender,
+  dateOfVisit: req.body.dateOfVisit,
+  imageUrl: req.body.imageUrl,
+  chiefComplaints: req.body.chiefComplaints || [],
+  pastHistory: req.body.pastHistory || {},
+    };
+
     const updated = await Case.findByIdAndUpdate(
       req.params.id,
-      { $set: req.body },
-      { new: true }
+      { $set: updatedData },
+      { new: true, runValidators: true }
     );
+    
+
     res.json(updated);
   } catch (err) {
     console.error("Error updating case:", err);
     res.status(500).json({ error: "Update failed" });
   }
 });
+
 
 // @route   DELETE /api/cases/:id
 router.delete("/:id", async (req, res) => {
@@ -118,5 +142,8 @@ router.delete("/:id", async (req, res) => {
     res.status(500).json({ error: "Delete failed" });
   }
 });
+
+
+
 
 module.exports = router;

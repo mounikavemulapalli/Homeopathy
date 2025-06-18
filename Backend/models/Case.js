@@ -63,8 +63,13 @@ const CaseSchema = new mongoose.Schema({
   age: Number,
   gender: String,
   phone: String,
+  patientName: String, // Add this if needed
+  phoneNumber: String, // Add this if used separately
+  symptoms: String, // Add this
+  remedyGiven: String, // Add this
   dateOfVisit: Date,
   imageUrl: String,
+
   chiefComplaints: [
     {
       complaint: String,
@@ -73,13 +78,26 @@ const CaseSchema = new mongoose.Schema({
       skinImageUrl: String,
     },
   ],
+
+  prescriptions: [
+    {
+      date: Date,
+      remedyName: String,
+      potency: String,
+      dose: String,
+      instructions: String,
+    },
+  ],
+
   pastHistory: {
     childhoodDiseases: String,
     surgeriesInjuries: String,
     majorIllnesses: String,
   },
-  // Add other nested fields (e.g., presentIllness, familyHistory, etc.)
+
+  // Add other sections if needed
 });
+
 
 module.exports = mongoose.model("Case", CaseSchema);
 
