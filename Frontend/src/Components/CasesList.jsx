@@ -1,168 +1,290 @@
-/** @format */
-
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import Modal from './Modal'; // Make sure Modal.jsx and Modal.css exist
 
 const CasesList = () => {
   const [cases, setCases] = useState([]);
-  const [error, setError] = useState(null);
-  const [editId, setEditId] = useState(null);
-  const [editName, setEditName] = useState("");
-  const [editPhone, setEditPhone] = useState("");
-  const [searchName, setSearchName] = useState("");
-  const [searchPhone, setSearchPhone] = useState("");
+  const [filteredCases, setFilteredCases] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCase, setSelectedCase] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [viewCase, setViewCase] = useState(null);
+  const [isViewModalOpen, setIsViewModalOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const casesPerPage = 5;
+
+  // AI summary state
+  const [aiSummary, setAiSummary] = useState('');
+  const [loadingSummary, setLoadingSummary] = useState(false);
 
   useEffect(() => {
-    const fetchCases = async () => {
+    const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/cases");
+        const res = await axios.get('http://localhost:5000/api/cases');
         setCases(res.data);
+        setFilteredCases(res.data);
       } catch (err) {
-        console.error("Error fetching cases:", err);
-        setError("Unable to fetch cases");
+        toast.error('Failed to load cases.');
       }
     };
-    fetchCases();
+    fetchData();
   }, []);
 
-  const handleEdit = (id) => {
-    const caseToEdit = cases.find((c) => c._id === id);
-    setEditId(id);
-    setEditName(caseToEdit.name || caseToEdit.patientName || "");
-    setEditPhone(caseToEdit.phone || caseToEdit.phoneNumber || "");
-  };
-
-  const handleSave = async (id) => {
-    try {
-      await axios.put(`http://localhost:5000/api/cases/${id}`, {
-        name: editName,
-        phone: editPhone,
-      });
-      setCases((prev) =>
-        prev.map((c) =>
-          c._id === id ? { ...c, name: editName, phone: editPhone } : c
-        )
-      );
-      setEditId(null);
-    } catch (err) {
-      alert("Failed to update case");
-    }
-  };
-
-  const handleDelete = async (id) => {
-    if (window.confirm("Are you sure you want to delete this case?")) {
-      try {
-        await axios.delete(`http://localhost:5000/api/cases/${id}`);
-        setCases((prev) => prev.filter((c) => c._id !== id));
-      } catch (err) {
-        alert("Failed to delete case");
-      }
-    }
-  };
-
-  // Filter cases by search
-  const filteredCases = cases.filter((data) => {
-    const name = (data.name || data.patientName || "").toLowerCase();
-    const phone = data.phone || data.phoneNumber || "";
-    return (
-      name.includes(searchName.toLowerCase()) && phone.includes(searchPhone)
+  useEffect(() => {
+    const term = searchTerm.toLowerCase();
+    const filtered = cases.filter(
+      (c) =>
+        (c.name || '').toLowerCase().includes(term) ||
+        (c.phone || '').includes(term)
     );
-  });
+    setFilteredCases(filtered);
+    setCurrentPage(1);
+  }, [searchTerm, cases]);
 
-  if (error) return <p>{error}</p>;
-  if (!cases.length) return <p>No cases found</p>;
+  const indexOfLast = currentPage * casesPerPage;
+  const indexOfFirst = indexOfLast - casesPerPage;
+  const currentCases = filteredCases.slice(indexOfFirst, indexOfLast);
+  const totalPages = Math.ceil(filteredCases.length / casesPerPage);
+
+  const handleEditClick = (caseData) => {
+    setSelectedCase(caseData);
+    setAiSummary('');
+    setIsModalOpen(true);
+  };
+
+  const handleViewClick = (caseData) => {
+    setViewCase(caseData);
+    setIsViewModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setSelectedCase(null);
+    setIsModalOpen(false);
+    setAiSummary('');
+  };
+
+  const handleFieldChange = (e) => {
+    const { name, value } = e.target;
+    setSelectedCase((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSaveCase = async () => {
+    try {
+      const res = await axios.put(
+        `http://localhost:5000/api/cases/${selectedCase._id}`,
+        selectedCase
+      );
+      setCases((prev) =>
+        prev.map((c) => (c._id === res.data._id ? res.data : c))
+      );
+      toast.success('Case updated!');
+      handleModalClose();
+    } catch (err) {
+      toast.error('Update failed.');
+    }
+  };
+
+  const handleDeleteCase = async (id) => {
+    try {
+      await axios.delete(`http://localhost:5000/api/cases/${id}`);
+      setCases((prev) => prev.filter((c) => c._id !== id));
+      toast.success('Deleted.');
+    } catch {
+      toast.error('Delete failed.');
+    }
+  };
+
+  const handleAISuggestion = async () => {
+    if (!selectedCase) return;
+    setLoadingSummary(true);
+    try {
+      const res = await axios.post('http://localhost:5000/api/generate-summary', selectedCase);
+      setAiSummary(res.data.summary || '');
+    } catch (err) {
+      toast.error('AI suggestion failed.');
+      console.error(err);
+    } finally {
+      setLoadingSummary(false);
+    }
+  };
 
   return (
-    <div className='max-w-2xl mx-auto mt-8'>
-      <h2 className='text-lg font-bold mb-4 text-center'>All Cases</h2>
-      <div className='flex gap-4 mb-4'>
-        <input
-          type='text'
-          placeholder='Search by name'
-          value={searchName}
-          onChange={(e) => setSearchName(e.target.value)}
-          className='border px-2 py-1 rounded w-1/2'
-        />
-        <input
-          type='text'
-          placeholder='Search by phone'
-          value={searchPhone}
-          onChange={(e) => setSearchPhone(e.target.value)}
-          className='border px-2 py-1 rounded w-1/2'
-        />
-      </div>
-      <table className='min-w-full border border-gray-300 rounded'>
+    <div>
+      <h2>Cases</h2>
+      <input
+        type="text"
+        placeholder="Search by name or phone"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+
+      <table border="1" cellPadding="6">
         <thead>
-          <tr className='bg-blue-100'>
-            <th className='py-2 px-4 border'>#</th>
-            <th className='py-2 px-4 border'>Name</th>
-            <th className='py-2 px-4 border'>Phone Number</th>
-            <th className='py-2 px-4 border'>Actions</th>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Date of Visit</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          {filteredCases.map((data, idx) => (
-            <tr key={data._id} className='text-center hover:bg-blue-50'>
-              <td className='py-2 px-4 border'>{idx + 1}</td>
-              <td className='py-2 px-4 border'>
-                {editId === data._id ? (
-                  <input
-                    value={editName}
-                    onChange={(e) => setEditName(e.target.value)}
-                    className='border px-2 py-1'
-                  />
-                ) : (
-                  data.name || data.patientName || "N/A"
-                )}
-              </td>
-              <td className='py-2 px-4 border'>
-                {editId === data._id ? (
-                  <input
-                    value={editPhone}
-                    onChange={(e) => setEditPhone(e.target.value)}
-                    className='border px-2 py-1'
-                  />
-                ) : (
-                  data.phone || data.phoneNumber || "N/A"
-                )}
-              </td>
-              <td className='py-2 px-4 border'>
-                {editId === data._id ? (
-                  <>
-                    <button
-                      className='text-green-600 hover:underline mr-3'
-                      onClick={() => handleSave(data._id)}
-                    >
-                      Save
-                    </button>
-                    <button
-                      className='text-gray-600 hover:underline'
-                      onClick={() => setEditId(null)}
-                    >
-                      Cancel
-                    </button>
-                  </>
-                ) : (
-                  <>
-                    <button
-                      className='text-blue-600 hover:underline mr-3'
-                      onClick={() => handleEdit(data._id)}
-                    >
-                      Edit
-                    </button>
-                    <button
-                      className='text-red-600 hover:underline'
-                      onClick={() => handleDelete(data._id)}
-                    >
-                      Delete
-                    </button>
-                  </>
-                )}
+          {currentCases.map((c) => (
+            <tr key={c._id}>
+              <td>{c.name}</td>
+              <td>{c.phone}</td>
+              <td>{c.age}</td>
+              <td>{c.gender}</td>
+              <td>{new Date(c.dateOfVisit).toLocaleDateString()}</td>
+              <td>
+                <button onClick={() => handleViewClick(c)}>View</button>
+                <button onClick={() => handleEditClick(c)}>Edit</button>
+                <button onClick={() => handleDeleteCase(c._id)}>Delete</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+
+      {/* Pagination */}
+      <div style={{ marginTop: '10px' }}>
+        <button onClick={() => setCurrentPage(1)} disabled={currentPage === 1}>First</button>
+        <button onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))} disabled={currentPage === 1}>Prev</button>
+        {Array.from({ length: totalPages }, (_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentPage(i + 1)}
+            style={{ fontWeight: currentPage === i + 1 ? 'bold' : 'normal' }}
+          >
+            {i + 1}
+          </button>
+        ))}
+        <button onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))} disabled={currentPage === totalPages}>Next</button>
+        <button onClick={() => setCurrentPage(totalPages)} disabled={currentPage === totalPages}>Last</button>
+      </div>
+
+      {/* Edit Modal */}
+      {isModalOpen && selectedCase && (
+        <Modal isOpen={isModalOpen} onClose={handleModalClose}>
+          <h3>Edit Case</h3>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSaveCase();
+            }}
+          >
+            {['name', 'phone', 'age', 'gender', 'symptoms', 'remedyGiven'].map((field) => (
+              <div key={field}>
+                <label>{field}:</label>
+                <input
+                  name={field}
+                  value={selectedCase[field] || ''}
+                  onChange={handleFieldChange}
+                  type={field === 'age' ? 'number' : 'text'}
+                />
+              </div>
+            ))}
+            <label>Date of Visit:</label>
+            <input
+              type="date"
+              name="dateOfVisit"
+              value={
+                selectedCase.dateOfVisit
+                  ? new Date(selectedCase.dateOfVisit).toISOString().split('T')[0]
+                  : ''
+              }
+              onChange={handleFieldChange}
+            />
+
+            {/* AI Summary Button */}
+            <hr />
+            <h4>AI Suggestion</h4>
+            <button
+              type="button"
+              onClick={handleAISuggestion}
+              disabled={loadingSummary}
+              className="btn btn-info mb-2"
+            >
+              {loadingSummary ? 'Generating...' : 'Generate Summary'}
+            </button>
+
+            {/* Show summary */}
+            {aiSummary && (
+              <div className="mb-3">
+                <label><strong>AI Summary:</strong></label>
+                <textarea
+                  className="form-control"
+                  value={aiSummary}
+                  readOnly
+                  rows={6}
+                />
+              </div>
+            )}
+
+            <div>
+              <button type="submit">Save</button>
+              <button type="button" onClick={handleModalClose}>
+                Cancel
+              </button>
+            </div>
+          </form>
+        </Modal>
+      )}
+
+      {/* View Modal */}
+      {isViewModalOpen && viewCase && (
+        <Modal isOpen={isViewModalOpen} onClose={() => setIsViewModalOpen(false)}>
+          <h3>View Case</h3>
+          <p><strong>Name:</strong> {viewCase.name}</p>
+          <p><strong>Phone:</strong> {viewCase.phone}</p>
+          <p><strong>Age:</strong> {viewCase.age}</p>
+          <p><strong>Gender:</strong> {viewCase.gender}</p>
+          <p><strong>Symptoms:</strong> {viewCase.symptoms}</p>
+          <p><strong>Remedy Given:</strong> {viewCase.remedyGiven}</p>
+          <p><strong>Date of Visit:</strong> {new Date(viewCase.dateOfVisit).toLocaleDateString()}</p>
+
+          <h4>Chief Complaints</h4>
+          {(viewCase.chiefComplaints || []).map((cc, i) => (
+            <div key={i}>
+              <p><strong>Complaint:</strong> {cc.complaint}</p>
+              <p><strong>Duration:</strong> {cc.duration}</p>
+              <p><strong>Description:</strong> {cc.description}</p>
+              <p><strong>Modalities:</strong> {cc.modalities}</p>
+              {cc.skinImage && <img src={cc.skinImage} alt="Skin" width="100" />}
+            </div>
+          ))}
+
+          <h4>Prescriptions</h4>
+          {(viewCase.prescriptions || []).map((p, i) => (
+            <div key={i}>
+              <p><strong>Date:</strong> {new Date(p.date).toLocaleDateString()}</p>
+              <p><strong>Remedy:</strong> {p.remedyName}</p>
+              <p><strong>Potency:</strong> {p.potency}</p>
+              <p><strong>Dose:</strong> {p.dose}</p>
+              <p><strong>Instructions:</strong> {p.instructions}</p>
+            </div>
+          ))}
+
+          <h4>Personal History</h4>
+          {viewCase.personalHistory &&
+            Object.entries(viewCase.personalHistory).map(([key, val]) => (
+              <p key={key}><strong>{key}:</strong> {val}</p>
+            ))}
+
+          {viewCase.imageUrl && (
+            <div>
+              <h4>Uploaded Image:</h4>
+              <img src={viewCase.imageUrl} alt="Uploaded" width="150" />
+            </div>
+          )}
+
+          <div style={{ marginTop: '10px' }}>
+            <button onClick={() => setIsViewModalOpen(false)}>Close</button>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };

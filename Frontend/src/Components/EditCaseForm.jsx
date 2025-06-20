@@ -1,249 +1,131 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+/** @format */
+const express = require("express");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
+require("dotenv").config();
 
-function EditCaseForm() {
-  const { caseId } = useParams();
-  const navigate = useNavigate();
+const router = express.Router();
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    symptoms: '',
-    remedyGiven: '',
-    dateOfVisit: '',
-    chiefComplaints: [
-      { complaint: '', duration: '', description: '' }
-    ],
-    prescriptions: [
-      { date: '', remedyName: '', potency: '', dose: '', instructions: '' }
-    ]
-  });
+const generateHomeoSummary = async (caseData) => {
+  try {
+    const safe = (val) => val || "Not provided";
+    const safeList = (arr) =>
+      Array.isArray(arr) && arr.length
+        ? arr
+            .map(
+              (item, i) =>
+                `${i + 1}. Complaint: ${safe(item.complaint)}, Duration: ${safe(
+                  item.duration
+                )}, Description: ${safe(item.description)}`
+            )
+            .join("\n")
+        : "No chief complaints provided.";
 
-  useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/cases/${caseId}`)
-      .then((res) => {
-        const data = res.data;
-        setFormData({
-          ...data,
-          chiefComplaints: data.chiefComplaints?.length
-            ? data.chiefComplaints
-            : [{ complaint: '', duration: '', description: '' }],
-          prescriptions: data.prescriptions?.length
-            ? data.prescriptions
-            : [{ date: '', remedyName: '', potency: '', dose: '', instructions: '' }]
-        });
-      })
-      .catch((err) => console.error('Failed to fetch case data:', err));
-  }, [caseId]);
+    const safePrescription = (arr) =>
+      Array.isArray(arr) && arr.length
+        ? arr
+            .map(
+              (p, i) =>
+                `${i + 1}. Date: ${safe(p.date)}, Remedy: ${safe(p.remedyName)}, Potency: ${safe(
+                  p.potency
+                )}, Dose: ${safe(p.dose)}, Instructions: ${safe(p.instructions)}`
+            )
+            .join("\n")
+        : "No prescription history available.";
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+    const prompt = `
+You are a homeopathy assistant.
 
-  const handleComplaintChange = (index, e) => {
-    const { name, value } = e.target;
-    const updated = [...formData.chiefComplaints];
-    updated[index][name] = value;
-    setFormData((prev) => ({ ...prev, chiefComplaints: updated }));
-  };
+Analyze the patient's case history and optionally provided face image. Based on the complaints and clinical history, suggest:
+- A list of likely homeopathy remedies.
+- Dosage instructions.
+- Key advice for the patient.
 
-  const addComplaint = () => {
-    setFormData((prev) => ({
-      ...prev,
-      chiefComplaints: [...prev.chiefComplaints, { complaint: '', duration: '', description: '' }]
-    }));
-  };
+Avoid special symbols. Respond in plain, understandable language.
 
-  const removeComplaint = (index) => {
-    const updated = [...formData.chiefComplaints];
-    updated.splice(index, 1);
-    setFormData((prev) => ({ ...prev, chiefComplaints: updated }));
-  };
+---
 
-  const handlePrescriptionChange = (index, e) => {
-    const { name, value } = e.target;
-    const updated = [...formData.prescriptions];
-    updated[index][name] = value;
-    setFormData((prev) => ({ ...prev, prescriptions: updated }));
-  };
+**Patient Details**
+- Name: ${safe(caseData.name)}
+- Age: ${safe(caseData.age)}
+- Gender: ${safe(caseData.gender)}
+- Marital Status: ${safe(caseData.maritalStatus)}
+- Occupation: ${safe(caseData.occupation)}
+- Address: ${safe(caseData.address)}
+- Phone: ${safe(caseData.phone)}
+- Date of Visit: ${safe(caseData.dateOfVisit)}
 
-  const addPrescription = () => {
-    setFormData((prev) => ({
-      ...prev,
-      prescriptions: [...prev.prescriptions, { date: '', remedyName: '', potency: '', dose: '', instructions: '' }]
-    }));
-  };
+**Chief Complaints:**
+${safeList(caseData.chiefComplaints)}
 
-  const removePrescription = (index) => {
-    const updated = [...formData.prescriptions];
-    updated.splice(index, 1);
-    setFormData((prev) => ({ ...prev, prescriptions: updated }));
-  };
+**History of Present Illness:**
+${safe(caseData.historyPresentIllness)}
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios
-      .put(`http://localhost:5000/api/cases/${caseId}`, formData)
-      .then(() => {
-        alert('Case updated successfully');
-        navigate('/followups');
-      })
-      .catch((err) => {
-        console.error('Error updating case:', err);
-      });
-  };
+**Past History**
+- Childhood Diseases: ${safe(caseData.pastHistory?.childhoodDiseases)}
+- Surgeries/Injuries: ${safe(caseData.pastHistory?.surgeriesInjuries)}
+- Major Illnesses: ${safe(caseData.pastHistory?.majorIllnesses)}
 
-  return (
-    <div className="container mt-4">
-      <h2>Edit Case</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label className="form-label">Patient Name</label>
-          <input
-  type="text"
-  className="form-control"
-  name="name"                // ✅ updated
-  value={formData.name}      // ✅ updated
-  onChange={handleChange}
-/>
-        </div>
+**Family History:** ${safe(caseData.familyHistory)}
 
-        <div className="mb-3">
-          <label className="form-label">Phone Number</label>
-          <input
-  type="text"
-  className="form-control"
-  name="phone"               // ✅ updated
-  value={formData.phone}     // ✅ updated
-  onChange={handleChange}
-/>
-        </div>
+**Personal History**
+- Appetite: ${safe(caseData.personalHistory?.appetite)}
+- Cravings/Aversions: ${safe(caseData.personalHistory?.cravingsAversions)}
+- Thirst: ${safe(caseData.personalHistory?.thirst)}
+- Bowel: ${safe(caseData.personalHistory?.bowel)}
+- Urine: ${safe(caseData.personalHistory?.urine)}
+- Sleep: ${safe(caseData.personalHistory?.sleep)}
+- Dreams: ${safe(caseData.personalHistory?.dreams)}
+- Sweat: ${safe(caseData.personalHistory?.sweat)}
+- Thermal: ${safe(caseData.personalHistory?.thermal)}
+- Habits: ${safe(caseData.personalHistory?.habits)}
+- Menstrual: ${safe(caseData.personalHistory?.menstrual)}
 
-        <div className="mb-3">
-          <label className="form-label">Symptoms</label>
-          <textarea
-            className="form-control"
-            name="symptoms"
-            value={formData.symptoms}
-            onChange={handleChange}
-          />
-        </div>
+**Mental Symptoms:**
+${safe(caseData.mentalSymptoms)}
 
-        <div className="mb-3">
-          <label className="form-label">Remedy Given</label>
-          <input
-            type="text"
-            className="form-control"
-            name="remedyGiven"
-            value={formData.remedyGiven}
-            onChange={handleChange}
-          />
-        </div>
+**General Remarks:**
+${safe(caseData.generalRemarks)}
 
-        <div className="mb-3">
-          <label className="form-label">Date of Visit</label>
-          <input
-            type="date"
-            className="form-control"
-            name="dateOfVisit"
-            value={formData.dateOfVisit?.substring(0, 10)}
-            onChange={handleChange}
-          />
-        </div>
+**Doctor Observations:**
+${safe(caseData.observationsByDoctor)}
 
-        <hr />
-        <h4>Chief Complaints</h4>
-        {formData.chiefComplaints.map((cc, index) => (
-          <div key={index} className="border p-3 mb-3">
-            <input
-              className="form-control mb-2"
-              placeholder="Complaint"
-              name="complaint"
-              value={cc.complaint}
-              onChange={(e) => handleComplaintChange(index, e)}
-            />
-            <input
-              className="form-control mb-2"
-              placeholder="Duration"
-              name="duration"
-              value={cc.duration}
-              onChange={(e) => handleComplaintChange(index, e)}
-            />
-            <textarea
-              className="form-control mb-2"
-              placeholder="Description"
-              name="description"
-              value={cc.description}
-              onChange={(e) => handleComplaintChange(index, e)}
-            />
-            <button type="button" className="btn btn-danger btn-sm" onClick={() => removeComplaint(index)}>
-              Remove
-            </button>
-          </div>
-        ))}
-        <button type="button" className="btn btn-secondary mb-4" onClick={addComplaint}>
-          + Add Complaint
-        </button>
+**Prescriptions:**
+${safePrescription(caseData.prescriptions)}
 
-        <hr />
-        <h4>Prescriptions</h4>
-        {formData.prescriptions.map((p, index) => (
-          <div key={index} className="border p-3 mb-3">
-            <input
-              type="date"
-              className="form-control mb-2"
-              name="date"
-              value={p.date?.substring(0, 10)}
-              onChange={(e) => handlePrescriptionChange(index, e)}
-            />
-            <input
-              className="form-control mb-2"
-              placeholder="Remedy Name"
-              name="remedyName"
-              value={p.remedyName}
-              onChange={(e) => handlePrescriptionChange(index, e)}
-            />
-            <input
-              className="form-control mb-2"
-              placeholder="Potency"
-              name="potency"
-              value={p.potency}
-              onChange={(e) => handlePrescriptionChange(index, e)}
-            />
-            <input
-              className="form-control mb-2"
-              placeholder="Dose"
-              name="dose"
-              value={p.dose}
-              onChange={(e) => handlePrescriptionChange(index, e)}
-            />
-            <input
-              className="form-control mb-2"
-              placeholder="Instructions"
-              name="instructions"
-              value={p.instructions}
-              onChange={(e) => handlePrescriptionChange(index, e)}
-            />
-            <button type="button" className="btn btn-danger btn-sm" onClick={() => removePrescription(index)}>
-              Remove
-            </button>
-          </div>
-        ))}
-        <button type="button" className="btn btn-secondary mb-4" onClick={addPrescription}>
-          + Add Prescription
-        </button>
+Give your summary below:
+`;
 
-        <div className="d-grid mt-4">
-          <button type="submit" className="btn btn-primary">
-            Update Case
-          </button>
-        </div>
-      </form>
-    </div>
-  );
-}
+    const model = genAI.getGenerativeModel({ model: "models/gemini-1.5-flash" });
 
-export default EditCaseForm;
+    let result;
+    if (caseData.imageBase64) {
+      result = await model.generateContent([
+        { text: prompt },
+        { inlineData: { mimeType: "image/jpeg", data: caseData.imageBase64 } },
+      ]);
+    } else {
+      result = await model.generateContent(prompt);
+    }
+
+    const summary = result.response.text();
+    return summary;
+  } catch (error) {
+    console.error("Gemini AI error:", error);
+    throw new Error("Failed to generate homeopathy summary");
+  }
+};
+
+router.post("/", async (req, res) => {
+  try {
+    console.log("📥 AI summary request received");
+    const caseData = req.body;
+    const summary = await generateHomeoSummary(caseData);
+    res.json({ summary });
+  } catch (error) {
+    console.error("❌ AI Summary Error:", error);
+    res.status(500).json({ error: "AI failed to generate summary" });
+  }
+});
+
+module.exports = router;

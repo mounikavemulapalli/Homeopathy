@@ -104,32 +104,42 @@ router.get("/:id", async (req, res) => {
 });
 
 // @route   PUT /api/cases/:id
-router.put("/:id", async (req, res) => {
+// PUT /api/cases/:id
+router.put('/:id', async (req, res) => {
   try {
     const updatedData = {
       name: req.body.name,
-  phone: req.body.phone,
-  age: req.body.age,
-  gender: req.body.gender,
-  dateOfVisit: req.body.dateOfVisit,
-  imageUrl: req.body.imageUrl,
-  chiefComplaints: req.body.chiefComplaints || [],
-  pastHistory: req.body.pastHistory || {},
+      phone: req.body.phone,
+      age: req.body.age,
+      gender: req.body.gender,
+      symptoms: req.body.symptoms,
+      remedyGiven: req.body.remedyGiven,
+      dateOfVisit: req.body.dateOfVisit,
+      imageUrl: req.body.imageUrl,
+
+      chiefComplaints: req.body.chiefComplaints || [],
+      prescriptions: req.body.prescriptions || [],
+      personalHistory: req.body.personalHistory || {},
     };
 
-    const updated = await Case.findByIdAndUpdate(
+    const updatedCase = await Case.findByIdAndUpdate(
       req.params.id,
       { $set: updatedData },
       { new: true, runValidators: true }
     );
-    
 
-    res.json(updated);
-  } catch (err) {
-    console.error("Error updating case:", err);
-    res.status(500).json({ error: "Update failed" });
+    if (!updatedCase) {
+      return res.status(404).json({ message: 'Case not found' });
+    }
+
+    res.json(updatedCase);
+  } catch (error) {
+    console.error('Update Error:', error);
+    res.status(500).json({ message: 'Server error while updating case' });
   }
 });
+
+
 
 
 // @route   DELETE /api/cases/:id
@@ -142,8 +152,4 @@ router.delete("/:id", async (req, res) => {
     res.status(500).json({ error: "Delete failed" });
   }
 });
-
-
-
-
 module.exports = router;

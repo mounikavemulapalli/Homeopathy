@@ -19,14 +19,15 @@
 //     default: Date.now,
 //   },
 // });
+// models/Case.js
 const mongoose = require("mongoose");
 
 const chiefComplaintSchema = new mongoose.Schema({
   complaint: String,
   duration: String,
   description: String,
-  modalities: String, // Added modalities field
-  skinImage: String, // Added skinImage field for file path
+  modalities: String,
+  skinImage: String,
 });
 
 const prescriptionSchema = new mongoose.Schema({
@@ -57,50 +58,25 @@ const personalHistorySchema = new mongoose.Schema({
   menstrual: String,
 });
 
-
 const CaseSchema = new mongoose.Schema({
   name: String,
+  phone: String,
   age: Number,
   gender: String,
-  phone: String,
-  patientName: String, // Add this if needed
-  phoneNumber: String, // Add this if used separately
-  symptoms: String, // Add this
-  remedyGiven: String, // Add this
+  symptoms: String,
+  remedyGiven: String,
   dateOfVisit: Date,
   imageUrl: String,
 
-  chiefComplaints: [
-    {
-      complaint: String,
-      duration: String,
-      description: String,
-      skinImageUrl: String,
-    },
-  ],
+  chiefComplaints: [chiefComplaintSchema],
+  prescriptions: [prescriptionSchema],
+  pastHistory: pastHistorySchema,
+  personalHistory: personalHistorySchema,
 
-  prescriptions: [
-    {
-      date: Date,
-      remedyName: String,
-      potency: String,
-      dose: String,
-      instructions: String,
-    },
-  ],
-
-  pastHistory: {
-    childhoodDiseases: String,
-    surgeriesInjuries: String,
-    majorIllnesses: String,
+  createdAt: {
+    type: Date,
+    default: Date.now,
   },
-
-  // Add other sections if needed
 });
 
-
 module.exports = mongoose.model("Case", CaseSchema);
-
-
-
-
