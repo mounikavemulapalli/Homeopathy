@@ -317,13 +317,21 @@ const CasesList = () => {
                 <strong>Modalities:</strong> {cc.modalities}
               </p>
               {cc.skinImage && (
-                <img src={cc.skinImage} alt='Skin' width='100' />
+                <img
+                  src={
+                    cc.skinImage.startsWith("http")
+                      ? cc.skinImage
+                      : `http://localhost:5000/uploads/${cc.skinImage}`
+                  }
+                  alt='Skin'
+                  width='100'
+                />
               )}
             </div>
           ))}
 
           <h4>Prescriptions</h4>
-          {(viewCase.prescription || []).map((p, i) => (
+          {(viewCase.prescriptions || []).map((p, i) => (
             <div key={i}>
               <p>
                 <strong>Date:</strong> {new Date(p.date).toLocaleDateString()}
