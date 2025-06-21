@@ -64,12 +64,18 @@ const CaseSchema = new mongoose.Schema({
   age: Number,
   gender: String,
   symptoms: String,
-  remedyGiven: String,
+  remedyGiven: {
+    type: String,
+    default: "",
+  },
   dateOfVisit: Date,
   imageUrl: String,
 
   chiefComplaints: [chiefComplaintSchema],
-  prescriptions: [prescriptionSchema],
+  prescriptions: {
+    type: [prescriptionSchema],
+    default: [], // ensures array is always there
+  },
   pastHistory: pastHistorySchema,
   personalHistory: personalHistorySchema,
 

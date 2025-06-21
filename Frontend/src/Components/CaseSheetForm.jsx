@@ -17,8 +17,8 @@ const initialCaseData = {
       complaint: "",
       duration: "",
       description: "",
-      modalities: "", // Added modalities field
-      skinImage: null, // Added skinImage field
+      modalities: "",
+      skinImage: null,
     },
   ],
   historyPresentIllness: "",
@@ -28,7 +28,7 @@ const initialCaseData = {
     majorIllnesses: "",
   },
   familyHistory: "",
-  personalHistory: "",
+  personalHistory: {},
   generalRemarks: "",
   observationsByDoctor: "",
   prescription: [
@@ -83,16 +83,16 @@ const CaseSheetForm = () => {
 
   const handlePrescriptionChange = (index, e) => {
     const { name, value } = e.target;
-    const updatedPrescriptions = [...caseData.prescription];
+    const updatedPrescriptions = [...caseData.prescription]; // <-- singular
     updatedPrescriptions[index][name] = value;
-    setCaseData({ ...caseData, prescription: updatedPrescriptions });
+    setCaseData({ ...caseData, prescription: updatedPrescriptions }); // <-- singular
   };
 
   const addPrescription = () => {
     setCaseData({
       ...caseData,
       prescription: [
-        ...caseData.prescription,
+        ...caseData.prescription, // <-- singular
         { date: "", remedyName: "", potency: "", dose: "", instructions: "" },
       ],
     });
@@ -235,28 +235,31 @@ const CaseSheetForm = () => {
       //   }
       // );
       const caseInput = {
-        symptoms: caseData.chiefComplaints?.map((c) => c.description).join(", ") || "",
+        symptoms:
+          caseData.chiefComplaints?.map((c) => c.description).join(", ") || "",
         thermal: caseData.personalHistory?.thermal || "",
         cravings: caseData.personalHistory?.cravingsAversions || "",
         mentals: caseData.mentalSymptoms || "",
       };
-      
+
       const requestBody = {
         rubrics: selectedRubrics || [],
         caseInput,
       };
-      
-      const brainResponse = await fetch("http://localhost:5000/api/brain/analyze", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestBody),
-      });
-      
+
+      const brainResponse = await fetch(
+        "http://localhost:5000/api/brain/analyze",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestBody),
+        }
+      );
+
       const brainData = await brainResponse.json();
       setBrainResult(brainData);
-      
 
       // Combine summary and AI remedy suggestion
       const finalSummary = `
@@ -271,6 +274,8 @@ Explanation: ${brainData.pioneer_explanation || "No explanation provided"}
 `;
 
       setAiSummary(finalSummary);
+      console.log("AI Summary:", finalSummary);
+      console.log("Brain Result:", brainData);
     } catch (error) {
       alert("Error generating summary.");
     } finally {
@@ -300,6 +305,29 @@ Explanation: ${brainData.pioneer_explanation || "No explanation provided"}
   const handleRemoveRubric = (index) => {
     setSelectedRubrics((prev) => prev.filter((_, i) => i !== index));
   };
+
+  // For testing, add this inside your component temporarily:
+  useEffect(() => {
+    setBrainResult({
+      main_remedy: "Arsenicum Album",
+      dosage: "30C, 3 times a day",
+      analysis: "Psoric",
+      pioneer_explanation: "Best suited for anxiety and restlessness.",
+    });
+    setAiSummary("Test summary");
+    setCaseData((prev) => ({
+      ...prev,
+      prescription: [
+        {
+          date: "2024-06-21",
+          remedyName: "Arsenicum Album",
+          potency: "30C",
+          dose: "3 times a day",
+          instructions: "Take before meals",
+        },
+      ],
+    }));
+  }, []);
 
   return (
     <form className='case-container' onSubmit={handleSubmit}>
@@ -737,14 +765,54 @@ Explanation: ${brainData.pioneer_explanation || "No explanation provided"}
           >
             <h3>AI Generated Summary</h3>
             <p>{aiSummary}</p>
-            {brainResult && ( // Display brainResult if available
+            {brainResult && (
               <div className='brain'>
-                <h3>Remedy: {brainResult.main_remedy}</h3>
-                <p>Dosage: {brainResult.dosage}</p>
-                <p>{brainResult.analysis}</p>
+                <h3>Remedy Given</h3>
+                <p>
+                  <strong>Remedy:</strong> {brainResult.main_remedy || "N/A"}
+                  <br />
+                  <strong>Dosage:</strong> {brainResult.dosage || "N/A"}
+                  <br />
+                  <strong>Miasm:</strong> {brainResult.analysis || "N/A"}
+                  <br />
+                  <strong>Explanation:</strong>{" "}
+                  {brainResult.pioneer_explanation || "No explanation provided"}
+                </p>
               </div>
             )}
           </div>
+        )}
+
+        {/* Display Prescriptions List */}
+        {caseData.prescription && caseData.prescription.length > 0 && (
+          <section className='case-section'>
+            <h3 className='case-section-title'>Prescriptions Given</h3>
+            <table
+              className='case-prescription-table'
+              style={{ width: "100%", marginBottom: "20px" }}
+            >
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Remedy Name</th>
+                  <th>Potency</th>
+                  <th>Dose</th>
+                  <th>Instructions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {caseData.prescription.map((pres, idx) => (
+                  <tr key={idx}>
+                    <td>{pres.date}</td>
+                    <td>{pres.remedyName}</td>
+                    <td>{pres.potency}</td>
+                    <td>{pres.dose}</td>
+                    <td>{pres.instructions}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
         )}
         <h3 className='case-section-title'>10. Prescription</h3>
         {caseData.prescription.map((prescription, index) => (
